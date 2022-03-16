@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styczna do wykresu funkcji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="979" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Elementy analizy matematycznej|Styczna do wykresu funkcji">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="elementy-analizy-matematycznej.html">Elementy analizy matematycznej</a> &rarr; <a
+                href="styczna-do-wykresu-funkcji.html">Styczna do wykresu funkcji</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="granica-funkcji-w-nieskonczonosci.html">&#9664; Granica funkcji w nieskończoności</a></div>
+            <div class="next_temat"><a href="badanie-monotonicznosci-funkcji-za-pomoca-pochodnej.html"
+                    class="next_temat">Badanie monotoniczności funkcji za pomocą pochodnej &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Styczna do wykresu funkcji</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_766" poziom="blok_0">Prosta styczna do wykresu funkcji \(f(x)\) w punkcie
+                \((x_0, f(x_0))\) wyraża się wzorem: \[y=f'(x_0)(x-x_0)+f(x_0)\] Współczynnik kierunkowy prostej
+                stycznej, to \(f'(x_0)\). <div class="akapit"> Równanie prostej stycznej zapisane w postaci kierunkowej,
+                    to: \[y=f'(x_0)\cdot x+b\] gdzie \(b=f(x_0)-f'(x_0)\cdot x_0\). </div> <img src="grafika/g0667.png"
+                    class="center m20" noc="1" alt="" />
+                <div class="twierdzenie">
+                    <h3>Wskazówka</h3> Przy wyznaczaniu równania prostej stycznej kluczowe jest obliczenie \(f'(x_0)\).
+                    Wzoru na \(b\) nie ma sensu zapamiętywać, ponieważ \(b\) wyliczamy podstawiając współrzędne punktu
+                    \((x_0,f(x_0))\) do równania \(y=f'(x_0)\cdot x+b\) odpowiednio pod \(x\) oraz \(y\). W ten sposób
+                    można też wyprowadzić wzór na \(b=f(x_0)-f'(x_0)\cdot x_0\).
+                </div>
+                <div class="zadanie"> Wyznacz równanie stycznej do wykresu funkcji \(f(x)=x^2-2x+1\) w punkcie
+                    \(x_0=3\). <div class="p_p"> Liczymy pochodną funkcji: \[f'(x)=2x-2\] Zatem: \[f'(x_0)=f'(3)=2\cdot
+                        3-2=4\] Wyznaczamy równanie prostej stycznej: \[\begin{split} y&=f'(x_0)\cdot x+b\\[6pt] y&=4x+b
+                        \end{split}\] Żeby obliczyć współczynnik \(b\) podstawimy do równania prostej stycznej
+                        współrzędne punktu \((x_0,f(x_0))\), który należy do tej prostej.<br /> Obliczamy:
+                        \[f(x_0)=f(3)=3^2-2\cdot 3+1=4\] Czyli punkt \((x_0,f(x_0)) = (3,4)\). Zatem podstawiamy:
+                        \[\begin{split} y&=4x+b\\[6pt] 4&=4\cdot 3+b\\[6pt] b&=-8 \end{split}\] Zatem równanie prostej
+                        stycznej do funkcji \(f(x)=x^2-2x+1\) w punkcie \(x_0=3\) jest postaci: \[y=4x-8\] </div>
+                </div>
+            </div>
+            <div class="zadanie" id="2411" tytul="" typ="1" yt="EY0StsKV9-M" p="0" lvl="PR" pkt="3" typ_v="1" pisz=""
+                odp="" wsk="" data="2017-05-09">
+                <div class="z_tresc">Funkcja \(f\) jest określona wzorem \(f(x)=\frac{x-1}{x^2+1}\) dla każdej liczby
+                    rzeczywistej \(x\). Wyznacz równanie stycznej do wykresu tej funkcji w punkcie \(P=(1,0)\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="2546" tytul="" typ="1" yt="oE0BEO9y9Er" p="0" lvl="PR" pkt="3" typ_v="1" pisz=""
+                odp="" wsk="" data="2017-12-04">
+                <div class="z_tresc">Wykaż, że nie istnieje styczna do hiperboli o równaniu \(y=\frac{4x}{x-3}\)
+                    prostopadła do prostej \(l\) o równaniu \(2x+4y-1=0\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1643" tytul="" typ="1" yt="w9s-Ab8n0au" p="0" lvl="" pkt="4" typ_v="1" pisz=""
+                odp="1" wsk="" data="2015-05-08">
+                <div class="z_tresc">Funkcja \(f\) określona jest wzorem \(f(x)=x^3-2x^2+1\) dla każdej liczby
+                    rzeczywistej \(x\). Wyznacz równania tych stycznych do wykresu funkcji \(f\), które są równoległe do
+                    prostej o równaniu \(y=4x\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(y=4x-7\) oraz \(y=4x+\frac{67}{27}\)</div>
+            </div>
+            <div class="zadanie" id="1545" tytul="" typ="1" yt="I3noP7bmf7b" p="0" lvl="PR" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2015-04-10">
+                <div class="z_tresc">Funkcja \(f\) określona jest wzorem \(f(x)=x^3-4x\). Prosta o równaniu \(x=1\)
+                    przecina wykres funkcji \(f\) w punkcie \(P\). Znajdź równanie stycznej do wykresu funkcji \(f\) w
+                    punkcie \(P\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(y=-x-2\)</div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="granica-funkcji-w-nieskonczonosci.html">&#9664; Granica funkcji w nieskończoności</a>
+                </div>
+                <div class="next_temat"><a href="badanie-monotonicznosci-funkcji-za-pomoca-pochodnej.html"
+                        class="next_temat">Badanie monotoniczności funkcji za pomocą pochodnej &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

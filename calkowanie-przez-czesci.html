@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Całkowanie przez części</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="19" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Studia|Całki|Całkowanie przez części">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="calki.html">Całki</a> &rarr; <a href="calkowanie-przez-czesci.html">Całkowanie przez części</a>
+        </div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="calkowanie-przez-podstawianie.html">&#9664; Całkowanie przez podstawianie</a></div>
+            <div class="next_temat"><a href="calki-funkcji-wymiernych.html" class="next_temat">Całki funkcji wymiernych
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Całkowanie przez części</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_20" poziom="blok_0">Jeżeli funcje \(f\) i \(g\) mają ciągłe pochodne, to:
+                \[\int f(x)\cdot g'(x)\ dx=f(x)\cdot g(x)-\int f'(x)\cdot g(x)\ dx\] lub \[\int f'(x)\cdot g(x)\
+                dx=f(x)\cdot g(x)-\int f(x)\cdot g'(x)\ dx\] <div class="zadanie" id="1654" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz całkę \(\int xe^xdx\).</div>
+                    <div class="p_p">Stosujemy całkowanie przez części: \[ \begin{split} \int xe^xdx &=\int x\left ( e^x
+                        \right )'dx=\\[6pt] &=xe^x-\int\left ( x \right )'e^xdx=\\[6pt] &=xe^x-\int 1\cdot e^x=\\[6pt]
+                        &=xe^x-e^x+C \end{split} \]</div>
+                </div>
+                <div class="zadanie" id="1655" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz całkę \(\int x^2e^xdx\).</div>
+                    <div class="p_p">Stosujemy całkowanie przez części: \[ \begin{split} \int x^2e^xdx&=\int x^2\left (
+                        e^x \right )'dx=\\[6pt] &=x^2e^x- \int 2xe^xdx=\\[6pt] &=x^2e^x-\left ( 2xe^x-\int2e^xdx \right
+                        )=\\[6pt] &=x^2e^x-2xe^x+2e^x+C=\\[6pt] &=e^x\left ( x^2-2x+2 \right )+C \end{split} \]</div>
+                </div>
+                <div class="zadanie" id="1656" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz całkę \(\int x^3 \cos x\ dx\).</div>
+                    <div class="p_p">Stosujemy całkowanie przez części: \[ \begin{split} \int x^3 \cos x\ dx&= \int x^3
+                        \left ( \sin x \right )'\ dx=\\[6pt] &=x^3\sin x-\int3x^2\sin x\ dx=\\[6pt] &=x^3\sin x-\left (
+                        \int3x^2\left ( -\cos x \right )'\ dx \right )=\\[6pt] &=x^3\sin x+\left ( \int3x^2\left ( \cos
+                        x \right )'\ dx \right )=\\[6pt] &=x^3\sin x+\left ( 3x^2\cos x-\int6x \cos x\ dx \right
+                        )=\\[6pt] &=x^3\sin x+3x^2\cos x-\int6x (\sin x)'\ dx=\\[6pt] &=x^3\sin x+3x^2\cos x-\left (
+                        6x\sin x - \int6\sin x\ dx \right )=\\[6pt] &=x^3\sin x+3x^2\cos x- 6x\sin x + 6\int\sin x\ dx
+                        =\\[6pt] &=x^3\sin x+3x^2\cos x- 6x\sin x - 6\cos x +C \end{split} \]</div>
+                </div>
+                <div class="zadanie" id="1657" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz całkę \(\int \frac{x}{\sin^2\!x}dx\).</div>
+                    <div class="p_p">Stosujemy całkowanie przez części: \[ \begin{split} \int
+                        \frac{x}{\sin^2\!x}dx&=\int x\cdot \frac{1}{\sin^2\!x}dx=\\[6pt] &=\int x\cdot \left (
+                        -\operatorname{ctg} x \right )'dx=\\[6pt] &=-x\operatorname{ctg} x-\int1\cdot
+                        (-\operatorname{ctg} x)dx=\\[6pt] &=-x\operatorname{ctg} x+\int \operatorname{ctg} x\ dx=\\[6pt]
+                        &=-x\operatorname{ctg} x+\ln|\sin x| + C \end{split} \]</div>
+                </div>
+                <div class="zadanie" id="1658" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz całkę \(\int \sin \left ( \ln x \right )dx\).</div>
+                    <div class="p_p">Stosujemy całkowanie przez części: \[ \begin{split} \int \sin \left ( \ln x \right
+                        )dx&=\int(x)' \sin \left ( \ln x \right )dx=\\[6pt] &=x \sin \left ( \ln x \right )-\int x \left
+                        ( \sin \left ( \ln x \right ) \right )'dx=\\[6pt] &=x \sin ( \ln x )-\int x \frac{\cos (\ln
+                        x)}{x}dx=\\[6pt] &=x \sin ( \ln x )-\int \cos (\ln x)\ dx=\\[6pt] &=x \sin ( \ln x )-\int
+                        (x)'\cos (\ln x)\ dx=\\[6pt] &=x \sin ( \ln x )-\left ( x\cos (\ln x) -\int x \frac{-\sin(\ln
+                        x)}{x}dx \right )=\\[6pt] &=x \sin ( \ln x )- x\cos (\ln x) -\int \sin(\ln x)\ dx \end{split} \]
+                        Zatem mamy równość: \[ \begin{split} \int \sin \left ( \ln x \right )dx&=x \sin ( \ln x )- x\cos
+                        (\ln x) -\int \sin(\ln x)\ dx\\[6pt] \int \sin \left ( \ln x \right )dx+\int \sin(\ln x)\ dx&=x
+                        \sin ( \ln x )- x\cos (\ln x)\\[6pt] 2\int \sin \left ( \ln x \right )dx&=x \sin ( \ln x )-
+                        x\cos (\ln x)\\[6pt] \int \sin \left ( \ln x \right )dx&=\frac{1}{2}x \sin ( \ln x )-
+                        \frac{1}{2}x\cos (\ln x)+C \end{split} \]</div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="calkowanie-przez-podstawianie.html">&#9664; Całkowanie przez podstawianie</a></div>
+                <div class="next_temat"><a href="calki-funkcji-wymiernych.html" class="next_temat">Całki funkcji
+                        wymiernych &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

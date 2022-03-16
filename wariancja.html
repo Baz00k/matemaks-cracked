@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wariancja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="448" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Statystyka|Wariancja">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="statystyka.html">Statystyka</a> &rarr; <a href="wariancja.html">Wariancja</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="odchylenie.html">&#9664; Odchylenie</a></div>
+            <div class="next_temat"><a href="odchylenie-standardowe.html" class="next_temat">Odchylenie standardowe
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Wariancja</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_443" poziom="blok_0"><b>Wariancja</b> liczb \(x_1, x_2,..., x_n\) to
+                średnia arytmetyczna kwadratów odchyleń od ich średniej arytmetycznej:
+                \[\sigma^2=\frac{\left(x_1-\overline{X} \right)^2+\left(x_2-\overline{X}
+                \right)^2+...+\left(x_n-\overline{X} \right)^2}{n}\] <div class="zadanie">Obliczymy wariancję liczb
+                    \(x_1 = 4, x_2 = -3, x_3 = 2\). <div class="p_p"> Najpierw liczymy średnią arytmetyczną:
+                        \[\overline{X}=\frac{4+(-3)+2}{3}=\frac{3}{3}=1 \] Zatem:
+                        \[\sigma^2=\frac{(4-1)^2+(-3-1)^2+(2-1)^2}{3}=\frac{9+16+1}{3}=\frac{26}{3}\] </div>
+                </div>
+                <div class="zadanie">Każdy z trzech zawodników wykonał serię \(13\) rzutów do kosza. Liczba rzutów
+                    celnych wynosiła odpowiednio \(5, 7\) oraz \(9\). Oblicz wariancję celnych rzutów do kosza. <div
+                        class="p_p"> Liczba rzutów w serii (\(13\)) nas nie interesuje. Musimy obliczyć wariancję liczb:
+                        \(5,7,9\). Średnia arytmetyczna tych liczb to: \[\overline{X}=\frac{5+7+9}{3}=\frac{21}{3}=7 \]
+                        Zatem wariancja wynosi:
+                        \[\sigma^2=\frac{(5-7)^2+(7-7)^2+(9-7)^2}{3}=\frac{4+0+4}{3}=\frac{8}{3}\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="odchylenie.html">&#9664; Odchylenie</a></div>
+                <div class="next_temat"><a href="odchylenie-standardowe.html" class="next_temat">Odchylenie standardowe
+                        &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

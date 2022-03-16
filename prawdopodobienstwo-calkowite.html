@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prawdopodobieństwo całkowite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="295" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Rachunek prawdopodobieństwa|Prawdopodobieństwo całkowite">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-prawdopodobienstwa.html">Rachunek prawdopodobieństwa</a> &rarr; <a
+                href="prawdopodobienstwo-calkowite.html">Prawdopodobieństwo całkowite</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="prawdopodobienstwo-warunkowe.html">&#9664; Prawdopodobieństwo warunkowe</a></div>
+            <div class="next_temat"><a href="statystyka.html" class="next_temat">Statystyka &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Prawdopodobieństwo całkowite</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_291" poziom="blok_0">Jeżeli zdarzenia \(B_1, B_2, ..., B_n\) są parami
+                rozłączne oraz mają prawdopodobieństwa dodatnie, które sumują się do jedynki, to dla dowolnego zdarzenia
+                \(A\) zachodzi wzór: \[P(A)=P(A|B_1)\cdot P(B_1)+P(A|B_2)\cdot P(B_2)+...+P(A|B_n)\cdot P(B_n)\] <div
+                    class="zadanie" id="20034" p="0" lvl="" typ="1">
+                    <div class="z_tresc">W urnie mamy \(10\) kul białych i \(7\) kul czarnych. Wyciągamy jedną losową
+                        kulę i wyrzucamy ją, nie sprawdzając koloru. Jaka jest szansa wyciągnięcia za drugim razem kuli
+                        białej?</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - za drugim razem wyciągnęliśmy
+                            kulę białą,<br /> \(B\) - za pierwszym razem wyciągnęliśmy kulę białą,<br /> \(C\) - za
+                            pierwszym razem wyciągnęliśmy kulę czarną. </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\). Stosujemy wzór
+                            na prawdopodobieństwo całkowite: \[ P(A)=P(A|B)\cdot P(B)+P(A|C)\cdot P(C)=\frac{9}{16}\cdot
+                            \frac{10}{17}+\frac{10}{16}\cdot \frac{7}{17} =\frac{90+70}{16\cdot 17}=\frac{10}{17} \]
+                        </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20035" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Na loterii mamy \(40\%\) losów wygrywających, \(50\%\) losów przegrywających
+                        oraz \(10\%\) losów "Graj dalej!" - pozwalających na wyciągnięcie następnego losu. Jakie jest
+                        prawdopodobieństwo wygranej?</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie2"> \(W\) - wygrano na loterii,<br />
+                            \(A\) - wyciągnięto los wygrywający,<br /> \(B\) - wyciągnięto los przegrywający,<br />
+                            \(C\) - wyciągnięto los "Graj dalej!". </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(W\). Stosujemy wzór
+                            na prawdopodobieństwo całkowite: \[ P(W)=P(W|A)\cdot P(A)+P(W|B)\cdot P(B)+P(W|C)\cdot
+                            P(C)=1\cdot \frac{4}{10}+0\cdot \frac{5}{10}+P(W)\cdot \frac{1}{10} \] Zatem mamy:
+                            \[\begin{split} P(W)&=1\cdot \frac{4}{10}+0\cdot \frac{5}{10}+P(W)\cdot \frac{1}{10}\\[6pt]
+                            P(W)&=\frac{4}{10}+\frac{1}{10}P(W)\\[6pt] P(W)-\frac{1}{10}P(W)&=\frac{4}{10}\\[6pt]
+                            \frac{9}{10}P(W)&=\frac{4}{10}\\[6pt] P(W)&=\frac{4}{9} \end{split}\] </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20036" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Z urny zawierającej \(3\) kule czarne i \(2\) kule białe losujemy kulę, po czym
+                        zwracamy ją do urny i dorzucamy jeszcze dwie kule tego samego koloru, co wylosowana. Następnie
+                        ponownie losujemy kulę z urny. Jakie jest prawdopodobieństwo, że za drugim razem wylosujemy kulę
+                        czarną?</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - za drugim razem wyciągnęliśmy
+                            kulę czarną,<br /> \(B\) - za pierwszym razem wyciągnęliśmy kulę białą,<br /> \(C\) - za
+                            pierwszym razem wyciągnęliśmy kulę czarną. </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\). Zastosujemy
+                            wzór na prawdopodobieństwo całkowite: \[ P(A)=P(A|B)\cdot P(B)+P(A|C)\cdot P(C) \] Jeśli za
+                            pierwszym razem wyciągnęliśmy kulę białą (zdarzenie \(B\)), to dorzuciliśmy do urny \(2\)
+                            kule białe, zatem mieliśmy łącznie 7 kul: \(3\) czarne i \(4\) białe. Czyli:
+                            \[P(A|B)=\frac{3}{7}\] Jeśli za pierwszym razem wyciągnęliśmy kulę czarną (zdarzenie \(C\)),
+                            to dorzuciliśmy do urny \(2\) kule czarne, zatem mieliśmy łącznie 7 kul: \(5\) czarnych i
+                            \(2\) białe. Czyli: \[P(A|C)=\frac{5}{7}\] Zatem: \[ P(A)=P(A|B)\cdot P(B)+P(A|C)\cdot
+                            P(C)=\frac{3}{7}\cdot \frac{2}{5}+\frac{5}{7}\cdot \frac{3}{5} =\frac{6+15}{7\cdot
+                            5}=\frac{3}{5} \] </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="prawdopodobienstwo-warunkowe.html">&#9664; Prawdopodobieństwo warunkowe</a></div>
+                <div class="next_temat"><a href="statystyka.html" class="next_temat">Statystyka &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

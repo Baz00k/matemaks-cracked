@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Logarytmy - najważniejsze wzory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="150" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Logarytmy|Logarytmy - najważniejsze wzory">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="logarytmy.html">Logarytmy</a> &rarr; <a href="logarytmy-najwazniejsze-wzory.html">Logarytmy -
+                najważniejsze wzory</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="logarytmy.html">&#9664; Wprowadzenie do logarytmów</a></div>
+            <div class="next_temat"><a href="obliczanie-logarytmow.html" class="next_temat">Obliczanie logarytmów
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Logarytmy - najważniejsze wzory</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_150" poziom="blok_0">
+
+                Jeżeli \(a \gt 0, a \ne 1, b \gt 0\) oraz \( c \gt
+                0\), to zachodzą następujące wzory: \[ \begin{split} &\log_ab+\log_ac=\log_a(b\cdot c)\\[6pt]
+                &\log_ab-\log_ac=\log_a\left(\frac{b}{c}\right)\\[6pt] &n\cdot
+                \log_ab=\log_a(b^n)=\log_{a^{\frac{1}{n}}}b\\[6pt] &a^{\log_ab}=b\\[6pt]
+                &\log_ab=\frac{\log_cb}{\log_ca} \end{split} \] Poniżej prezentuję te same wzory z dodatkowymi
+                informacjami i przykładami. <div class="twierdzenie">
+                    <h3>Wzór 1 i 2</h3> Dodawanie i odejmowanie logarytmów o tej samej podstawie:
+                    \[\log_ab+\log_ac=\log_a(b\cdot c)\] \[\log_ab-\log_ac=\log_a\left(\frac{b}{c}\right)\] Przykład 1:
+                    \[\log_26+\log_2\frac{2}{3}=\log_2\left(6\cdot \frac{2}{3}\right)=\log_24=2\] Przykład 2:
+                    \[\log_318-\log_32=\log_3\left(\frac{18}{2}\right)=\log_39=2\]
+                </div>
+                <div class="twierdzenie">
+                    <h3>Wzór 3</h3> Wyciąganie wykładnika potęgi przed logarytm: \[\begin{split} &\log_a(b^n)=n\cdot
+                    \log_ab\\[6pt] &\log_{a^{n}}b=\frac{1}{n}\log_ab \end{split}\] Przykład:
+                    \[\log_27^3=3\log_27=\log_{2^{\frac{1}{3}}}7=\log_\sqrt[3]{2}7\] Oba wzory wynikają bezpośrednio z
+                    definicji logarytmu. <div class="akapit"> Najpierw pokażemy, że zachodzi wzór: \(\log_a(b^n)=n\cdot
+                        \log_ab\).<br /> Załóżmy, że \(\log_ab=c\). Wówczas mamy: \[a^c=b\] Możemy podnieść obie strony
+                        równania do potęgi \(n\): \[a^{nc}=b^n\] Teraz zapisujemy równanie w postaci logarytmicznej
+                        korzystając z definicji logarytmu: \[\log_ab^n=nc\] Skoro \(\log_ab=c\), zatem mamy:
+                        \[\log_ab^n=n\cdot \log_ab \ _\blacksquare\] </div>
+                    <div class="akapit"> Teraz podobnie pokażemy, że zachodzi wzór:
+                        \(\log_{a^{n}}b=\frac{1}{n}\log_ab\).<br /> Załóżmy, że \(\log_ab=c\). Wówczas mamy: \[a^c=b\]
+                        Podnosimy obie strony równania do potęgi \(n\): \[ a^{nc}=b^n\\[6pt] (a^n)^c=b^n \] Zapisujemy
+                        równanie w postaci logarytmicznej: \[\log_{a^n}b^n=c\] Korzystając z poprzedniego wzoru, mamy:
+                        \[n\log_{a^n}b=c\] Czyli: \[\log_{a^n}b=\frac{1}{n}c\] Korzystamy z założenia: \(\log_ab=c\) i
+                        otrzymujemy: \[\log_{a^n}b=\frac{1}{n}\cdot \log_ab \ _\blacksquare\] </div>
+                    <div class="akapit"> Korzystając ze wzoru na zamianę podstaw logarytmów również bardzo łatwo można
+                        udowodnić ten wzór: \[\log_{a^n}b=\frac{\log_ab}{\log_aa^n}=\frac{\log_ab}{n}=\frac{1}{n}\log_ab
+                        \ _\blacksquare\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="logarytmy.html">&#9664; Wprowadzenie do logarytmów</a></div>
+                <div class="next_temat"><a href="obliczanie-logarytmow.html" class="next_temat">Obliczanie logarytmów
+                        &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

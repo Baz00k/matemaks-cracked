@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pierwiastkowanie liczb zespolonych</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="259" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Studia|Liczby zespolone|Pierwiastkowanie liczb zespolonych">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="liczby-zespolone.html">Liczby zespolone</a> &rarr; <a
+                href="pierwiastkowanie-liczb-zespolonych.html">Pierwiastkowanie liczb zespolonych</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="wzor-de-moivre-a-potegowanie-liczb-zespolonych.html">&#9664; Wzór de Moivre'a - potęgowanie
+                    liczb zespolonych</a></div>
+            <div class="next_temat"><a href="macierze.html" class="next_temat">Macierze &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Pierwiastkowanie liczb zespolonych</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_256" poziom="blok_0">Gdy pierwiastkujemy liczby zespolone, to możemy
+                otrzymać kilka różnych wyników.<br /> Na przykład pierwiastkiem 4 stopnia z liczby 1 są liczby: 1, -1,
+                <i>i</i> oraz -<i>i</i>, ponieważ:<br /> <img
+                    src="grafika/studia/liczby_zespolone/pierwiastkowanie_z_1.png" style="margin: 15px auto 15px 20px;"
+                    alt="" /><br /> Zatem wyciągając pierwiastek 4 stopnia z liczby rzeczywistej 1, mamy w liczbach
+                zespolonych aż 4 rozwiązania!<br style="margin-bottom: 20px;" /> Generalnie gdy wyciągamy pierwiastek
+                <i>n</i>-tego stopnia z liczby zespolonej, to zawsze otrzymujemy <i>n</i> rozwiązań. O tym jak obliczyć
+                te rozwiązania mówi następujące twierdzenie: <div class="twierdzenie">
+                    <h3>Twierdzenie</h3> Niech <i>z</i> = |<i>z</i>|(cos&phi; + <i>i</i> sin&phi;) będzie liczbą
+                    zespoloną różną od zera.<br /> Wówczas <b>pierwiastkami stopnia <i>n</i></b> z liczby
+                    <b><i>z</i></b> są liczby: <img src="grafika/studia/liczby_zespolone/pierwiastek_zespolony_wzor.png"
+                        class="center" style="margin: 10px auto 0px auto;" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="wzor-de-moivre-a-potegowanie-liczb-zespolonych.html">&#9664; Wzór de Moivre'a -
+                        potęgowanie liczb zespolonych</a></div>
+                <div class="next_temat"><a href="macierze.html" class="next_temat">Macierze &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Implikacja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="104" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Rachunek zbiorów|Logika|Implikacja">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-zbiorow.html">Rachunek zbiorów i logika</a> &rarr; <a href="logika.html">Logika</a>
+            &rarr; <a href="implikacja.html">Implikacja</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="alternatywa.html">&#9664; Alternatywa</a></div>
+            <div class="next_temat"><a href="rownowaznosc.html" class="next_temat">Równoważność &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Implikacja</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_105" poziom="blok_0">
+                <div class="akapit"> <b>Implikacja</b> - to dwa zdania połączone w następujący sposób: <b>jeżeli</b>
+                    (zdanie 1) <b>to</b> (zdanie 2). </div>
+                <div class="akapit"> Implikację w matematyce oznaczamy symbolem \(\Rightarrow \).<br /> Implikację zdań:
+                    <i>jeżeli \(p\) to \(q\)</i> zapisujemy tak: \(p \Rightarrow q\). </div>
+                <div class="twierdzenie"> <b>Implikacja</b> dwóch zdań \(p \Rightarrow q\) jest <b>fałszywa</b> tylko
+                    wtedy, gdy zdanie \(p\) jest prawdziwe, a zdanie \(q\) jest fałszywe. </div>
+                <div class="akapit bt"> Wszystkie możliwe przypadki dla implikacji zestawiliśmy w poniższej tabelce.
+                    <table class="tabela2">
+                        <tr class="t1">
+                            <td>\(p\)</td>
+                            <td>\(q\)</td>
+                            <td>\(p \Rightarrow q\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(0\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="akapit"> Zdanie \(p\) nazywamy <b>poprzednikiem</b> implikacji, a zdanie \(q\) - jej
+                    <b>następnikiem</b>.<br /> Z powyższej tabelki widzimy, że z prawdy może wynikać tylko prawda, a z
+                    fałszu - cokolwiek. </div>
+                <div class="zadanie"> "<i>Jeżeli 2+2=4, to 2-2=0.</i>"<br /> To zdanie jest implikacją dwóch zdań:
+                    "<i>2+2=4</i>" oraz "<i>2-2=0</i>".<br /> Oba zdania są prawdziwe, zatem ich implikacja również jest
+                    prawdziwa. \[ \underbrace{ \underbrace{\text{2+2=4}}_{\text{prawda }(1)} \text{ to }
+                    \underbrace{\text{2-2=0.}}_{\text{prawda } (1)} }_{\text{prawda }(1)} \] </div>
+                <div class="zadanie"> "<i>Jeżeli liczba 60 jest liczbą parzystą, to liczba 62 jest ujemna.</i>"<br /> To
+                    zdanie jest implikacją dwóch zdań: "<i>Liczba 60 jest liczbą parzystą</i>" oraz "<i>liczba 62 jest
+                        ujemna.</i>".<br /> Pierwsze zdanie jest prawdziwe, a drugie jest fałszywe, zatem implikacja
+                    tych dwóch zdań jest fałszywa (z prawdy nie może wynikać fałsz!). \[ \underbrace{
+                    \underbrace{\text{Liczba 60 jest liczbą parzystą}}_{\text{prawda }(1)} \text{ to }
+                    \underbrace{\text{liczba 62 jest ujemna.}}_{\text{fałsz } (0)} }_{\text{fałsz }(0)} \] </div>
+                <div class="zadanie"> "<i>Jeżeli liczba 62 jest ujemna, to liczba 60 jest liczbą parzystą.</i>"<br /> To
+                    zdanie jest implikacją dwóch zdań: "<i>liczba 62 jest ujemna</i>" oraz "<i>liczba 60 jest liczbą
+                        parzystą.</i>".<br /> Pierwsze zdanie jest fałszywe, a drugie zdanie jest prawdziwe, zatem
+                    implikacja tych dwóch zdań jest prawdziwa (z&nbsp;fałszu może wynikać prawda). \[ \underbrace{
+                    \underbrace{\text{liczba 62 jest ujemna}}_{\text{fałsz }(0)} \text{ to } \underbrace{\text{liczba 60
+                    jest liczbą parzystą.}}_{\text{prawda } (1)} }_{\text{prawda }(1)} \] </div>
+                <div class="zadanie"> "<i>Jeżeli 1=2, to 2=3.</i>"<br /> To zdanie jest implikacją dwóch zdań:
+                    "<i>1=2</i>" oraz "<i>2=3</i>".<br /> Oba zdania są fałszywe, zatem ich implikacja jest prawdziwa (z
+                    fałszu może wynikać fałsz). \[ \underbrace{ \underbrace{\text{1 = 2}}_{\text{fałsz }(0)} \text{ to }
+                    \underbrace{\text{2 = 3}}_{\text{fałsz } (0)} }_{\text{prawda }(1)} \] </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="alternatywa.html">&#9664; Alternatywa</a></div>
+                <div class="next_temat"><a href="rownowaznosc.html" class="next_temat">Równoważność &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

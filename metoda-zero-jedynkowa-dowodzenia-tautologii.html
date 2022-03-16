@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metoda zero-jedynkowa dowodzenia tautologii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="198" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Szkoła|Rachunek zbiorów|Logika|Prawa rachunku zdań|Metoda zero-jedynkowa dowodzenia tautologii">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-zbiorow.html">Rachunek zbiorów i logika</a> &rarr; <a href="logika.html">Logika</a>
+            &rarr; <a href="prawa-rachunku-zdan.html">Prawa rachunku zdań</a> &rarr; <a
+                href="metoda-zero-jedynkowa-dowodzenia-tautologii.html">Metoda zero-jedynkowa dowodzenia tautologii</a>
+        </div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="prawa-rachunku-zdan.html">&#9664; Prawa rachunku zdań - definicja i najważniejsze wzory</a>
+            </div>
+            <div class="next_temat"><a href="prawo-wylaczonego-srodka.html" class="next_temat">Prawo wyłączonego środka
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Metoda zero-jedynkowa dowodzenia tautologii</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_196" poziom="blok_0">
+                <div class="akapit"> Tautologie dowodzimy metodą <b>zero-jedynkową</b>. Polega ona na odpowiednim
+                    wypełnianiu tabelki zerami i jedynkami. W&nbsp;pierwszych kolumnach wypisujemy wszystkie możliwe
+                    wartości logiczne zdań prostych. W&nbsp;kolejnych kolumnach wyznaczamy wartości coraz bardziej
+                    złożonych zdań, tworzących naszą tautologię. </div>
+                <div class="zadanie"> Rozważmy następujące zdanie: \[p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\] <div
+                        class="akapit"> Metodą zero-jedynkową sprawdzimy, czy jest to tautologia. Zaczynamy od
+                        przygotowania tabelki: </div>
+                    <table class="tabela2 tabela_mod1">
+                        <tr class="t1">
+                            <td>\(p\)</td>
+                            <td>\(q\)</td>
+                            <td>\(\sim p\)</td>
+                            <td>\((\sim p)\lor q\)</td>
+                            <td>\(p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table> Wypełniamy pierwszą wolną kolumnę (wyznaczamy wartości logiczne dla zdania \(\sim p\))
+                    korzystając z wartości logicznych z&nbsp;pierwszej kolumny (dla zdania \(p\)): <table
+                        class="tabela2 tabela_mod1">
+                        <tr class="t1">
+                            <td>\(p\)</td>
+                            <td>\(q\)</td>
+                            <td>\(\sim p\)</td>
+                            <td>\((\sim p)\lor q\)</td>
+                            <td>\(p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(0\)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(0\)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(1\)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(1\)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table> Teraz wypełniamy kolejną kolumnę (wyznaczamy wartości logiczne dla zdania <span
+                        class="odsu">\((\sim p)\lor q\)</span>). W tym celu wykorzystamy wartości logiczne z drugiej i
+                    trzeciej kolumny: <table class="tabela2 tabela_mod1">
+                        <tr class="t1">
+                            <td>\(p\)</td>
+                            <td>\(q\)</td>
+                            <td>\(\sim p\)</td>
+                            <td>\((\sim p)\lor q\)</td>
+                            <td>\(p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(0\)</td>
+                            <td>\(0\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                            <td></td>
+                        </tr>
+                    </table> Teraz wypełniamy ostatnią kolumnę (wyznaczamy wartości logiczne dla zdania <span
+                        class="odsu">\(p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\)</span>). W tym celu wykorzystamy
+                    wartości logiczne z pierwszej i czwartej kolumny: <table class="tabela2 tabela_mod1">
+                        <tr class="t1">
+                            <td>\(p\)</td>
+                            <td>\(q\)</td>
+                            <td>\(\sim p\)</td>
+                            <td>\((\sim p)\lor q\)</td>
+                            <td>\(p \Rightarrow \Bigl( (\sim p) \lor q \Bigr)\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(1\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(0\)</td>
+                            <td>\(0\)</td>
+                            <td>\(0\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(1\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td class="t2">\(0\)</td>
+                            <td class="t2">\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table> Z drugiego wiersza naszej tabelki odczytujemy, że zdanie <span class="odsu">\(p \Rightarrow
+                        \Bigl( (\sim p) \lor q \Bigr)\)</span> jest fałszywe (przyjmuje wartość logiczną \(0\)) dla
+                    \(p=1\) i \(q=0\).<br /> Zatem zdanie <span class="odsu">\(p \Rightarrow \Bigl( (\sim p) \lor q
+                        \Bigr)\)</span> nie jest tautologią.
+                </div>
+                <div class="akapit bt"> W kolejnych rozdziałach udowodnimy metodą zero-jedynkową kilka najważniejszych
+                    tautologii. </div>
+                <div class="akapit"> Aby jakieś wyrażenie okazało się tautolgią, to w ostatniej kolumnie naszej tabelki
+                    muszą stać same jedynki (tzn. w każdym przypadku badane zdanie musi okazać się prawdziwe). </div>
+                <div class="akapit"> Od tej pory będę pokazywał od razu wypełnione wszystkie kolumny danej tabelki
+                    (pamiętajmy jednak, że tabelkę wypełniamy kolumna po kolumnie). </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="prawa-rachunku-zdan.html">&#9664; Prawa rachunku zdań - definicja i najważniejsze
+                        wzory</a></div>
+                <div class="next_temat"><a href="prawo-wylaczonego-srodka.html" class="next_temat">Prawo wyłączonego
+                        środka &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

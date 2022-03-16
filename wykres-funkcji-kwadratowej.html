@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wykres funkcji kwadratowej</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="492" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Funkcje|Funkcja kwadratowa|Wykres funkcji kwadratowej">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="funkcje.html">Funkcje</a> &rarr; <a href="funkcja-kwadratowa.html">Funkcja kwadratowa</a> &rarr;
+            <a href="wykres-funkcji-kwadratowej.html">Wykres funkcji kwadratowej</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="funkcja-kwadratowa.html">&#9664; Wprowadzenie do funkcji kwadratowej</a></div>
+            <div class="next_temat"><a href="miejsca-zerowe-funkcji-kwadratowej.html" class="next_temat">Miejsca zerowe
+                    funkcji kwadratowej &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Wykres funkcji kwadratowej</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_487" poziom="blok_0">
+                <div class="akapit"> Wzór ogólny funkcji kwadratowej jest postaci: \[f(x)=ax^2+bx+c\] gdzie literki
+                    \(a\), \(b\) oraz \(c\) są współczynnikami liczbowymi. </div>
+                <div class="akapit"> Wykresem każdej funkcji kwadratowej jest <b>parabola</b>. </div>
+                <div class="zadanie"> Wykres funkcji \[f(x)=x^2\] wygląda następująco: <img src="grafika/g0390.png"
+                        class="center m20" noc="1" alt="" /> Metodą tabelki możemy wyliczyć kilka punktów należących do
+                    tej paraboli: <table class="tabela2">
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-2\)</td>
+                            <td>\(-1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(f(x)=x^2\)</td>
+                            <td>\(4\)</td>
+                            <td>\(1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(4\)</td>
+                        </tr>
+                    </table> Dla funkcji kwadratowej \(f(x)=x^2\) współczynniki liczbowe \(a\), \(b\) oraz \(c\) mają
+                    wartości: \[\begin{split} &a=1\\[6pt] &b=0\\[6pt] &c=0 \end{split}\] <div class="akapit"> Ramiona
+                        paraboli są skierowane do góry ponieważ współczynnik \(a\) jest dodatni. </div> Wierzchołek tej
+                    paraboli jest w punkcie \((0, 0)\). </div>
+                <div class="zadanie"> Wykres funkcji \[f(x)=-x^2\] wygląda następująco: <img src="grafika/g0391.png"
+                        class="center m20" noc="1" alt="" /> Metodą tabelki możemy wyliczyć kilka punktów należących do
+                    tej paraboli: <table class="tabela2">
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-2\)</td>
+                            <td>\(-1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(f(x)=-x^2\)</td>
+                            <td>\(-4\)</td>
+                            <td>\(-1\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-1\)</td>
+                            <td>\(-4\)</td>
+                        </tr>
+                    </table> Dla funkcji kwadratowej \(f(x)=-x^2\) współczynniki liczbowe \(a\), \(b\) oraz \(c\) mają
+                    wartości: \[\begin{split} &a=-1\\[6pt] &b=0\\[6pt] &c=0 \end{split}\] <div class="akapit"> Ramiona
+                        paraboli są skierowane w dół ponieważ współczynnik \(a\) jest ujemny. </div> Wierzchołek tej
+                    paraboli jest w punkcie \((0, 0)\). </div>
+                <div class="akapit bt"> Każda parabola ma <b>wierzchołek</b> oraz dwa <b>ramiona</b>. <img
+                        src="grafika/g0392.png" class="center m20" noc="1" alt="" /> </div>
+                <div class="twierdzenie">
+                    <h3>Metoda rysowania wykresu funkcji kwadratowej</h3> Żeby narysować dokładny wykres funkcji
+                    kwadratowej, to trzeba wcześniej: <ul class="lista4 ml20">
+                        <li>ustalić w którą stronę skierowane są ramiona paraboli.<br /> Jeżeli \(a \gt 0\) to do góry,
+                            a jeżeli \(a \lt 0\) to do dołu. </li>
+                        <li>obliczyć (o ile istnieją) miejsca zerowe funkcji: \[\begin{split} &x_1=\frac{-b-\sqrt{\Delta
+                            }}{2a}\\[6pt] &x_2=\frac{-b+\sqrt{\Delta }}{2a} \end{split}\] gdzie \(\Delta =b^2-4ac\).
+                        </li>
+                        <li>obliczyć wierzchołek paraboli \(W=(p,q)\): \[\begin{split}
+                            p&=\frac{-b}{2a}\\[6pt]q&=\frac{-\Delta }{4a} \end{split}\]</li>
+                        <li class="punkt3">obliczyć punkt przecięcia z osią \(y\)-ów.<br /> Punkt ten ma współrzędne:
+                            \((0, f(0))\), czyli \((0,c)\). </li>
+                    </ul>
+                </div>
+                <div class="zadanie">Narysuj wykres funkcji kwadratowej \(f(x) = x^2 - 2x - 8\) i omów jej własności.
+                    <div class="p_p"> Współczynniki liczbowe tej funkcji kwadratowej, to: \[\begin{split} &a=1\\[6pt]
+                        &b=-2\\[6pt] &c=-8 \end{split}\] <div class="akapit"> Współczynnik \(a\) jest dodatni czyli
+                            ramiona paraboli są skierowane do góry. </div>
+                        <div class="akapit"> Liczymy miejsca zerowe: \[\Delta =b^2-4ac=(-2)^2-4\cdot 1\cdot
+                            (-8)=4+32=36\] \[\begin{split} &x_1=\frac{-b-\sqrt{\Delta }}{2a}=\frac{2-6}{2}=-2\\[6pt]
+                            &x_2=\frac{-b+\sqrt{\Delta }}{2a}=\frac{2+6}{2}=4 \end{split}\] </div>
+                        <div class="akapit"> Liczymy współrzędne wierzchołka: \[\begin{split}
+                            &p=\frac{-b}{2a}=\frac{2}{2}=1\\[6pt] &q=\frac{-\Delta }{4a}=\frac{-36}{4}=-9 \end{split}\]
+                            Czyli wierzchołek paraboli jest w punkcie \(W=(1,-9)\). </div>
+                        <div class="akapit"> Liczymy punkt przecięcia paraboli z osią \(y\)-ów: \[f(0)=c=-8\] Czyli
+                            punkt przecięcia paraboli z osią \(y\)-ów ma współrzędne \((0,-8)\). </div>
+                        <div class="akapit"> Zaznaczamy w układzie współrzędnych wyliczone punkty i rysujemy wykres:
+                            <img src="grafika/g0393.png" class="center m20" noc="1" alt="" /> </div>
+                        <div class="akapit"> Teraz omówimy własności tej funkcji. <ul class="lista4">
+                                <li>Dziedzina: \(\mathbb{R}\).</li>
+                                <li>Zbiór wartości: \(\langle -9;+\infty )\).</li>
+                                <li>Miejsca zerowe: funkcja ma dwa miejsca zerowe: \(x_1 = -2\) oraz \(x_2 = 4\).</li>
+                                <li>Funkcja przyjmuje wartości dodatnie, gdy \(x\in (-\infty ; -2) \cup (4 +\infty )\).
+                                </li>
+                                <li>Funkcja przyjmuje wartości ujemne, gdy \(x\in (-2; 4)\).</li>
+                                <li>Punkt przecięcia z osią y-ów ma współrzędne: \((0, -8)\).</li>
+                                <li>Monotoniczność: funkcja jest niemonotoniczna (jest jedynie monotoniczna
+                                    przedziałami).</li>
+                                <li>Różnowartościowość: funkcja nie jest różnowartościowa.</li>
+                                <li>Parzystość: funkcja nie jest parzysta.</li>
+                                <li>Nieparzystość: funkcja nie jest nieparzysta.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="akapit"> Wykres dowolnej funkcji, to możesz narysować za pomocą <a
+                        href="program-do-rysowania-wykresow-funkcji.html">programu do rysowania wykresów</a>. </div>
+                <div class="akapit"> Rozwiązywanie wielu zadań z funkcji kwadratowej wymaga narysowania wykresu
+                    paraboli. </div>
+            </div>
+            <div class="zadanie" id="242" tytul="" typ="1" yt="UpyRN8PNttf" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-21">
+                <div class="z_tresc">Dana jest parabola o równaniu <span class="odsu">\(y=x^2+8x-14\)</span>. Pierwsza
+                    współrzędna wierzchołka tej paraboli jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( x=-8 \)</div>
+                        <div><b>B.</b>\( x=-4 \)</div>
+                        <div><b>C.</b>\( x=4 \)</div>
+                        <div><b>D.</b>\( x=8 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="243" tytul="" typ="1" yt="MZbeGaxJ9Q9" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-21">
+                <div class="z_tresc">Wskaż fragment wykresu funkcji kwadratowej, której zbiorem wartości jest \(\langle
+                    -2,+\infty )\). <img src="./grafika/g0203.png" class="center" noc="1" alt="" /></div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="274" tytul="" typ="1" yt="IxiiLzl5AJL" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-20">
+                <div class="z_tresc">Na jednym z poniższych rysunków przedstawiono fragment wykresu funkcji
+                    \(y=x^2+2x-3\). Wskaż ten rysunek. <img src="./grafika/g0209.png" class="center" noc="1" alt="" />
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="275" tytul="" typ="1" yt="Ya4ZxHzHWYZ" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-20">
+                <div class="z_tresc">Wierzchołkiem paraboli będącej wykresem funkcji określonej wzorem <span
+                        class="odsu">\(f(x)=x^2-4x+4\)</span> jest punkt o współrzędnych <div class="blok_odp">
+                        <div><b>A.</b>\( (0,2) \)</div>
+                        <div><b>B.</b>\( (0,-2) \)</div>
+                        <div><b>C.</b>\( (-2,0) \)</div>
+                        <div><b>D.</b>\( (2,0) \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="735" tytul="" typ="1" yt="QiVlyS0oSYk" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-07-31">
+                <div class="z_tresc">Miejscem zerowym funkcji kwadratowej <span class="odsu">\(y=-(-x-7)(1+x)\)</span>
+                    jest <div class="blok_odp">
+                        <div><b>A.</b>\( x=7 \)</div>
+                        <div><b>B.</b>\( x=1 \)</div>
+                        <div><b>C.</b>\( x=0 \)</div>
+                        <div><b>D.</b>\( x=-1 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="407" tytul="" typ="1" yt="IXOdKJwpTSu" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-07-26">
+                <div class="z_tresc">Wykresem funkcji kwadratowej <span class="odsu1">\(f(x)=-3x^2+3\)</span> jest
+                    parabola o wierzchołku w punkcie <div class="blok_odp">
+                        <div><b>A.</b>\( (3,0) \)</div>
+                        <div><b>B.</b>\( (0,3) \)</div>
+                        <div><b>C.</b>\( (-3,0) \)</div>
+                        <div><b>D.</b>\( (0,-3) \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="310" tytul="" typ="1" yt="kJLoflr0CD_" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-05-08">
+                <div class="z_tresc">Miejscami zerowymi funkcji kwadratowej <span class="odsu1">\( y = -3(x-7)(x+2)
+                        \)</span> są <div class="blok_odp">
+                        <div><b>A.</b>\(x=7, x=-2 \)</div>
+                        <div><b>B.</b>\(x=-7, x=-2 \)</div>
+                        <div><b>C.</b>\(x=7, x=2 \)</div>
+                        <div><b>D.</b>\(x=-7, x=2 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="377" tytul="" typ="1" yt="MaYWdpptbiM" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-03-08">
+                <div class="z_tresc">Liczby \(x_1, x_2\) są rozwiązaniami równania \(4(x + 2)(x - 6) = 0\) . Suma
+                    \({x_1}^2 + {x_2}^2\) jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( 16 \)</div>
+                        <div><b>B.</b>\( 32 \)</div>
+                        <div><b>C.</b>\( 40 \)</div>
+                        <div><b>D.</b>\( 48 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="109" tytul="" typ="1" yt="k27YAlwG2_X" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Wskaż funkcję kwadratową, której zbiorem wartości jest przedział \( (-\infty ;3
+                    \rangle \). <div class="blok_odp w100">
+                        <div><b>A.</b>\(f(x)=-(x-2)^2+3 \)</div>
+                        <div><b>B.</b>\(f(x)=(2-x)^2+3 \)</div>
+                        <div><b>C.</b>\(f(x)=-(x+2)^2-3 \)</div>
+                        <div><b>D.</b>\(f(x)=(2-x)^2-3 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="111" tytul="" typ="1" yt="UD8sHPguDRs" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Wykres funkcji kwadratowej <span class="odsu">\( f(x)=3(x+1)^2-4 \)</span> nie ma
+                    punktów wspólnych z&nbsp;prostą o równaniu <div class="blok_odp">
+                        <div><b>A.</b>\(y=1 \)</div>
+                        <div><b>B.</b>\(y=-1 \)</div>
+                        <div><b>C.</b>\(y=-3 \)</div>
+                        <div><b>D.</b>\(y=-5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="112" tytul="" typ="1" yt="sBy6YdD10CH" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Prosta o równaniu <span class="ml2 mr2">\( y=a \)</span> ma dokładnie jeden punkt
+                    wspólny z wykresem funkcji kwadratowej <span class="ml3 mr2">\( f(x)=-x^2+6x-10 \)</span>. Wynika
+                    stąd, że<div class="blok_odp">
+                        <div><b>A.</b>\(a=3 \)</div>
+                        <div><b>B.</b>\(a=0 \)</div>
+                        <div><b>C.</b>\(a=-1 \)</div>
+                        <div><b>D.</b>\(a=-3 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="113" tytul="" typ="1" yt="I7kTB9hFJQL" p="0" lvl="PP2022" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Jaka jest najmniejsza wartość funkcji kwadratowej <span class="ml4 mr3">\(
+                        f(x)=x^2+4x-3 \)</span> w przedziale \( \langle 0, 3 \rangle \)? <div class="blok_odp">
+                        <div><b>A.</b>\(-7 \)</div>
+                        <div><b>B.</b>\(-4 \)</div>
+                        <div><b>C.</b>\(-3 \)</div>
+                        <div><b>D.</b>\(-2 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="601" tytul="" typ="1" yt="4CtasEYQl6y" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Wskaż funkcję kwadratową, której zbiorem wartości jest przedział \(\langle-2,
+                    \infty )\). <div class="blok_odp">
+                        <div><b>A.</b>\( y=-2x^2+2 \)</div>
+                        <div><b>B.</b>\( y=-(x+1)^2-2 \)</div>
+                        <div><b>C.</b>\( y=2(x-1)^2+2 \)</div>
+                        <div><b>D.</b>\( y=(x+1)^2-2 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="602" tytul="" typ="1" yt="gb5GXpZ46Rq" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Wskaż zbiór wartości funkcji <span class="odsu">\(f(x)=(x-3)^2+2\)</span>
+                    <div class="blok_odp">
+                        <div><b>A.</b>\( \langle -2, \infty ) \)</div>
+                        <div><b>B.</b>\( \langle 2, \infty ) \)</div>
+                        <div><b>C.</b>\( \langle -3, \infty ) \)</div>
+                        <div><b>D.</b>\( \langle 3, \infty ) \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="603" tytul="" typ="1" yt="k4f3ylu8z-Z" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Wskaż zbiór wartości funkcji <span class="odsu">\(f(x)=-(x+3)^2-5\)</span>
+                    <div class="blok_odp">
+                        <div><b>A.</b>\( \langle -5, \infty ) \)</div>
+                        <div><b>B.</b>\( \langle 5, \infty ) \)</div>
+                        <div><b>C.</b>\( (-\infty , -5 \rangle \)</div>
+                        <div><b>D.</b>\( (-\infty , 5 \rangle \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="359" tytul="" typ="1" yt="oeI68bwS0Oe" p="0" lvl="PP2022" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-03-15">
+                <div class="z_tresc">Oblicz największą wartość funkcji <span class="odsu">\(f(x)=-2x^2+16x-15\)</span> w
+                    przedziale \(\langle -2,3 \rangle\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(15\)</div>
+            </div>
+            <div class="zadanie" id="153" tytul="" typ="1" yt="sL1MVbCdl74" p="0" lvl="PP2022" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Oblicz najmniejszą wartość funkcji kwadratowej <span
+                        class="ml5 mr3">\(f(x)=x^2-6x+1\)</span> w przedziale \(\langle 0,1 \rangle\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(-4\)</div>
+            </div>
+            <div class="zadanie" id="14" tytul="" typ="1" yt="YYfYlAt35j4" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-03-06">
+                <div class="z_tresc">Funkcja kwadratowa \(f(x)=-2(x-5)(x+1)\) jest malejąca w zbiorze <div
+                        class="blok_odp w100">
+                        <div><b>A.</b>\((-1,5)\)</div>
+                        <div><b>B.</b>\( ( -\infty ,2 \rangle \)</div>
+                        <div><b>C.</b>\(\langle 2,+\infty )\)</div>
+                        <div><b>D.</b>\((-\infty ,-1)\cup (5,+\infty )\)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="990" tytul="" typ="1" yt="IOvcteLf5Lc" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-05-08">
+                <div class="z_tresc">Wierzchołkiem paraboli o równaniu <span class="odsu">\(y=-3(x-2)^2+4\)</span> jest
+                    punkt o współrzędnych <div class="blok_odp">
+                        <div><b>A.</b>\( (-2, -4) \)</div>
+                        <div><b>B.</b>\( (-2, 4) \)</div>
+                        <div><b>C.</b>\( (2, -4) \)</div>
+                        <div><b>D.</b>\( (2, 4) \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="1199" tytul="" typ="1" yt="4_tHvnPwx0s" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-08-27">
+                <div class="z_tresc">Wierzchołek paraboli o równaniu <span class="ml3 mr5">\(y=(x+1)^2+2c\)</span> leży
+                    na prostej o równaniu <span class="ml3">\(y=6\)</span>. Wtedy <div class="blok_odp">
+                        <div><b>A.</b>\( c=-6 \)</div>
+                        <div><b>B.</b>\( c=-3 \)</div>
+                        <div><b>C.</b>\( c=3 \)</div>
+                        <div><b>D.</b>\( c=6 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="1272" tytul="" typ="1" yt="YMsYzNeyFPE" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-11-27">
+                <div class="z_tresc">Na wykresie przedstawiony jest trójmian \(y = ax^2 + bx + c\). <img
+                        src="./grafika/g0304.png" class="center" noc="1" alt="" /> Wynika z tego, że: <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( b\lt 0 \)</div>
+                        <div><b>B.</b>\( b>0 \)</div>
+                        <div><b>C.</b>\( b\le 0 \)</div>
+                        <div><b>D.</b>\( b\ge 0 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="1349" tytul="" typ="1" yt="kjRz7CN9viY" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-04-28">
+                <div class="z_tresc">Wierzchołek paraboli, która jest wykresem funkcji \( y=x^2 -2x-3 \) leży na
+                    prostej: <div class="blok_odp">
+                        <div><b>A.</b>\(y=-4 \)</div>
+                        <div><b>B.</b>\(y=4 \)</div>
+                        <div><b>C.</b>\(y=1 \)</div>
+                        <div><b>D.</b>\(y=2 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="1371" tytul="" typ="1" yt="s3yT0-Bj0Ao" p="0" lvl="PP" pkt="4" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-04-28">
+                <div class="z_tresc">Rysunek obok przedstawia wykres funkcji kwadratowej \( f \). Zapisz wzór funkcji \(
+                    f \) w postaci ogólnej i podaj jej zbiór wartości. <img src="./grafika/g0314.png" class="center"
+                        noc="1" alt="" /> </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz"><br />\(f(x)=-x^2-2x+3\) <br />\(ZW=(-\infty ;4\rangle \)</div>
+            </div>
+            <div class="zadanie" id="1379" tytul="" typ="1" yt="QJ0LBQEeqsL" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-05-06">
+                <div class="z_tresc">Na rysunku przedstawiono fragment wykresu funkcji kwadratowej \( f \). <img
+                        src="./grafika/g0316.png" class="center" noc="1" alt="" /> Funkcja \( f \) określona jest wzorem
+                    <div class="blok_odp w100">
+                        <div><b>A.</b>\(f(x)=-\frac{1}{2}(x-3)(x+1) \)</div>
+                        <div><b>B.</b>\(f(x)=\frac{1}{2}(x-3)(x+1) \)</div>
+                        <div><b>C.</b>\(f(x)=-\frac{1}{2}(x+3)(x-1) \)</div>
+                        <div><b>D.</b>\(f(x)=\frac{1}{2}(x+3)(x-1) \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="1398" tytul="" typ="1" yt="wvOIJ2fT_48" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-05-06">
+                <div class="z_tresc">Wykresem funkcji kwadratowej \( f(x)=2x^2+bx+c \) jest parabola, której
+                    wierzchołkiem jest punkt \( W=(4,0) \). Oblicz wartości współczynników \( b \) i \( c \). </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(b=-16\), \(c=32\)</div>
+            </div>
+            <div class="zadanie" id="1427" tytul="" typ="1" yt="AvRRxK80Y2F" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-08-26">
+                <div class="z_tresc">Wskaż rysunek, na którym przedstawiony jest wykres funkcji kwadratowej, określonej
+                    wzorem \( f(x)=(x-2)(x+4) \) . <img src="./grafika/g0323.png" class="center" noc="1" alt="" />
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="1428" tytul="" typ="1" yt="QUoffVZ4p8Y" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-08-26">
+                <div class="z_tresc">Funkcja kwadratowa, której zbiorem wartości jest przedział \( ( -\infty, -3\rangle
+                    \) , może być określona wzorem <div class="blok_odp">
+                        <div><b>A.</b>\(y=(x+2)^2-3 \)</div>
+                        <div><b>B.</b>\(y=-(x+3)^2 \)</div>
+                        <div><b>C.</b>\(y=-(x-2)^2-3 \)</div>
+                        <div><b>D.</b>\(y=-x^2+3 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="1464" tytul="" typ="1" yt="E-LiQAWuK2C" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-12-16">
+                <div class="z_tresc">W układzie współrzędnych narysowano część paraboli o wierzchołku w punkcie \( A=(2,
+                    4) \), która jest wykresem funkcji kwadratowej&nbsp;\( f \). <img src="./grafika/g0086.png"
+                        class="center" noc="1" alt="" /> Funkcja \( f \) może być opisana wzorem <div
+                        class="blok_odp w100">
+                        <div><b>A.</b>\(f(x)=(x-2)^2+4 \)</div>
+                        <div><b>B.</b>\(f(x)=(x+2)^2+4 \)</div>
+                        <div><b>C.</b>\(f(x)=-(x-2)^2+4 \)</div>
+                        <div><b>D.</b>\(f(x)=-(x+2)^2+4 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="1734" tytul="" typ="1" yt="oOJktsZId1y" p="0" lvl="PP" pkt="1" typ_v="2" pisz=""
+                odp="1" wsk="" data="2015-08-25">
+                <div class="z_tresc">Parabola o wierzchołku \(W = (−3, 5)\) i ramionach skierowanych w dół może być
+                    wykresem funkcji określonej wzorem <div class="blok_odp w100">
+                        <div><b>A.</b>\( y=2\cdot (x+3)^2+5 \)</div>
+                        <div><b>B.</b>\( y=-2\cdot (x-3)^2+5 \)</div>
+                        <div><b>C.</b>\( y=-2\cdot (x+3)^2+5 \)</div>
+                        <div><b>D.</b>\( y=-2\cdot (x-3)^2-5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="funkcja-kwadratowa.html">&#9664; Wprowadzenie do funkcji kwadratowej</a></div>
+                <div class="next_temat"><a href="miejsca-zerowe-funkcji-kwadratowej.html" class="next_temat">Miejsca
+                        zerowe funkcji kwadratowej &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dwumian Newtona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="987" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Wyrażenia algebraiczne|Dwumian Newtona">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="wyrazenia-algebraiczne.html">Wyrażenia algebraiczne</a> &rarr; <a
+                href="dwumian-newtona.html">Dwumian Newtona</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="wzory-skroconego-mnozenia.html">&#9664; Wzory skróconego mnożenia</a></div>
+            <div class="next_temat"><a href="rozne-zadania-z-wyrazen-algebraicznych.html" class="next_temat">Różne
+                    zadania z wyrażeń algebraicznych &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Dwumian Newtona</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_770" poziom="blok_0">Dwumianem Newtona nazywamy wzór:
+                \[(x+y)^n=\binom{n}{0}x^ny^0+\binom{n}{1}x^{n-1}y^1+\binom{n}{2}x^{n-2}y^2+...+\binom{n}{n-1}x^1y^{n-1}+\binom{n}{n}x^0y^n
+                \] gdzie symbol \(\binom{n}{k} \) oznacza współczynnik dwumianowy i jest obliczany ze wzoru:
+                \[\binom{n}{k}=\frac{n!}{k!\cdot (n-k)!} \] <div class="akapit bt"> Zauważmy, że każdy dwumian ma sumę
+                    wykładników równą \(n\). Przykładowo dla dwumianu: \[\binom{n}{2}x^{n-2}y^2\] mamy sumę wykładników
+                    potęg równą: \[(n-2)+2=n\] </div>
+                <div class="akapit"> Jeśli zauważymy, że \(x^0=1\) oraz \(y^0=1\) (musimy przy tym założyć, że \(x\ne
+                    0\) i \(y\ne 0\), ponieważ wyrażenie \(0^0\) jest nieoznaczone), to możemy zapisać wzór dwumianowy
+                    prościej:
+                    \[(x+y)^n=\binom{n}{0}x^n+\binom{n}{1}x^{n-1}y+\binom{n}{2}x^{n-2}y^2+...+\binom{n}{n-1}xy^{n-1}+\binom{n}{n}y^n
+                    \] </div> Ze wzoru dwumianowego można wyprowadzać wzory skróconego mnożenia. <div class="zadanie">
+                    \[ \begin{split} (x+y)^2&=\binom{2}{0}x^2+\binom{2}{1}xy+\binom{2}{2}y^2=\\[6pt] &=\frac{2!}{0!\cdot
+                    (2-0)!}x^2+\frac{2!}{1!\cdot (2-1)!}xy + \frac{2!}{2!\cdot (2-2)!}y^2=\\[6pt]
+                    &=\frac{2}{2}x^2+\frac{2}{1}xy+\frac{2}{2}y^2=\\[6pt] &=x^2+2xy+y^2 \end{split} \] </div>
+                <div class="akapit bt"> Rachunek w powyższym przykładzie może wyglądać na skomplikowany, ale w istocie
+                    taki nie jest. Gdy umiemy sprawnie liczyć symbole Newtona \(\binom{n}{k} \), to taki rachunek możemy
+                    wykonać dużo szybciej: </div>
+                <div class="zadanie"> \[ \begin{split}
+                    (x+y)^3&=\binom{3}{0}x^3+\binom{3}{1}x^2y+\binom{3}{2}xy^2+\binom{3}{3}y^3 =\\[6pt]
+                    &=x^3+3x^2y+3xy^2+y^3 \end{split} \] </div>
+                <div class="akapit bt"> Wzór tak samo działa jeśli zamiast literek występują liczby: </div>
+                <div class="zadanie"> Rozpisz wyrażenie \((x+7)^3\) stosując dwumian Newtona. <div class="p_p"> \[
+                        \begin{split} (x+7)^3 &=\binom{3}{0}x^3\cdot 7^0+\binom{3}{1}x^2\cdot 7^1+\binom{3}{2}x^1\cdot
+                        7^2+\binom{3}{3}x^0\cdot7^3=\\[6pt] &=x^3+3x^2\cdot 7+3x\cdot 49+7^3=\\[6pt]
+                        &=x^3+21x^2+147x+343 \end{split} \] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="wzory-skroconego-mnozenia.html">&#9664; Wzory skróconego mnożenia</a></div>
+                <div class="next_temat"><a href="rozne-zadania-z-wyrazen-algebraicznych.html" class="next_temat">Różne
+                        zadania z wyrażeń algebraicznych &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

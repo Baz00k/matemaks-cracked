@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Generator zadań</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script type="text/javascript" src="./skrypty/spis_zadan.js"></script>
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="1008" s_pkt="1" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="2" p_procent="60" nadtematy="|Matura|Generator zadań">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="matura.html">Matura</a> &rarr; <a
+                href="generator-zadan.html">Generator zadań</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="powtorka-do-matury.html">&#9664; Powtórka do matury</a></div>
+            <div class="next_temat"><a href="arkusze-2020.html" class="next_temat">Arkusze 2020 &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Generator zadań</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_792" poziom="blok_0">
+                <style>
+                    .button_generuj {
+                        display: inline-block;
+                        padding: 6px 12px;
+                        line-height: 25px;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        text-align: center;
+                        border: 1px solid #9f9f9f;
+                        background: #e6f9b9;
+                        box-shadow: 0 0 3px #999 inset;
+                        color: #000;
+                    }
+
+                    .button_generuj:hover {
+                        background: #ebffbc;
+                        color: #000;
+                    }
+
+                    .container_noc .button_generuj {
+                        box-shadow: 0px 1px 3px #444;
+                    }
+
+                    .ustawienia_generatora {
+                        text-align: left;
+                    }
+                </style>
+                <script> $(document).ready(function () { formatuj_poziom_zadan_select(); }); </script>
+                <div class="m10"> Ta strona umożliwia <b>trening na losowych zadaniach maturalnych</b>. </div>
+                <div class="m10"> Zadania losowane są ze zbioru <b>ponad 2000</b> zadań maturalnych z serwisu
+                    matemaks.pl. 
+                    
+                </div>
+                <div class="m10"> Można generować zadania zamknięte, otwarte lub mieszane, a także <div class="komentarz">jako tako</div> <b>całe arkusze
+                        maturalne </b>.  </div>
+                    <div class="komentarz"> Sporadycznie zdarzające się zapisy tego typu > [a_5=?] można spokojnie ignorować, nie są one częścią zadania.</div>
+                <div class="m20"> <b>Ustawienia generatora:</b>
+                    <div class="ustawienia_generatora"> Liczba zadań: 
+                        <select id="ile_zadan_select">
+                            <option value="1">1 zadanie</option>
+                            <option value="2">2 zadania</option>
+                            <option value="3">3 zadania</option>
+                            <option value="4">4 zadania</option>
+                            <option value="5">5 zadań</option>
+                            <option value="10">10 zadań</option>
+                            <option value="15">15 zadań</option>
+                            <option value="20">20 zadań</option>
+                            <option value="34">pełny arkusz</option>
+                            <!-- <option value="512">debug</option> -->
+                        </select> </div>
+                    <div class="ustawienia_generatora"> Poziom zadań: <select id="poziom_zadan_select">
+                            <option value="PP">Matura podstawowa</option>
+                            <option value="PPZ">Matura podstawowa - tylko zamknięte (te za 1 punkt)</option>
+                            <option value="PPO">Matura podstawowa - tylko otwarte (te trudniejsze)</option>
+                            <option value="PR">Matura rozszerzona</option>
+                            <option value="PRZ">Matura rozszerzona - tylko zamknięte</option>
+                            <option value="PRO">Matura rozszerzona - tylko otwarte (powodzenia)</option>
+                        </select> </div>
+                </div>
+                    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+                <div class="center">
+                    <div class="button_generuj" onclick="biblioteka()">Generuj losowe zadania!</div>
+                </div>
+                <div id="generator_ajax_info"></div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="powtorka-do-matury.html">&#9664; Powtórka do matury</a></div>
+                <div class="next_temat"><a href="arkusze-2020.html" class="next_temat">Arkusze 2020 &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

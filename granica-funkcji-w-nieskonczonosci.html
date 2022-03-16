@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Granica funkcji w nieskończoności</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="97" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Elementy analizy matematycznej|Granica funkcji w nieskończoności">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="elementy-analizy-matematycznej.html">Elementy analizy matematycznej</a> &rarr; <a
+                href="granica-funkcji-w-nieskonczonosci.html">Granica funkcji w nieskończoności</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="granice-jednostronne-funkcji.html">&#9664; Granice jednostronne funkcji</a></div>
+            <div class="next_temat"><a href="styczna-do-wykresu-funkcji.html" class="next_temat">Styczna do wykresu
+                    funkcji &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Granica funkcji w nieskończoności</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_98" poziom="blok_0">
+                <div class="akapit"> [strona w trakcie przygotowania] </div>
+                <div class="akapit"> Granicę funkcji \(f(x)\) w plus nieskończoności (\(+\infty \)) zapisujemy tak:
+                    \[\lim_{x \to +\infty}f(x)\] a w minus nieskończoności tak: \[\lim_{x \to -\infty}f(x)\] </div>
+                <div class="akapit"> Intuicyjnie - granica funkcji w plus/minus nieskończoności, to wartość do której
+                    dąży funkcja, wraz z tym jak argumenty funkcji dążą do plus/minus nieskończoności. </div>
+                <div class="zadanie"> Przykładowa ilustracja granicy funkcji w plus i minus nieskończoności: <img
+                        src="grafika/g0539.png" class="center m20" noc="1" alt="" /> </div>
+                <div class="twierdzenie">
+                    <h3>Definicja granicy w plus nieskończoności</h3>
+                    <div class="akapit"> <b>Granicą</b> funkcji \(f(x)\) w <b>plus nieskończoności</b> jest liczba
+                        \(g\): \[\lim_{x \to +\infty}f(x)=g \] jeżeli dla każdego ciągu \((x_n)\) takiego, że: \(\lim_{n
+                        \to \infty}x_n=+\infty \), zachodzi: \(\lim_{n \to \infty} f(x_n)=g\). </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Definicja granicy w minus nieskończoności</h3>
+                    <div class="akapit"> <b>Granicą</b> funkcji \(f(x)\) w <b>minus nieskończoności</b> jest liczba
+                        \(g\): \[\lim_{x \to -\infty}f(x)=g \] jeżeli dla każdego ciągu \((x_n)\) takiego, że: \(\lim_{n
+                        \to \infty}x_n=-\infty \), zachodzi: \(\lim_{n \to \infty} f(x_n)=g\). </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Własności granic</h3> Jeżeli istnieją granice: \(\lim_{x \to +\infty}f(x)\) oraz \(\lim_{x \to
+                    +\infty}g(x)\), to wówczas: <div class="ml20 lista_abc">
+                        <div>\(\lim_{x \to +\infty}\Bigl(c\cdot f(x)\Bigl)=c\cdot \lim_{x \to +\infty}f(x)\)</div>
+                        <div>\(\lim_{x \to +\infty}\Bigl( f(x)+g(x)\Bigl)=\lim_{x \to +\infty}f(x)+\lim_{x \to
+                            +\infty}g(x)\)</div>
+                        <div>\(\lim_{x \to +\infty}\Bigl( f(x)-g(x)\Bigl)=\lim_{x \to +\infty}f(x)-\lim_{x \to
+                            +\infty}g(x)\)</div>
+                        <div>\(\lim_{x \to +\infty}\Bigl( f(x)\cdot g(x)\Bigl)=\lim_{x \to +\infty}f(x)\cdot \lim_{x \to
+                            +\infty}g(x)\)</div>
+                        <div>jeżeli dodatkowo: \(\lim_{x \to +\infty}g(x)\ne 0\), to: \(\lim_{x \to +\infty}\left(
+                            \frac{f(x)}{g(x)}\right)=\frac{\lim\limits_{x \to +\infty}f(x)}{\lim\limits_{x \to
+                            +\infty}g(x)}\)</div>
+                        <div>jeżeli dodatkowo: \(\lim_{x \to +\infty}f(x) = g \) oraz \( g \ge 0\), to: \(\lim_{x \to
+                            +\infty}\sqrt{f(x)}=\sqrt{g}\)</div>
+                    </div>
+                </div> Powyższe własności granic są również prawdziwe w minus nieskończoności. <div class="zadanie">
+                    Oblicz granicę: \(\lim_{x \to +\infty}\frac{5x^3-2x^2+1}{x^4+x^3-2x} \) <div class="p_p"> Dzielimy
+                        licznik i mianownik przez \(x^4\) (czyli największą potęgę \(x\)-a z mianownika: \[\begin{split}
+                        \lim_{x \to +\infty}\frac{5x^3-2x^2+1}{x^4+x^3-2x}&=\lim_{x \to
+                        +\infty}\frac{\frac{5x^3}{x^4}-\frac{2x^2}{x^4}+\frac{1}{x^4}}{\frac{x^4}{x^4}+\frac{x^3}{x^4}-\frac{2x}{x^4}}=\\[6pt]
+                        &=\lim_{x \to
+                        +\infty}\frac{\frac{5}{x}-\frac{2}{x^2}+\frac{1}{x^4}}{1+\frac{1}{x}-\frac{2}{x^3}}=\frac{0}{1}=0
+                        \end{split}\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="granice-jednostronne-funkcji.html">&#9664; Granice jednostronne funkcji</a></div>
+                <div class="next_temat"><a href="styczna-do-wykresu-funkcji.html" class="next_temat">Styczna do wykresu
+                        funkcji &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

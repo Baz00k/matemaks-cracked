@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Suma zbiorów</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="405" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Rachunek zbiorów|Suma zbiorów">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-zbiorow.html">Rachunek zbiorów i logika</a> &rarr; <a href="suma-zbiorow.html">Suma
+                zbiorów</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="zaznaczanie-zbiorow-na-osi-liczbowej.html">&#9664; Zaznaczanie zbiorów na osi liczbowej</a>
+            </div>
+            <div class="next_temat"><a href="roznica-zbiorow.html" class="next_temat">Różnica zbiorów &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Suma zbiorów</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_401" poziom="blok_0">Sumę zbiorów \(A\) i \(B\) oznaczamy: \[A\cup B\]
+                Graficzna ilustracja sumy zbiorów \(A\) i \(B\): <img class="center" src="grafika/g0020.png" noc="1"
+                    alt="Suma zbiorów" />
+                <div class="akapit"> Do sumy \(A\cup B\) zaliczamy wszystkie liczby, które wchodzą w skład zbioru \(A\)
+                    lub zbioru \(B\). </div>
+                <div class="zadanie"> Jeżeli \(A = \{1, 2, 3\}\) oraz \(B = \{5, 6, 7, 8\}\), to: \[A \cup B = \{1, 2,
+                    3, 5, 6, 7, 8\}\] </div>
+                <div class="zadanie"> Jeżeli \(A = \{-2,1,5\}\) oraz \(B = \{1,5,7,12\}\), to: \[A \cup B =
+                    \{-2,1,5,7,12\}\] </div>
+                <div class="zadanie"> Jeżeli \(A = (-2, 3)\) oraz \(B = (4, 7)\), to: \[A \cup B = (-2, 3) \cup (4, 7)\]
+                    Możemy zaznaczyć sumę zbiorów na osi liczbowej: <img class="center m20" src="grafika/g0021.png"
+                        noc="1" alt="" /> </div>
+                <div class="zadanie"> Jeżeli \(A = (-2, 4)\) oraz \(B = (1, 6)\), to: \[A \cup B = (-2, 6)\] Możemy
+                    zaznaczyć na osi liczbowej zbiór \(A\) oraz zbiór \(B\): <img class="center m20"
+                        src="grafika/g0022.png" noc="1" alt="" /> oraz sumę zbiorów: <img class="center m20"
+                        src="grafika/g0023.png" noc="1" alt="" /> </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="zaznaczanie-zbiorow-na-osi-liczbowej.html">&#9664; Zaznaczanie zbiorów na osi
+                        liczbowej</a></div>
+                <div class="next_temat"><a href="roznica-zbiorow.html" class="next_temat">Różnica zbiorów &#9654;</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

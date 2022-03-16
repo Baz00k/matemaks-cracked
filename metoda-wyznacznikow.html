@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metoda wyznaczników</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="197" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Równania i nierówności|Układy równań|Metoda wyznaczników">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rownania-i-nierownosci.html">Równania i nierówności</a> &rarr; <a href="uklady-rownan.html">Układy
+                równań</a> &rarr; <a href="metoda-wyznacznikow.html">Metoda wyznaczników</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="metoda-graficzna.html">&#9664; Metoda graficzna</a></div>
+            <div class="next_temat"><a href="uklady-oznaczone-nieoznaczone-i-sprzeczne.html" class="next_temat">Układy
+                    oznaczone, nieoznaczone i sprzeczne &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Metoda wyznaczników</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_195" poziom="blok_0">
+                <div class="akapit"> W tej metodzie oba równania muszą być zapisane w postaci \(ax+by=c\).<br /> Jeżeli
+                    równania są zapisane inaczej, to musimy najpierw przekształcić je do takiej postaci. </div>
+                <div class="akapit"> Rozwiązanie układu równań metodą wyznaczników polega na policzeniu trzech
+                    wyznaczników i zastosowaniu dwóch wzorów. Prześledzimy cały algorytm na poniższym przykładzie.
+                </div>
+                <div class="zadanie" id="20025" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rozwiąż układ równań metodą wyznaczników: \[\begin{split} \begin{cases}
+                        7x+2y=1\\ 3x+4y=2 \end{cases} \end{split}\]</div>
+                    <div class="p_p">
+                        <div class="akapit1"> Oba równania są już zapisane w postaci \(ax+by=c\).<br /> Możemy zatem
+                            przejść do liczenia trzech wyznaczników \(W\), \(W_x\) oraz \(W_y\). </div>
+                        <div class="akapit1"> Dla ułatwienia zapiszemy nasz układ równań jeszcze raz, kolorując
+                            współczynniki liczbowe: </div> \[\begin{split} \begin{cases}
+                        \color{Red}{7}x+\color{Blue}{2}y=\color{Green}{1}\\
+                        \color{Red}{3}x+\color{Blue}{4}y=\color{Green}{2} \end{cases} \end{split}\] Teraz nasze
+                        wyznaczniki budujemy z odpowiednich kolumn w taki sposób: \[ W=\begin{vmatrix} \color{Red}{7} &
+                        \color{Blue}{2}\\[6pt] \color{Red}{3} & \color{Blue}{4} \end{vmatrix} \qquad \qquad
+                        W_x=\begin{vmatrix} \color{Green}{1} & \color{Blue}{2}\\[6pt] \color{Green}{2} & \color{Blue}{4}
+                        \end{vmatrix} \qquad \qquad W_y=\begin{vmatrix} \color{Red}{7} & \color{Green}{1}\\[6pt]
+                        \color{Red}{3} & \color{Green}{2} \end{vmatrix} \] Obliczamy je, mnożąc liczby na krzyż i
+                        odejmując od siebie: \[\begin{split} &W=\begin{vmatrix} 7 & 2\\[6pt] 3 & 4 \end{vmatrix} =7\cdot
+                        4-3\cdot 2=28-6=22\\[26pt] &W_x=\begin{vmatrix} 1 & 2\\[6pt] 2 & 4 \end{vmatrix} =1\cdot
+                        4-2\cdot 2=4-4=0\\[26pt] &W_y=\begin{vmatrix} 7 & 1\\[6pt] 3 & 2 \end{vmatrix} =7\cdot 2-3\cdot
+                        1=14-3=11 \end{split}\] Teraz obliczmy rozwiązania układu równań korzystając ze <b>wzorów
+                            Cramera</b>: \[\begin{split} &x=\frac{W_x}{W}=\frac{0}{22}=0\\[6pt]
+                        &y=\frac{W_y}{W}=\frac{11}{22}=\frac{1}{2} \end{split}\] Czyli rozwiązaniem układu równań jest
+                        para liczb: \[\begin{split} &x=0\\[6pt] &y=\frac{1}{2} \end{split}\]
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="metoda-graficzna.html">&#9664; Metoda graficzna</a></div>
+                <div class="next_temat"><a href="uklady-oznaczone-nieoznaczone-i-sprzeczne.html"
+                        class="next_temat">Układy oznaczone, nieoznaczone i sprzeczne &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

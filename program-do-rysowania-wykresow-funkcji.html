@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Program do rysowania wykresów funkcji</title>
+    <meta name="description" content="Program do rysowania wykresów funkcji online." />
+    <meta name="keywords" content="matematyka, funkcje, funkcja, wykres, wykresy, rysowanie, układ, współrzędnych" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <style>
+        .BoxHelp {
+            color: #000;
+            text-decoration: none;
+            font: 13px Verdana, sans-serif;
+        }
+
+        .BoxHelp div {
+            display: none;
+        }
+
+        .BoxHelp:hover div {
+            margin: 5px 25px;
+            padding: 5px;
+            display: block;
+            width: 250px;
+            position: absolute;
+            font-size: 11px;
+            text-align: left;
+            border: 1px solid #777;
+            background-color: #fdfdfd;
+            color: #333;
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 999;
+        }
+
+        .container,
+        .navigation_content,
+        .cookie_info {
+            width: 100%;
+            max-width: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="312" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Programy|Program do rysowania wykresów funkcji">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="programy.html">Programy</a> &rarr; <a
+                href="program-do-rysowania-wykresow-funkcji.html">Program do rysowania wykresów funkcji</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="kalkulator.html">&#9664; Kalkulator</a></div>
+            <div class="next_temat"><a href="program-do-dzielenia-pisemnego-liczb.html" class="next_temat">Program do
+                    dzielenia pisemnego liczb &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Program do rysowania wykresów funkcji</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_308" poziom="blok_0">
+                <div style="margin: 0 auto;">
+                    <div id="ustawienia" style="float: left; margin: 0px 10px 20px 0px; width: 580px;"> Podaj wzór
+                        funkcji:<br /> <b style="margin-left: 0px;"><i>f</i>(<i>x</i>)</b> = <input type="text"
+                            id="wzor_funkcji"
+                            onkeydown="if (event.keyCode == 13) document.getElementById('rysuj_button').click()"
+                            value="" style="width: 320px;" /> <input type="hidden" id="a" value="1"> <input
+                            type="hidden" id="b" value="1"> <input type="hidden" id="c" value="1"> <input type="hidden"
+                            id="m" value="1"> <input type="hidden" id="p" value="1"> <input type="hidden" id="q"
+                            value="1"> <input type="hidden" id="zakres" value="10"> <input type="button"
+                            id="rysuj_button" value="Rysuj wykres" onclick="tworz_wykres();" /> <a class="BoxHelp">
+                            <div style="margin: 5px 25px 5px 300px;">Wpisz w podane pole wzór funkcji, którą chcesz
+                                narysować, np:<br />x^2-5<br /> a następnie kliknij przycis "Rysuj wykres".<br
+                                    style="margin: auto auto 10px;" /> Jeśli chcesz równocześnie narysować <b>wykresy
+                                    kilku funkcji</b>, to oddziel ich wzory średnikami, np:<br /> x^2-5;2x+1<br
+                                    style="margin: auto auto 10px;" /> Program interpretuje wzory funkcji zgodnie z
+                                kolejnością wykonywania działań (np. potęgowanie ma pierwszeństwo przed mnożeniem, a
+                                mnożenie ma pierwszeństwo przed dodawaniem). <br />Pamiętaj, że możesz stosować nawiasy,
+                                aby wymusić odpowiednią kolejność wykonywania działań.<br
+                                    style="margin: auto auto 10px;" /> Program obsługuje sześć <b>parametrów</b>: a, b,
+                                c, m, p oraz q. Po wygenerowaniu funkcji, parametry można modyfikować przy pomocy
+                                suwaka. Przykład funkcji z parametrami:<br /> ax^2-x+c </div> <img
+                                src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                        </a>
+                        <div style="border: 1px dashed #333; margin: 15px 5px 15px 0px; padding: 10px 10px;">
+                            <div class="centertxt"><b>Wzory funkcji</b></div>
+                            <div style="margin:0 20px;"><span id="formula_bez_parametrow"></span></div>
+                            <div id="parametry_c" style="display: none;">
+                                <div class="centertxt"><b>Parametry funkcji</b></div> Skok parametrów: <select
+                                    id="parametr_skok" onchange="ustal_granice_parametrow()">
+                                    <option value="10">0.1</option>
+                                    <option value="100">0.01</option>
+                                    <option value="1000">0.001</option>
+                                </select> <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 140px;">Ustal minimalną wartość o jaką będą się
+                                        zmieniały parametry podczas przesuwania suwaka.</div> <img
+                                        src="grafika/pomoc.png" alt=""
+                                        style="vertical-align:middle; margin-bottom: 5px;" />
+                                </a><br />
+                                <div id="parametr_a_c" style="display: none;"> <select id="parametr_a_min"
+                                        onchange="ustal_granice_parametru_a()">
+                                        <option value="0.1">a &isin; (-0.1; 0.1)</option>
+                                        <option value="1">a &isin; (-1; 1)</option>
+                                        <option value="10" selected>a &isin; (-10; 10)</option>
+                                        <option value="20">a &isin; (-20; 20)</option>
+                                        <option value="30">a &isin; (-30; 30)</option>
+                                        <option value="40">a &isin; (-40; 40)</option>
+                                        <option value="50">a &isin; (-50; 50)</option>
+                                        <option value="60">a &isin; (-60; 60)</option>
+                                        <option value="70">a &isin; (-70; 70)</option>
+                                        <option value="80">a &isin; (-80; 80)</option>
+                                        <option value="90">a &isin; (-90; 90)</option>
+                                        <option value="100">a &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="a_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_a_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="a_info">a =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru a</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle;margin-bottom: 5px;" />
+                                    </a> </div>
+                                <div id="parametr_b_c" style="display: none;"> <select id="parametr_b_min"
+                                        onchange="ustal_granice_parametru_b()">
+                                        <option value="0.1">b &isin; (-0.1; 0.1)</option>
+                                        <option value="1">b &isin; (-1; 1)</option>
+                                        <option value="10" selected>b &isin; (-10; 10)</option>
+                                        <option value="20">b &isin; (-20; 20)</option>
+                                        <option value="30">b &isin; (-30; 30)</option>
+                                        <option value="40">b &isin; (-40; 40)</option>
+                                        <option value="50">b &isin; (-50; 50)</option>
+                                        <option value="60">b &isin; (-60; 60)</option>
+                                        <option value="70">b &isin; (-70; 70)</option>
+                                        <option value="80">b &isin; (-80; 80)</option>
+                                        <option value="90">b &isin; (-90; 90)</option>
+                                        <option value="100">b &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="b_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_b_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="b_info">b =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru b</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle;margin-bottom: 5px;" />
+                                    </a> </div>
+                                <div id="parametr_c_c" style="display: none;"> <select id="parametr_c_min"
+                                        onchange="ustal_granice_parametru_c()">
+                                        <option value="0.1">c &isin; (-0.1; 0.1)</option>
+                                        <option value="1">c &isin; (-1; 1)</option>
+                                        <option value="10" selected>c &isin; (-10; 10)</option>
+                                        <option value="20">c &isin; (-20; 20)</option>
+                                        <option value="30">c &isin; (-30; 30)</option>
+                                        <option value="40">c &isin; (-40; 40)</option>
+                                        <option value="50">c &isin; (-50; 50)</option>
+                                        <option value="60">c &isin; (-60; 60)</option>
+                                        <option value="70">c &isin; (-70; 70)</option>
+                                        <option value="80">c &isin; (-80; 80)</option>
+                                        <option value="90">c &isin; (-90; 90)</option>
+                                        <option value="100">c &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="c_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_c_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="c_info">c =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru c</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle; margin-bottom: 5px;" />
+                                    </a> </div>
+                                <div id="parametr_m_c" style="display: none;"> <select id="parametr_m_min"
+                                        onchange="ustal_granice_parametru_m()">
+                                        <option value="0.1">m &isin; (-0.1; 0.1)</option>
+                                        <option value="1">m &isin; (-1; 1)</option>
+                                        <option value="10" selected>m &isin; (-10; 10)</option>
+                                        <option value="20">m &isin; (-20; 20)</option>
+                                        <option value="30">m &isin; (-30; 30)</option>
+                                        <option value="40">m &isin; (-40; 40)</option>
+                                        <option value="50">m &isin; (-50; 50)</option>
+                                        <option value="60">m &isin; (-60; 60)</option>
+                                        <option value="70">m &isin; (-70; 70)</option>
+                                        <option value="80">m &isin; (-80; 80)</option>
+                                        <option value="90">m &isin; (-90; 90)</option>
+                                        <option value="100">m &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="m_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_m_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="m_info">m =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru m</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle; margin-bottom: 5px;" />
+                                    </a> </div>
+                                <div id="parametr_p_c" style="display: none;"> <select id="parametr_p_min"
+                                        onchange="ustal_granice_parametru_p()">
+                                        <option value="0.1">p &isin; (-0.1; 0.1)</option>
+                                        <option value="1">p &isin; (-1; 1)</option>
+                                        <option value="10" selected>p &isin; (-10; 10)</option>
+                                        <option value="20">p &isin; (-20; 20)</option>
+                                        <option value="30">p &isin; (-30; 30)</option>
+                                        <option value="40">p &isin; (-40; 40)</option>
+                                        <option value="50">p &isin; (-50; 50)</option>
+                                        <option value="60">p &isin; (-60; 60)</option>
+                                        <option value="70">p &isin; (-70; 70)</option>
+                                        <option value="80">p &isin; (-80; 80)</option>
+                                        <option value="90">p &isin; (-90; 90)</option>
+                                        <option value="100">p &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="p_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_p_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="p_info">p =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru p</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle; margin-bottom: 5px;" />
+                                    </a> </div>
+                                <div id="parametr_q_c" style="display: none;"> <select id="parametr_q_min"
+                                        onchange="ustal_granice_parametru_q()">
+                                        <option value="0.1">q &isin; (-0.1; 0.1)</option>
+                                        <option value="1">q &isin; (-1; 1)</option>
+                                        <option value="10" selected>q &isin; (-10; 10)</option>
+                                        <option value="20">q &isin; (-20; 20)</option>
+                                        <option value="30">q &isin; (-30; 30)</option>
+                                        <option value="40">q &isin; (-40; 40)</option>
+                                        <option value="50">q &isin; (-50; 50)</option>
+                                        <option value="60">q &isin; (-60; 60)</option>
+                                        <option value="70">q &isin; (-70; 70)</option>
+                                        <option value="80">q &isin; (-80; 80)</option>
+                                        <option value="90">q &isin; (-90; 90)</option>
+                                        <option value="100">q &isin; (-100; 100)</option>
+                                    </select> <input type="range" id="q_range" name="rangeInput" min="1" max="200"
+                                        value="110" onmousemove="parametr_q_change(this.value)"
+                                        style="vertical-align:middle;margin:0 5px;width:300px;"> (<span id="q_info">q =
+                                        1</span>) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 440px;">Ustal wartość parametru q</div> <img
+                                            src="grafika/pomoc.png" alt=""
+                                            style="vertical-align:middle; margin-bottom: 5px;" />
+                                    </a> </div>
+                            </div>
+                        </div>
+                        <div id="wykres_ustawienia">
+                            <div style="border: 1px dashed #333; margin: 15px 5px 0 0; padding: 10px 10px;"> <b
+                                    class="centertxt">Dodatkowe ustawienia</b>
+                                <div></div> Rozmiar: <input type="range" id="wymiar" min="200" max="1600" value="560"
+                                    onmousemove="wymiar_change(this.value)" onchange="wymiar_change(this.value)"
+                                    onmouseup="rysuj_wykres();" style="vertical-align:middle;margin:0 5px;width:300px;">
+                                (<span id="wymiar_info">560</span>/1600) <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 440px;">Ustala fizyczny rozmiar układu
+                                        współrzędnych.<br />Jeżeli układ współrzędnych nie zmieści się po prawej
+                                        stronie, to zostanie przeniesiony pod spód.</div> <img src="grafika/pomoc.png"
+                                        alt="" style="vertical-align:middle;" />
+                                </a><br /> Dokładność: <input type="range" id="dokladnosc_wykresu" min="1" max="200"
+                                    value="100" onmousemove="pobierz_ustawienia()"
+                                    style="vertical-align:middle;margin:0 5px;width:300px;"> (<span
+                                    id="skok_info">100</span>/200) <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 440px;">Większą dokładność warto ustawić w dwóch
+                                        przypadkach:<br /> 1) W sytuacji, gdy funkcja bardzo szybko zmienia swoje
+                                        wartości (np. ma asymptoty pionowe). W takim przypadku warto zwiększyć
+                                        dokładność, aby funkcja została odwzorowana prawidłowo.<br /> 2) W sytuacji, gdy
+                                        zależy nam dodatkowo na wyliczeniu miejsc zerowych. Przy małej dokładności
+                                        miejsca zerowe mogą być wyliczane z drobnym błędem, lub mogą nie zostać w ogóle
+                                        opisane.<br style="margin-bottom:10px;" /> <b>Uwaga!</b> Im większa dokładność
+                                        tym wolniej działa rysowanie, przesuwanie i przybliżanie sporządzonego wykresu.
+                                        Jeżeli nie generujesz bardzo skomplikowanych funkcji, to pracuj na jak
+                                        najmniejszej dokładności.</div> <img src="grafika/pomoc.png" alt=""
+                                        style="vertical-align:middle;" />
+                                </a>
+                                <div style="border:0px dashed #aaa;"> <input type="checkbox" id="siatka"
+                                        onchange="pobierz_ustawienia()" checked>Siatka <input type="checkbox" id="os_x"
+                                        onchange="pobierz_ustawienia()" checked>Oś Ox <input type="checkbox" id="os_y"
+                                        onchange="pobierz_ustawienia()" checked>Oś Oy <input type="checkbox"
+                                        id="punkty_s" onchange="pobierz_ustawienia()" checked>Punkty specjalne<br />
+                                </div> <input type="checkbox" id="osie" onchange="pobierz_ustawienia()" checked>Opisuj
+                                osie układu współrzędnych <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 240px;">Dodaje współrzędne na osiach <i>Ox</i> i
+                                        <i>Oy</i>.<br /> <b>Uwaga!</b> Wyłącza automatycznie zaznaczanie miejsc
+                                        zerowych, punktu przecięcia z osią <i>Oy</i> oraz asymptot pionowych.</div> <img
+                                        src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="miejsca_zerowe"
+                                    onchange="pobierz_ustawienia()">Zaznacz miejsca zerowe <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 180px;">Zaznacza i oblicza miejsca zerowe
+                                        funkcji.<br /> <b>Uwaga!</b> Jeżeli nie zostały obliczone wszystkie mejsca
+                                        zerowe, to należy zwiększyć dokładność wykresu suwakiem powyżej.<br />
+                                        <b>Uwaga!</b> Wyłącza automatycznie zaznaczanie współrzędnych na osiach
+                                        <i>Ox</i> i <i>Oy</i>.</div> <img src="grafika/pomoc.png" alt=""
+                                        style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="punkt_przeciecia_y"
+                                    onchange="pobierz_ustawienia()">Zaznacz punkt przecięcia z osią <i>Oy</i> <a
+                                    class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 250px;">Zaznacza i oblicza punkt przecięcia wykresu
+                                        z osią <i>Oy</i>.<br /> <b>Uwaga!</b> Wyłącza automatycznie zaznaczanie
+                                        współrzędnych na osiach <i>Ox</i> i <i>Oy</i>.</div> <img
+                                        src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="ekstrema" onchange="pobierz_ustawienia()">Zaznacz
+                                ekstrema <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 160px;">Oblicza i zaznacza ekstrema funkcji.<br />
+                                        <b>Uwaga!</b> Jeżeli ekstrema funkcji nie są wyliczane precyzyjnie, to należy
+                                        zwiększyć dokładność wykresu suwakiem powyżej.</div> <img
+                                        src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="asymptoty" onchange="pobierz_ustawienia()">Zaznacz
+                                asymptoty <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 160px;">Oblicza i zaznacza pionowe oraz poziome
+                                        asymptoty funkcji (o ile istnieją).<br /> <b>Uwaga!</b> Wyłącza automatycznie
+                                        zaznaczanie współrzędnych na osiach <i>Ox</i> i <i>Oy</i>.<br /> <b>Uwaga!</b>
+                                        Jeżeli asymptoty funkcji nie są wyliczane precyzyjnie, to należy zwiększyć
+                                        dokładność wykresu suwakiem powyżej.</div> <img src="grafika/pomoc.png" alt=""
+                                        style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="pochodne" onchange="pobierz_ustawienia()">Rysuj
+                                pochodne funkcji <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 180px;">Rysuje dodatkowo wykres pochodnej
+                                        funkcji.<br /> <b>Uwaga!</b> Jeżeli pracujesz z wykresem tylko jednej funkcji,
+                                        to jej pochodna zostanie narysowana kolorem pomarańczowym.<br /> Jeżeli
+                                        pracujesz jednocześnie z kilkoma funkcjami, to wykresy ich pochodnych będą
+                                        rysowane kolorami nieco bledszymi od oryginalnych.</div> <img
+                                        src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                </a><br />
+                                <div id="opcje_kilku_funkcji_c" style="display: none;"> <input type="checkbox"
+                                        id="punkty_przeciecia" onchange="pobierz_ustawienia()">Zaznacz punkty przecięcia
+                                    funkcji <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 240px;">Oblicza i zaznacza wszystkie punkty
+                                            przecięcia narysowanych funkcji.<br /> <b>Uwaga!</b> Jeżeli nie zostały
+                                            obliczone wszystkie widoczne punkty przecięcia, to należy zwiększyć
+                                            dokładność wykresu suwakiem powyżej.</div> <img src="grafika/pomoc.png"
+                                            alt="" style="vertical-align:middle;" />
+                                    </a><br /> <input type="checkbox" id="obszary" onchange="pobierz_ustawienia()">
+                                    Zaznacz obszar opisany nierównością <select id="f1_obszar"
+                                        onchange="pobierz_ustawienia()">
+                                        <option value="1">f1(x)</option>
+                                        <option value="2">f2(x)</option>
+                                    </select> <select id="znak_obszar" onchange="pobierz_ustawienia()">
+                                        <option value="0">&gt;</option>
+                                        <option value="1">&lt;</option>
+                                    </select> <select id="f2_obszar" onchange="pobierz_ustawienia()">
+                                        <option value="1">f1(x)</option>
+                                        <option value="2" selected>f2(x)</option>
+                                    </select> <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 380px;">Zaznacza obszar między dwiema
+                                            wskazanymi funkcjami (dokładne wzory Twoich funkcji są podane nad wykresem -
+                                            w okienku "Parametry funkcji" )<br /> </div><img src="grafika/pomoc.png"
+                                            alt="" style="vertical-align:middle;" />
+                                    </a><br /> <input type="checkbox" id="calka" onchange="pobierz_ustawienia()">Oblicz
+                                    pole między funkcjami <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 180px;">Liczy pole (całkę) zaznaczonego
+                                            obszaru.<br /> <b>Uwaga!</b> Funkcje między którymi ma być obliczone pole
+                                            należy wybrać powyżej - w opcji: "Zaznacz obszar opisany nierównością"<br />
+                                        </div><img src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                    </a> dla <i>x</i> &isin; (<input type="text" id="przedzial_calkowania_min" value=""
+                                        onkeyup="pobierz_ustawienia()" style="width: 40px;" />; <input type="text"
+                                        id="przedzial_calkowania_max" value="" onkeyup="pobierz_ustawienia()"
+                                        style="width: 40px;" />) <a class="BoxHelp">
+                                        <div style="margin: 5px 25px 5px 380px;">W tych polach możesz podać przedział na
+                                            którym chcesz oliczyć pole miedzy funkcjami.<br /> W przypadku nie wpisania
+                                            żadnych wartości, pole liczone jest na całym widocznym przedziale
+                                            argumentów.<br /> <b>Uwaga!</b> Maksymalny przedział argumentów na którym
+                                            jest liczona całka, to przedział widoczny na wykresie. Jeżeli chcesz
+                                            obliczyć całkę na wiekszym obszarze, to po prostu oddal wykres.<br /> </div>
+                                        <img src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                    </a> </div> Zoom: <span id="skala">40</span> <a class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 20px;"> Aby przybliżyć/oddalić wykres wciśnij PPM
+                                        i&nbsp;przesuń kursor w prawo/lewo. </div> <img src="grafika/pomoc.png" alt=""
+                                        style="vertical-align:middle;" />
+                                </a><br /> Współrzędne środka: (<span id="xc">0</span>; <span id="yc">0</span>) <a
+                                    class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 90px;"> Aby przesunąc wykres wciśnij LPM
+                                        i&nbsp;przesuń kursor w wybranym kierunku. </div> <img src="grafika/pomoc.png"
+                                        alt="" style="vertical-align:middle;" />
+                                </a><br /> <input type="checkbox" id="x_szczegolne_checkbox"
+                                    onchange="pobierz_ustawienia()"> Zaznacz punkty o współrzędnej <i>x</i> = <input
+                                    type="text" id="x_szczegolne" onkeyup="pobierz_ustawienia()" value=""> <a
+                                    class="BoxHelp">
+                                    <div style="margin: 5px 25px 5px 260px;"> Gdy chcesz zaznaczyć wiele punktów, to
+                                        wypisz ich współrzędne x-owe oddzielając je średnikami. </div> <img
+                                        src="grafika/pomoc.png" alt="" style="vertical-align:middle;" />
+                                </a><br /> <input type="button" value="Zapisz wygenerowany wykres jako obrazek"
+                                    onclick="zapisz_obrazek();" />
+                            </div>
+                        </div>
+                        <script> function zapisz_obrazek() { var canvas = document.getElementById("mainCanvas"); var img = canvas.toDataURL("image/jpg"); var wymiar = _("wymiar").value; var myWindow = window.open("", "MsgWindow", "width=" + wymiar + ", height=" + wymiar); myWindow.document.write('<img src="' + img + '"/>'); } </script>
+                    </div>
+                    <div style="float: left; margin: 0px 0px 20px 0px;">
+                        <div id="wykres" style="position:relative;"> <canvas id="mainCanvas"
+                                style="display: block;border:1px solid #444;cursor:move;margin: 20px auto 15px;width: 560px;height: 560px;background:#fff;"
+                                onmousedown="clickCanvas(event);"> It looks like your browser does not support Canvas.
+                                Try FireFox, Chrome, Opera, or Safari instead. </canvas> </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div> <b class="centertxt">Zestawienie dostępnych operatorów</b>
+                <table id="operator" class="tabela2" style="margin: 10px auto 40px;">
+                    <tr class="t1">
+                        <td style="width: 120px;">Operator</td>
+                        <td style="width: 180px;">Działanie</td>
+                        <td style="width: 160px;">Przykład</td>
+                        <td style="width: 180px;">Przykład z parametrami</td>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>dodawanie</td>
+                        <td>2x+3</td>
+                        <td>ax+b</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>odejmowanie</td>
+                        <td>2x-3</td>
+                        <td>ax-b</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>mnożenie</td>
+                        <td>2*x</td>
+                        <td>a*x</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>dzielenie</td>
+                        <td>3/x</td>
+                        <td>a/x</td>
+                    </tr>
+                    <tr>
+                        <td>^</td>
+                        <td>potęgowanie</td>
+                        <td>x^3</td>
+                        <td>a(x-b)^4+c</td>
+                    </tr>
+                    <tr>
+                        <td>sqrt()</td>
+                        <td>pierwiastkowanie</td>
+                        <td>sqrt(2x)</td>
+                        <td>sqrt(ax)-b</td>
+                    </tr>
+                    <tr>
+                        <td>| &bull; |</td>
+                        <td>wartość bezwzględna</td>
+                        <td>|x+5|-4</td>
+                        <td>|x-p|-q</td>
+                    </tr>
+                    <tr>
+                        <td>log()</td>
+                        <td>logarytm naturalny</td>
+                        <td>log(x)</td>
+                        <td>log(ax)-b</td>
+                    </tr>
+                    <tr>
+                        <td>sin()</td>
+                        <td>sinus</td>
+                        <td>sin(x^2)</td>
+                        <td>a*sin(bx)+c</td>
+                    </tr>
+                    <tr>
+                        <td>cos()</td>
+                        <td>cosinus</td>
+                        <td>cos(3x-1)</td>
+                        <td>a*cos(bx-p)+q</td>
+                    </tr>
+                    <tr>
+                        <td>tg()</td>
+                        <td>tangens</td>
+                        <td>tg(x)</td>
+                        <td>tg(x/a)</td>
+                    </tr>
+                    <tr>
+                        <td>ctg()</td>
+                        <td>cotangens</td>
+                        <td>3ctg(x/10)</td>
+                        <td>a*ctg(x/b)</td>
+                    </tr>
+                </table>
+                <div style="margin:10px auto 10px 20px; width: 1000px;"> Program obsługuje 6 parametrów: a, b, c, p, q,
+                    m, które można podawać we wzorze funkcji zamiast współczynników liczbowych.<br /> Po wygenerowaniu
+                    wykresu wartości parametrów można zmieniać dynamicznie suwakami. </div> <b class="centertxt">Wzory
+                    typowych funkcji z parametrami</b>
+                <table id="operator" class="tabela2" style="margin: 10px auto 40px;">
+                    <tr class="t1">
+                        <td style="width: 400px;">Nazwa funkcji</td>
+                        <td style="width: 200px;)">Wzór funkcji</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja liniowa</td>
+                        <td>ax+b</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja kwadratowa (postać ogólna)</td>
+                        <td>ax^2+bx+c</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja kwadratowa (postać iloczynowa)</td>
+                        <td>a(x-b)(x-c)</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja kwadratowa (postać kanoniczna)</td>
+                        <td>a(x-p)^2+q</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja z wartością bezwzględną</td>
+                        <td>a|x-p|+q</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja homograficzna</td>
+                        <td>a/(x-p)+q</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja wielomianowa 3 stopnia</td>
+                        <td>ax^3+bx^2+cx+p</td>
+                    </tr>
+                </table>
+                <div style="margin:10px auto 10px 20px; width: 1000px;"> Program może wyświetlać jednocześnie wzory
+                    kilku funkcji.<br /> Wzory kolejnych funkcji należy wpisywać oddzielając je średnikami.<br /> Jeśli
+                    badasz przebieg kilku funkcji jednocześnie, to w polu "Dodatkowe ustawienia" pojawią się nowe opcje,
+                    takie jak np.: obliczanie i zaznaczanie punktów przecięcia funkcji, czy też liczenie pola (całki)
+                    między wskazanymi funkcjami. </div> <b class="centertxt">Przykłady analizy kilku funkcji</b>
+                <table id="operator" class="tabela2" style="margin: 10px auto 40px;">
+                    <tr class="t1">
+                        <td style="width: 400px;">Opis przykładu</td>
+                        <td style="width: 200px;">Wzór</td>
+                    </tr>
+                    <tr>
+                        <td>Funkcja liniowa i kwadratowa</td>
+                        <td>ax+b;c(x-p)^2+q</td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 15px; padding: 6px 0;">Analiza liczby rozwiązań równania z
+                            parametrem:<br /><i>x</i><sup>2</sup> - <i>x</i> - 6 = <i>m</i></td>
+                        <td>x^2-x-6;m</td>
+                    </tr>
+                    <tr>
+                        <td>Pole ograniczone przez parabolę i oś <i>Ox</i></td>
+                        <td>ax^2+bx+c;0</td>
+                    </tr>
+                    <tr>
+                        <td>Pole pod sinusem</td>
+                        <td>a*sin(bx);0</td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 20px; padding: 3px 0;">Graficzne rozwiązanie
+                            nierówności:<br /><i>x</i>sin(<i>x</i>) &gt; <i>mx</i>^2<br />w zależności od parametru
+                            <i>m</i></td>
+                        <td>xsin(x);mx^2</td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 20px; padding: 3px 0;">Liczba rozwiązań równania:<br />|||<i>x</i> -
+                            <i>a</i>| - <i>b</i>| - <i>c</i>| = <i>m</i><br />w zależności od parametrów <i>a</i>,
+                            <i>b</i>, <i>c</i> oraz <i>m</i></td>
+                        <td>|||x-a|-b|-c|;m</td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 20px; padding: 3px 0;">Obliczenie pola opisanego przez układ
+                            nierówności: \[\begin{cases} \frac{1}{x}\gt m\cdot \sin x \\ \frac{1}{5}\lt x\lt 5
+                            \end{cases} \] w zależności od parametru \(m\)</td>
+                        <td>1/x;m*sin(x)</td>
+                    </tr>
+                </table>
+                <script src="skrypty/wykres_funkcji_comp.js"></script>
+                <script>$(document).ready(function () { tworz_wykres(); });</script>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="kalkulator.html">&#9664; Kalkulator</a></div>
+                <div class="next_temat"><a href="program-do-dzielenia-pisemnego-liczb.html" class="next_temat">Program
+                        do dzielenia pisemnego liczb &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

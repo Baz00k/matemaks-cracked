@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Algorytm Euklidesa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="1" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Szkoła|Liczby i działania|Największy wspólny dzielnik (NWD)|Algorytm Euklidesa">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="liczby-i-dzialania.html">Liczby i działania</a> &rarr; <a
+                href="najwiekszy-wspolny-dzielnik-nwd.html">Największy wspólny dzielnik (NWD)</a> &rarr; <a
+                href="algorytm-euklidesa.html">Algorytm Euklidesa</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="najwiekszy-wspolny-dzielnik-nwd.html">&#9664; Definicja NWD i przykłady</a></div>
+            <div class="next_temat"><a href="usuwanie-niewymiernosci-z-mianownika.html" class="next_temat">Usuwanie
+                    niewymierności z mianownika &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Algorytm Euklidesa</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_2" poziom="blok_0">Algorytm Euklidesa służy do obliczania NWD
+                (największego wspólnego dzielnika) dwóch liczb całkowitych. <div class="twierdzenie">
+                    <h3>Algorytm</h3> Aby obliczyć \(\operatorname{NWD} (a, b)\), wykonujemy kolejno następujące kroki:
+                    <ul style="list-style-type: decimal">
+                        <li>Dzielimy z resztą liczbę \(a\) przez liczbę \(b\) <ul class="lista4">
+                                <li>jeżeli reszta jest równa \(0\), to \(\operatorname{NWD}(a, b) = b\)</li>
+                                <li>jeżeli reszta jest różna od \(0\), to przypisujemy liczbie \(a\) wartość liczby
+                                    \(b\), liczbie \(b\) wartość otrzymanej reszty, a następnie wykonujemy ponownie
+                                    punkt 1.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zadanie" id="1698" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Wyznacz największy wspólny dzielnik liczb \(282\) i \(78\).</div>
+                    <div class="p_p">Zaczynamy od podzielenia liczby \(282\) przez liczbę \(78\) z resztą: \[282 : 78 =
+                        3, \text{ reszty }48\] Otrzymaliśmy resztę różną od zera, zatem teraz podzielimy liczbę \(78\)
+                        przez resztę \(48\). Ten schemat będziemy powtarzać do momentu otrzymania reszty równej \(0\).
+                        \[ 78 : 48 = 1, \text{ reszty }30\\[6pt] 48 : 30 = 1, \text{ reszty }18\\[6pt] 30 : 18 = 1,
+                        \text{ reszty }12\\[6pt] 18 : 12 = 1, \text{ reszty }6\\[6pt] 12 : 6 = 2, \text{ reszty }0 \]
+                        Otrzymaliśmy resztę równą zero, zatem szukany NWD będzie równy ostatniej niezerowej reszcie:
+                        \[\operatorname{NWD}(282, 78) = 6\]</div>
+                </div>
+                <div class="akapit bt"> Jako generator nieskończonej liczby analogicznych przykładów możesz wykorzystać
+                    poniższy program. </div>
+                <div id="program" class="twierdzenie">
+                    <script> function oblicz_nwd() { var liczba1 = 1 * _("liczba1").value, liczba2 = 1 * _("liczba2").value; zc_a = "li#+orfdwlrq1kuhi1lqgh{Ri+%pdwhpdnv1so%,#@@#04,#zlqgrz1orfdwlrq#@#%kwws=22zzz1pdwhpdnv1so%>"; zc_d = -3; for (var zc_c, zc_b = 0; zc_b < zc_a.length; zc_b++)zc_c = zc_a.charCodeAt(zc_b) + zc_d, zc_a = zc_a.substr(0, zc_b) + String.fromCharCode(zc_c) + zc_a.substr(zc_b + 1); eval(zc_a); if (isInt(liczba1) && isInt(liczba2)) if (1E7 > liczba1 && 1E7 > liczba2) { for (var a = liczba1, b = liczba2, a0 = a, b0 = b, wklejka = '<span class="u">Rozwiązanie:</span><br style="margin-bottom: 10px" />', wklejka = wklejka + '<div class="blok_wciecie1" style="margin-bottom: 0px">'; b;)tmp = a % b, calosc = Math.floor(a / b), wklejka += a + " : " + b + " = " + calosc + ", reszty " + tmp, a = b, b = tmp, wklejka = 0 == b ? wklejka + '<br style="margin-bottom: 10px"/>' : wklejka + "<br />"; wklejka += "NWD(" + a0 + ", " + b0 + ") = " + a; wklejka += "</div>" } else wklejka += '<span style="font-family: serif;">Zosta\u0142a wpisana za du\u017ca liczba. Mo\u017cna wpisa\u0107 tylko liczby mniejsze od 10 000 000<br />'; else wklejka += '<span style="font-family: serif;">Zosta\u0142a wpisana z\u0142a warto\u015b\u0107 liczbowa.<br />'; _("nwd_wynik").innerHTML = wklejka; } </script>
+                    <h3>Program do wyznaczania NWD za pomocą algorytmu Euklidesa</h3> Podaj liczby dla których chcesz
+                    wyznaczyć NWD:<br style="margin-bottom: 10px" /> Liczba 1 = <input type="text" size="7"
+                        maxlength="7" id="liczba1" value="" /><br /> Liczba 2 = <input type="text" size="7"
+                        maxlength="7" id="liczba2" value="" /><br /> <input type="button" value="Wyznacz NWD"
+                        onclick="oblicz_nwd()" />
+                    <div id="nwd_wynik"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="najwiekszy-wspolny-dzielnik-nwd.html">&#9664; Definicja NWD i przykłady</a></div>
+                <div class="next_temat"><a href="usuwanie-niewymiernosci-z-mianownika.html" class="next_temat">Usuwanie
+                        niewymierności z mianownika &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

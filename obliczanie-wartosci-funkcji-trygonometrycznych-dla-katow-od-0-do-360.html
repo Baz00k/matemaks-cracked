@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Obliczanie wartości funkcji trygonometrycznych dla kątów od 0° do 360°</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="237" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Szkoła|Trygonometria|Obliczanie wartości funkcji trygonometrycznych dla kątów od 0° do 360°">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="trygonometria.html">Trygonometria</a> &rarr; <a
+                href="obliczanie-wartosci-funkcji-trygonometrycznych-dla-katow-od-0-do-360.html">Obliczanie wartości
+                funkcji trygonometrycznych dla kątów od 0° do 360°</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="funkcje-trygonometryczne-dowolnego-kata.html">&#9664; Funkcje trygonometryczne dowolnego
+                    kąta</a></div>
+            <div class="next_temat"><a href="wykres-funkcji-sinus.html" class="next_temat">Wykres funkcji sinus
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Obliczanie wartości funkcji trygonometrycznych dla kątów od 0° do 360°</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_234" poziom="blok_0">Z rozdziału <i><a
+                        href="pojecie-miary-kata-i-jego-uogolnienie.html">Pojęcie miary kąta i jego uogólnienie</a></i>
+                wiemy już, że dowolny kąt możemy utożsamić z kątem z przedziału \(\left \langle 0^\circ , 360^\circ
+                \right \rangle\).<br /> Pamiętamy, że jeżeli kąt \(\alpha \in \left \langle 0^\circ , 360^\circ \right
+                \rangle\), to jego ramiona pokrywają się z ramionami kąta o mierze \(\alpha + k\cdot 360^\circ \), gdzie
+                \(k\in \mathbb{Z} \). Wynika stąd bardzo przydatna obserwacja: <div class="twierdzenie"> Niech \(k\)
+                    będzie dowolną liczbą całkowitą. Wówczas: \[\begin{split} &\sin (\alpha +k\cdot 360^\circ )=\sin
+                    \alpha \\[6pt]&\cos (\alpha +k\cdot 360^\circ )=\cos \alpha \\[6pt]&\operatorname{tg} (\alpha
+                    +k\cdot 360^\circ )=\operatorname{tg} \alpha \\[6pt]&\operatorname{ctg} (\alpha +k\cdot 360^\circ
+                    )=\operatorname{ctg} \alpha \\[6pt] \end{split}\] </div>
+                <div class="akapit bt"> Dla tangensa i cotangensa mamy nawet: \[\begin{split} &\operatorname{tg} (\alpha
+                    +k\cdot 180^\circ )=\operatorname{tg} \alpha \\[6pt]&\operatorname{ctg} (\alpha +k\cdot 180^\circ
+                    )=\operatorname{ctg} \alpha \\[6pt] \end{split}\] </div>
+                <div class="zadanie"> Każdą funkcję trygonometryczną kąta większego od \(360^\circ \) możemy zamienić na
+                    równoważną funkcję trygonometryczną kąta z przedziału \(\left \langle 0^\circ , 360^\circ \right
+                    \rangle\). Przykładowo: <ul class="lista1">
+                        <li> \(\sin 400^\circ = \sin (40^\circ +360^\circ )=\sin 40^\circ \) </li>
+                        <li> \(\cos 442^\circ = \cos (82^\circ +360^\circ )=\cos 82^\circ \) </li>
+                        <li> \(\operatorname{tg} 1180^\circ = \operatorname{tg} (100^\circ +3\cdot 360^\circ
+                            )=\operatorname{tg} 100^\circ \) </li>
+                        <li> \(\operatorname{ctg} (-510^\circ) = \operatorname{ctg} (210^\circ -2\cdot 360^\circ
+                            )=\operatorname{ctg} 210^\circ \) </li>
+                    </ul>
+                </div>
+                <div class="akapit bt"> Zatem obliczanie wartość trygonometrycznych dowolnych kątów sprowadza się do
+                    obliczania wartości trygonometrycznych ich kątów tożsamych w przedziale \(\left \langle 0^\circ ,
+                    360^\circ \right \rangle\). </div>
+                <div class="akapit"> Teraz skupimy się już wyłącznie na kątach z przedziału \(\left \langle 0^\circ ,
+                    360^\circ \right \rangle\). </div>
+                <div class="akapit"> Okazuje się, że obliczanie wartości funkcji trygonometrycznych dla kątów z
+                    przedziału \(\left \langle 0^\circ , 360^\circ \right \rangle\), można sprowadzić jedynie do
+                    przedziału \(\left \langle 0^\circ , 90^\circ \right \rangle\). Zatem jeżeli umiemy obliczać
+                    wartości funkcji trygonometrycznych dla kątów ostrych, to umiemy automatycznie obliczać wartości
+                    funkcji trygonometrycznych dla dowolnych kątów! </div>
+                <div class="akapit"> Wzory które umożliwiają robienie takich sztuczek nazywamy <b>wzorami
+                        redukcyjnymi</b>. Wzorów tych jest bardzo dużo i nie będę ich tutaj wypisywał. Możesz je znaleźć
+                    w <a href="wzory-trygonometryczne.html">zestawieniu wzorów trygonometrycznych</a>. Osobiście nie
+                    zachęcam do uczenia się wzorów redukcyjnych na pamięć, ponieważ jest ich bardzo dużo i łatwo mogą
+                    się pomieszać. </div>
+                <div class="akapit"> Zawsze możemy samodzielnie wyprowadzić dowolny wzór redukcyjny, gdy tylko zajdzie
+                    taka potrzeba. Możemy w tym celu skorzystać z definicji funkcji trygonometrycznych (trochę
+                    trudniejsza metoda) albo z wykresu (łatwiejsza metoda, ale wymaga znajomości wykresów. Omówimy ją w
+                    następnych rozdziałach). </div>
+                <div class="akapit"> Teraz na kilku przykładach zobaczymy jak można wyprowadzać wzory redukcyjne wprost
+                    z definicji. </div>
+                <div class="zadanie">Oblicz \(\sin 150^\circ \text{, }\cos 150^\circ \text{ i} \operatorname{tg}
+                    150^\circ \). <div class="p_p"> Zaczynamy od zaznaczenia w układzie współrzędnych kąta \(150^\circ
+                        \). Narysujmy również okrąg jednostkowy (o promieniu 1). <img src="grafika/g0072.png"
+                            class="center" noc="1" alt="" /> Na przecięciu ramienia kąta i okręgu możemy zaznaczyć punkt
+                        \(P=(a,b)\).<br /> Z definicji funkcji trygonometrycznych wiemy, że: \[\begin{split} &\sin
+                        150^\circ =\frac{b}{1}=b\\[6pt]&\cos 150^\circ =\frac{a}{1}=a\\[6pt]&\operatorname{tg} 150^\circ
+                        =\frac{b}{a}\\[6pt] \end{split}\] Nie znamy na razie współrzędnych \(a\text{ i }b\), ale możemy
+                        zauważyć, że jak odbijemy punkt \(P\) względem osi \(Oy\), to otrzymamy rysunek: <img
+                            src="grafika/g0073.png" class="center" noc="1" alt="" /> Dla kąta \(30^\circ \) liczymy, że:
+                        \[\begin{split} &\sin 30^\circ =\frac{b}{1}=b\\[6pt]&\cos 30^\circ
+                        =\frac{-a}{1}=-a\\[6pt]&\operatorname{tg} 30^\circ =\frac{b}{-a}\\[6pt] \end{split}\] Zatem:
+                        \[\begin{split} &\sin 150^\circ =\sin 30^\circ =\frac{1}{2}\\[6pt]&\cos 150^\circ =-\cos
+                        30^\circ =-\frac{\sqrt{3}}{2}\\[6pt]&\operatorname{tg} 150^\circ =-\operatorname{tg} 30^\circ
+                        =-\frac{\sqrt{3}}{3}\\[6pt] \end{split}\] </div>
+                </div>
+                <div class="akapit bt"> Teraz słownie opiszemy zastosowaną metodę. </div>
+                <div class="twierdzenie">
+                    <h3>Algorytm</h3> Żeby obliczyć z definicji wartości funkcji trygonometrycznych dla kąta rozwartego
+                    \(\alpha \) , należy: <ul class="lista1">
+                        <li>Narysować w układzie współrzędnych okrąg jednostkowy i zaznaczyć w nim kąt środkowy \(\alpha
+                            \) .</li>
+                        <li>Zaznaczyć punkt \(P\), czyli punkt przecięcia okręgu i ramienia kąta. </li>
+                        <li>Znaleźć w pierwszej ćwiartce punkt \(P'\) - symetryczny obraz punktu \(P\) (symetria może
+                            być względem dowolnej osi lub początku układu współrzędnych). </li>
+                        <li>Obliczyć wartości funkcji trygonometrycznych dla kąta \(\beta \) wyznaczonego przez punkt
+                            \(P'\). </li>
+                        <li>Wyrazić funkcje trygonometryczne kąta \(\alpha \) za pomocą funkcji trygonometrycznych
+                            kąta \(\beta \). </li>
+                    </ul>
+                </div>
+                <div class="zadanie">Oblicz \(\sin 230^\circ \text{, }\cos 230^\circ \text{ i} \operatorname{tg}
+                    230^\circ \). <div class="p_p"> Rysujmy w układzie współrzędnych okrąg jednostkowy i zaznaczamy w
+                        nim kąt środkowy o mierze \(230^\circ \). <img src="grafika/g0074.png" class="center" noc="1"
+                            alt="" /> Na przecięciu ramienia kąta i okręgu zaznaczamy punkt \(P=(a,b)\).<br /> Z
+                        definicji funkcji trygonometrycznych wiemy, że: \[\begin{split} &\sin 230^\circ
+                        =\frac{b}{1}=b\\[6pt]&\cos 230^\circ =\frac{a}{1}=a\\[6pt]&\operatorname{tg} 230^\circ
+                        =\frac{b}{a}\\[6pt] \end{split}\] Odbijamy punkt \(P\) względem początku układu współrzędnych i
+                        otrzymujemy punkt \(P'=(-a,-b)\). <img src="grafika/g0075.png" class="center" noc="1" alt="" />
+                        Wyznaczamy wartości funkcji trygonometrycznych dla kąta \(50^\circ \): \[\begin{split} &\sin
+                        50^\circ =\frac{-b}{1}=-b\\[6pt]&\cos 50^\circ =\frac{-a}{1}=-a\\[6pt]&\operatorname{tg}
+                        50^\circ =\frac{-b}{-a}=\frac{b}{a}\\[6pt] \end{split}\] Zatem: \[\begin{split} &\sin 230^\circ
+                        =-\sin 50^\circ\\[6pt]&\cos 230^\circ =-\cos 50^\circ\\[6pt]&\operatorname{tg} 230^\circ
+                        =\operatorname{tg} 50^\circ\\[6pt] \end{split}\] Wartości funkcji trygonometrycznych dla kąta
+                        \(50^\circ \) możemy odczytać z tablic trygonometrycznych. </div>
+                </div>
+                <div class="zadanie">Oblicz \(\sin 315^\circ \text{, }\cos 315^\circ \text{ i} \operatorname{tg}
+                    315^\circ \). <div class="p_p"> Rysujmy w układzie współrzędnych okrąg jednostkowy i zaznaczamy w
+                        nim kąt środkowy o mierze \(315^\circ \). <img src="grafika/g0076.png" class="center" noc="1"
+                            alt="" /> Na przecięciu ramienia kąta i okręgu zaznaczamy punkt \(P=(a,b)\).<br /> Z
+                        definicji funkcji trygonometrycznych wiemy, że: \[\begin{split} &\sin 315^\circ
+                        =\frac{b}{1}=b\\[6pt]&\cos 315^\circ =\frac{a}{1}=a\\[6pt]&\operatorname{tg} 315^\circ
+                        =\frac{b}{a}\\[6pt] \end{split}\] Odbijamy punkt \(P\) względem osi \(Ox\) i otrzymujemy punkt
+                        \(P'=(a,-b)\). <img src="grafika/g0077.png" class="center" noc="1" alt="" /> Wyznaczamy wartości
+                        funkcji trygonometrycznych dla kąta \(45^\circ \): \[\begin{split} &\sin 45^\circ
+                        =\frac{-b}{1}=-b\\[6pt]&\cos 45^\circ =\frac{a}{1}=a\\[6pt]&\operatorname{tg} 45^\circ
+                        =\frac{-b}{a}=-\frac{b}{a}\\[6pt] \end{split}\] Zatem: \[\begin{split} &\sin 315^\circ =-\sin
+                        45^\circ=-\frac{\sqrt{2}}{2}\\[6pt]&\cos 315^\circ =\cos
+                        45^\circ=\frac{\sqrt{2}}{2}\\[6pt]&\operatorname{tg} 315^\circ =-\operatorname{tg}
+                        45^\circ=-1\\[6pt] \end{split}\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="funkcje-trygonometryczne-dowolnego-kata.html">&#9664; Funkcje trygonometryczne dowolnego
+                        kąta</a></div>
+                <div class="next_temat"><a href="wykres-funkcji-sinus.html" class="next_temat">Wykres funkcji sinus
+                        &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kwantyfikatory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="129" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Rachunek zbiorów|Logika|Kwantyfikatory">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-zbiorow.html">Rachunek zbiorów i logika</a> &rarr; <a href="logika.html">Logika</a>
+            &rarr; <a href="kwantyfikatory.html">Kwantyfikatory</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="prawa-rachunku-zdan.html">&#9664; Prawa rachunku zdań</a></div>
+            <div class="next_temat"><a href="wartosc-bezwzgledna.html" class="next_temat">Wartość bezwzględna
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Kwantyfikatory</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_129" poziom="blok_0">
+                <div class="akapit"> <b>Kwantyfikatorami</b> nazywamy zwroty: <b>dla każdego</b> i <b>istnieje
+                        takie</b>.</b> </div>
+                <div class="twierdzenie"> <b>Kwantyfikator ogólny</b> oznaczamy symbolem \(\forall\) (albo
+                    \(\bigwedge\)) i czytamy: <b>dla każdego</b>. </div>
+                <div class="twierdzenie"> <b>Kwantyfikator szczegółowy</b> oznaczamy symbolem \(\exists\) (albo
+                    \(\bigvee\)) i czytamy: <b>istnieje takie</b>. </div>
+                <div class="akapit bt"> Pod kwantyfikatorem zawsze umieszczamy parametr, którego ma dotyczyć dany
+                    kwantyfikator. </div>
+                <div class="zadanie">
+                    <ul class="lista1">
+                        <li> Wyrażenie: \( \underset{x\ \in\ \mathbb{R} }{\forall} \) czytamy: <i>dla każdego \(x\)
+                                należącego do zbioru liczb rzeczywistych</i>. </li>
+                        <li> Wyrażenie: \( \underset{k\ \in\ \mathbb{Z} }{\forall} \) czytamy: <i>dla każdego \(k\)
+                                należącego do zbioru liczb całkowitych</i>. </li>
+                        <li> Wyrażenie: \( \underset{n\ \in\ \mathbb{N} }{\forall} \) czytamy: <i>dla każdego \(n\)
+                                należącego do zbioru liczb naturalnych</i>. </li>
+                        <li> Wyrażenie: \( \underset{x\ > 2 }{\forall} \) czytamy: <i>dla każdego \(x\) większego od
+                                dwóch</i>. </li>
+                        <li> Wyrażenie: \( \underset{x\ \in\ \mathbb{R} \\ x\ <\ 0}{\forall} \) czytamy: <i>dla każdego
+                                \(x\) należącego do zbioru liczb rzeczywistych i jednocześnie mniejszego od zera</i>.
+                        </li>
+                        <li> Wyrażenie: \( \underset{x\ \in\ \mathbb{R} }{\exists} \) czytamy: <i>istnieje taki \(x\)
+                                należący do zbioru liczb rzeczywistych</i>. </li>
+                        <li> Wyrażenie: \( \underset{x \in (-1,1) }{\exists} \) czytamy: <i>istnieje taki \(x\) należący
+                                do przedziału \((-1,1)\)</i>. </li>
+                        <li> Wyrażenie: \( \underset{n\ \in\ \mathbb{N} }{\exists} \) czytamy: <i>istnieje taki \(n\)
+                                należący do zbioru liczb naturalnych</i>. </li>
+                    </ul>
+                </div>
+                <div class="akapit bt"> Za kwantyfikatorem zawsze umieszczamy wyrażenie, którego ma dotyczyć dany
+                    kwantyfikator. </div>
+                <div class="zadanie">
+                    <ul class="lista1">
+                        <li> Wyrażenie: \[ \underset{x\ \in\ \mathbb{R} }{\forall}\ x^2 \ge 0 \] czytamy: <i>dla każdego
+                                \(x\) należącego do zbioru liczb rzeczywistych wyrażenie \(x^2\) jest większe lub równe
+                                zero</i>.<br /> Zauważmy przy okazji, że powyższe zdanie jest zdaniem prawdziwym.<br />
+                            Gdybyśmy napisali np. zdanie: \[ \underset{x\ \in\ \mathbb{R} }{\forall}\ x^2 \ge 5 \] to
+                            byłoby ono nieprawdziwe, ponieważ np. dla \(x=2\) mamy \(x^2=4<5\). </li>
+                        <li> Wyrażenie: \[ \underset{k\ \in\ \mathbb{Z} }{\forall}\ 2|k(k+1) \] czytamy: <i>dla każdego
+                                \(k\) należącego do zbioru liczb całkowitych wyrażenie \(k(k+1)\) jest podzielne przez
+                                \(2\)</i>. </li>
+                        <li> Wyrażenie: \[ \underset{n\ \in\ \mathbb{N} }{\forall}\ n+1>0 \] czytamy: <i>dla każdego
+                                \(n\) należącego do zbioru liczb naturalnych wyrażenie \(n+1\) jest dodatnie</i>. </li>
+                        <li> Wyrażenie: \[ \underset{x\ > 2 }{\forall}\ x^2>4 \] czytamy: <i>dla każdego \(x\) większego
+                                od dwóch wyrażenie \(x^2\) jest większe od \(4\)</i>. </li>
+                        <li> Wyrażenie: \[ \underset{x\ \in\ \mathbb{R}\ \land\ x\ <\ 0}{\forall}\ x^3<0 \] czytamy: <i>
+                                dla każdego \(x\) należącego do zbioru liczb rzeczywistych i jednocześnie mniejszego od
+                                zera wyrażenie \(x^3\) jest ujemne</i>. </li>
+                        <li> Wyrażenie: \[ \underset{x\ \in\ \mathbb{R} }{\exists}\ 2x+5=6 \] czytamy: <i>istnieje taki
+                                \(x\) należący do zbioru liczb rzeczywistych, dla którego spełnione jest równanie
+                                \(2x+5=6\)</i>.<br /> (oczywiście chodzi o \(x=\frac{1}{2}\)) </li>
+                        <li> Wyrażenie: \[ \underset{x \in (-1,1) }{\exists}\ x^2=0 \] czytamy: <i>istnieje taki \(x\)
+                                należący do przedziału \((-1,1)\) dla którego \(x^2=0\)</i>.<br /> (oczywiście chodzi o
+                            \(x=0\)) </li>
+                        <li> Wyrażenie: \[ \underset{n\ \in\ \mathbb{N} }{\exists}\ 21|n \] czytamy: <i>istnieje \(n\)
+                                należący do zbioru liczb naturalnych taki, że \(n\) jest podzielny przez
+                                \(21\)</i>.<br /> (w tym przypadku chodzi o <span class="odsu1">\(n\in \{21, 42,
+                                63,...\}\)</span>) </li>
+                    </ul>
+                </div>
+                <div class="akapit bt"> Kwantyfikatory często stosuje się w bardziej złożonych zdaniach. </div>
+                <div class="zadanie">
+                    <ul class="lista1">
+                        <li> Wyrażenie: \[ \underset{x\ \in\ \mathbb{R} }{\forall}\ \underset{y\ \in\ \mathbb{R}
+                            }{\forall}\ x^2 + y^2 \ge 0 \] czytamy: <i>dla każdego \(x\) należącego do zbioru liczb
+                                rzeczywistych oraz \(y\) należącego do zbioru liczb rzeczywistych, wyrażenie \(x^2 +
+                                y^2\) jest większe lub równe zero</i>. </li>
+                        <li> Wyrażenie: \[ \underset{x\ \in\ \mathbb{R} }{\forall}\ \underset{y\ \in\ \mathbb{R}
+                            }{\exists}\ x+y=100 \] czytamy: <i>dla każdego \(x\) należącego do zbioru liczb
+                                rzeczywistych istnieje \(y\) należący do zbioru liczb rzeczywistych taki, że wyrażenie
+                                \(x+y\) jest równe \(100\)</i>. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="prawa-rachunku-zdan.html">&#9664; Prawa rachunku zdań</a></div>
+                <div class="next_temat"><a href="wartosc-bezwzgledna.html" class="next_temat">Wartość bezwzględna
+                        &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pochodne</title>
+    <meta name="description" content="Pochodne funkcji - definicje, przykłady, zadania z rozwiązaniami." />
+    <meta name="keywords" content="pochodna funkcji, pochodne, granica, obliczanie, matematyka" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="266" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Studia|Pochodne">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="pochodne.html">Pochodne</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="granica-funkcji.html">&#9664; Granica funkcji</a></div>
+            <div class="next_temat"><a href="wzory-pochodnych-wybranych-funkcji.html" class="next_temat">Wzory
+                    pochodnych wybranych funkcji &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Pochodne</h1>
+            <div class="spistresci mb20">
+                <div class="slink">
+                    <div>1.</div><span class="kotwica" kotwica="wprowadzenie">Definicja pochodnej funkcji</span>
+                </div>
+                <div class="slink">
+                    <div>2.</div><a href="./wzory-pochodnych-wybranych-funkcji.html">Wzory pochodnych wybranych
+                        funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>3.</div><a href="./reguly-obliczania-pochodnych.html">Reguły obliczania pochodnych</a>
+                </div>
+                <div class="slink">
+                    <div>4.</div><a href="./pochodna-sumy-funkcji.html">Pochodna sumy funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>5.</div><a href="./pochodna-iloczynu-funkcji.html">Pochodna iloczynu funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>6.</div><a href="./pochodna-ilorazu-funkcji.html">Pochodna ilorazu funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>7.</div><a href="./pochodna-zlozenia-funkcji.html">Pochodna złożenia funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>8.</div><a href="./pochodne-prostych-funkcji.html">Pochodne prostych funkcji</a>
+                </div>
+                <div class="slink">
+                    <div>9.</div><a href="./pochodne-funkcji-trygonometrycznych.html">Pochodne funkcji
+                        trygonometrycznych</a>
+                </div>
+                <div class="slink">
+                    <div>10.</div><a href="./pochodne-funkcji-zlozonych.html">Pochodne funkcji złożonych</a>
+                </div>
+            </div>
+            <div id="wprowadzenie">Definicja pochodnej funkcji</div>
+            <div class="blok_strony" id="blok_263" poziom="blok_0">Załóżmy, że mamy daną funkcję \(f(x)\) oraz argument
+                \(x_0\), w otoczeniu którego funkcja \(f(x)\) jest określona.<br /> Pochodną funkcji \(f(x)\) w punkcie
+                \(x_0\) oznaczamy symbolem: \[f'(x_0)\] i definiujemy jako granicę: \[f'(x_0)=\lim_{x \to x_0}
+                \frac{f(x)-f(x_0)}{x-x_0}\] Możemy również zdefiniować pochodną jako granicę: \[f'(x_0)=\lim_{h \to 0}
+                \frac{f(x_0+h)-f(x_0)}{h}\] <div class="akapit"> Obie definicje są równoważne i w zależności od
+                    podręcznika, możesz spotkać się z pierwszą lub drugą.<br /> Dalej będę posługiwał się głównie drugą
+                    definicją, ponieważ jest częściej spotykana i trochę prostsza w zastosowaniu. </div>
+                <div class="akapit"> Ułamek z którego liczymy granicę: \(\frac{f(x_0+h)-f(x_0)}{h}\) nazywamy
+                    <b>ilorazem różnicowym</b>.<br /> Iloraz różnicowy - to stosunek przyrostu wartości funkcji do
+                    przyrostu argumentu funkcji. </div> <img src="grafika/g0406.png" class="center mt20" noc="1"
+                    alt="" />
+                <div class="rys_podpis"></div> Przez dwa punkty funkcji \(f(x)\) (dla argumentów \(x_0\) oraz \(x_0+h\))
+                poprowadziliśmy prostą \(y\) daną wzorem: \[y=\operatorname{tg} \alpha \cdot x+b\] gdzie z definicji
+                tangensa w trójkącie prostokątnym mamy: \[\operatorname{tg} \alpha =\frac{f(x_0+h)-f(x_0)}{h}\] Czyli na
+                Rys. 1 iloraz różnicowy, to po prostu <b>współczynnik kierunkowy</b> szarej prostej! <div
+                    class="twierdzenie">
+                    <h3>Interpretacja geometryczna pochodnej</h3> Pochodna funkcji \(f(x)\) w punkcie \(x_0\) - to
+                    współczynnik kierunkowy prostej stycznej do \(f(x)\) w punkcie \(x_0\). <img src="grafika/g0405.png"
+                        class="center mt20" noc="1" alt="" />
+                    <div class="rys_podpis"></div> Zauważmy, że jeśli \(h\to 0\), to szara prosta zbiega do
+                    pomarańczowej prostej.<br /> Możemy wręcz napisać, że: \[\lim_{h \to 0} \operatorname{tg} \alpha =
+                    f'(x_0)\] Pochodna pokazuje nam jak funkcja zmienia się w danym punkcie. Dokładniej: <ul
+                        class="lista4">
+                        <li>Jeśli \(f'(x_0)\gt 0\), to funkcja \(f(x)\) <b>rośnie</b> w punkcie \(x_0\).</li>
+                        <li>Jeśli \(f'(x_0)= 0\), to funkcja \(f(x)\) jest <b>stała</b> w punkcie \(x_0\).</li>
+                        <li>Jeśli \(f'(x_0)\lt 0\), to funkcja \(f(x)\) <b>maleje</b> w punkcie \(x_0\).</li>
+                    </ul>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Sposoby oznaczania pochodnych</h3> Pochodną funkcji \(f(x)\) zapisujemy najczęściej tak:
+                    \[f'(x)\] Czasami można spotkać się z innymi oznaczeniami: <ul class="lista1 mbli20">
+                        <li>\(\frac{df(x)}{dx}\) (oznaczenie wprowadzone przez Leibniza)</li>
+                        <li>\(f'(x)\) (oznaczenie wprowadzone przez Lagrange'a)</li>
+                        <li>\(Df(x)\) (oznaczenie wprowadzone przez Cauchy'ego)</li>
+                    </ul> Jeśli funkcja jest dana wzorem: \(y = \text{[wzór funkcji]}\), to pochodne oznaczamy w taki
+                    sposób: <ul class="lista1 mbli20">
+                        <li>\(\frac{dy}{dx}\) (oznaczenie wprowadzone przez Leibniza)</li>
+                        <li>\(y'\) (oznaczenie wprowadzone przez Lagrange'a)</li>
+                        <li>\(Dy\) (oznaczenie wprowadzone przez Cauchy'ego)</li>
+                    </ul>
+                </div>
+                <div class="akapit bt"> Pochodne funkcji można liczyć bezpośrednio z definicji, ale dużo łatwiej jest
+                    korzystać z <a href="wzory-pochodnych-wybranych-funkcji.html">gotowych wzorów</a>. Nie musimy wtedy
+                    liczyć granicy ilorazu różnicowego, tylko stosujemy proste wzory i <a
+                        href="reguly-obliczania-pochodnych.html">reguły liczenia pochodnych</a>. </div>
+                <div class="akapit"> W poniższych przykładach obliczymy pochodne bezpośrednio z definicji. </div>
+                <div class="zadanie" id="2023" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz pochodną funkcji \(f(x) = x^2\) w punkcie \(x_0 = 2\).</div>
+                    <div class="p_p">Liczymy wartość pochodnej w punkcie \(x_0\) korzystając z definicji: \[
+                        \begin{split} f'(2)&=\lim_{h \to 0} \frac{f(2+h)-f(2)}{h} =\lim_{h \to 0} \frac{(2+h)^2-2^2}{h}
+                        =\lim_{h \to 0} \frac{4+4h+h^2-4}{h}\\[6pt] &=\lim_{h \to 0} \frac{4h+h^2}{h} =\lim_{h \to 0}
+                        \frac{h(4+h)}{h} =\lim_{h \to 0} (4+h) = 4 \end{split} \] Możemy również policzyć z definicji
+                        wzór ogólny pochodnej dla tej funkcji:<br /> \[ \begin{split} f'(x)&=\lim_{h \to 0}
+                        \frac{f(x+h)-f(x)}{h} =\lim_{h \to 0} \frac{(x+h)^2-x^2}{h} =\lim_{h \to 0}
+                        \frac{x^2+2hx+h^2-x^2}{h}\\[6pt] &=\lim_{h \to 0} \frac{2hx+h^2}{h} =\lim_{h \to 0}
+                        \frac{h(2x+h)}{h} =\lim_{h \to 0} (2x+h) = 2x \end{split} \] Czyli ostatecznie: \[f'(x)=2x\]
+                        Można też napisać równoważnie: \[(x^2)'=2x\] Korzystając z tak wyliczonego wzoru możemy teraz
+                        obliczyć wartość pochodnej w dowolnym punkcie, np.: \[ f'(2)=2\cdot 2=4\\[6pt] f'(0)=2\cdot
+                        0=0\\[6pt] f'(-5)=2\cdot (-5)=-10\\[6pt] \] Praktycznie zawsze opłaca się najpierw policzyć
+                        pochodną funkcji (zwłaszcza, że mamy do dyspozycji gotowe wzory na liczenie pochodnych), a
+                        dopiero potem wyznaczyć jej wartość w konkretnym punkcie.</div>
+                </div>
+                <div class="zadanie" id="2024" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz pochodną funkcji \(f(x) = x^3 - 2x\).</div>
+                    <div class="p_p">Liczymy pochodną korzystając z definicji: \[ \begin{split} f'(x)&=\lim_{h \to 0}
+                        \frac{f(x+h)-f(x)}{h} =\lim_{h \to 0} \frac{\Bigl((x+h)^3-2(x+h)\Bigl)-(x^3-2x)}{h}=\\[6pt]
+                        &=\lim_{h \to 0} \frac{x^3+3x^2h+3xh^2+h^3-2x-2h-x^3+2x}{h} =\lim_{h \to 0}
+                        \frac{3x^2h+3xh^2+h^3-2h}{h}=\\[6pt] &=\lim_{h \to 0} \frac{h(3x^2+3xh+h^2-2)}{h} =\lim_{h \to
+                        0} (3x^2+3xh+h^2-2)=3x^2-2 \end{split} \] Zatem: \[f'(x)=3x^2-2\] Można napisać równoważnie:
+                        \[(x^3 - 2x)'=3x^2-2\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="granica-funkcji.html">&#9664; Granica funkcji</a></div>
+                <div class="next_temat"><a href="wzory-pochodnych-wybranych-funkcji.html" class="next_temat">Wzory
+                        pochodnych wybranych funkcji &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <style type="text/css">
+        .styl_wzor1 {
+            vertical-align: middle;
+        }
+    </style>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

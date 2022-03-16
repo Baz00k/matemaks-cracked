@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prawdopodobieństwo warunkowe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="296" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Rachunek prawdopodobieństwa|Prawdopodobieństwo warunkowe">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="rachunek-prawdopodobienstwa.html">Rachunek prawdopodobieństwa</a> &rarr; <a
+                href="prawdopodobienstwo-warunkowe.html">Prawdopodobieństwo warunkowe</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="wlasnosci-rachunku-prawdopodobienstwa.html">&#9664; Własności rachunku prawdopodobieństwa</a>
+            </div>
+            <div class="next_temat"><a href="prawdopodobienstwo-calkowite.html" class="next_temat">Prawdopodobieństwo
+                    całkowite &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Prawdopodobieństwo warunkowe</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_292" poziom="blok_0">
+                <div class="akapit"> Prawdopodobieństwo warunkowe zajścia zdarzenia \(A\), pod warunkiem zajścia
+                    zdarzenia \(B\), liczymy ze wzoru: \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] gdzie \(P(B)>0\). </div>
+                <div class="zadanie druk_ukryj" id="5005" tytul="Prawdopodobieństwo warunkowe" typ="2" yt="8hProx1ioLM"
+                    p="0" lvl="" pkt="1" typ_v="1" pisz="" odp="" wsk="" data="2015-01-01">
+                    <div class="z_tresc">W tym nagraniu wideo omawiam prawdopodobieństwo warunkowe na kilku przykładach.
+                    </div>
+                    <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                </div>
+                <div class="zadanie" id="20028" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Wykonano rzut sześcienną kostką do gry. Wyznacz prawdopodobieństwo wyrzucenia
+                        więcej niż trzech oczek, jeśli wiadomo, że wypadła parzysta liczba oczek.</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie1"> \(\Omega \) - jeden rzut kostką do
+                            gry,<br /> \(A\) - wyrzucono więcej niż trzy oczka,<br /> \(B\) - wyrzucono parzystą liczbę
+                            oczek,<br /> \(A\cap B\) - wyrzucono parzystą liczbę oczek większą od 3.<br /> </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod warunkiem,
+                            że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] </div>
+                        <div class="akapit1"> Liczymy moce zbiorów: <div class="wciecie1 odrzut2">
+                                <div class="odrzut1"> \(|\Omega |=|\{1,2,3,4,5,6\}|=6\) </div>
+                                <div class="odrzut1"> \(|A |=|\{4,5,6\}|=3\) </div>
+                                <div class="odrzut1"> \(|B |=|\{2,4,6\}|=3\) </div>
+                                <div class="odrzut1"> \(|A\cap B |=|\{4,6\}|=2\) </div>
+                            </div>
+                        </div>
+                        <div class="akapit1"> Teraz liczymy prawdopodobieństwa: <div class="wciecie1 odrzut2">
+                                <div class="odrzut1"> \(P(A\cap B)=\frac{|A\cap B|}{|\Omega |}=\frac{2}{6}=\frac{1}{3}\)
+                                </div> \(P(B)=\frac{|B|}{|\Omega |}=\frac{3}{6}=\frac{1}{2}\)
+                            </div>
+                        </div>
+                        <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                            B)}{P(B)}=\frac{\frac{1}{3}}{\frac{1}{2}}=\frac{2}{3}\] </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20029" p="0" lvl="" typ="1">
+                    <div class="z_tresc">W urnie jest \(8\) kul: \(4\) białe i \(4\) czarne. Wybieramy losowo bez
+                        zwracania 2 kule. Wyznacz prawdopodobieństwo tego, że druga wylosowana kula będzie czarna, gdy
+                        pierwsza wylosowana kula była biała.</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie1"> \(A\) - druga wylosowana kula jest
+                            czarna,<br /> \(B\) - pierwsza wylosowana kula jest biała,<br /> \(A\cap B\) - pierwsza
+                            wylosowana kula jest biała, a druga wylosowana kula jest czarna.<br /> </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod warunkiem,
+                            że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] </div>
+                        <div class="akapit1"> Liczymy potrzebne prawdopodobieństwa: <div class="wciecie1 odrzut2">
+                                <div class="odrzut1"> \(P(B)=\frac{4}{8}=\frac{1}{2}\) </div> \(P(A\cap
+                                B)=\frac{4}{8}\cdot \frac{4}{7}=\frac{2}{7}\)
+                            </div>
+                        </div>
+                        <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                            B)}{P(B)}=\frac{\frac{2}{7}}{\frac{1}{2}}=\frac{4}{7}\] </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20030" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rzucamy trzema kostkami. Jakie jest prawdopodobieństwo, że na żadnej kostce nie
+                        wypadła szóstka, jeśli na każdej kostce wypadła inna liczba oczek.</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - na żadnej kostce nie wypadła
+                            szóstka,<br /> \(B\) - na każdej kostce wypadła inna liczba oczek,<br /> \(A\cap B\) - na
+                            każdej kostce wypadła inna liczba oczek i nie wypadła ani jedna szóstka. </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod warunkiem,
+                            że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] </div>
+                        <div class="akapit1"> Liczymy potrzebne prawdopodobieństwa: <div class="wciecie2">
+                                <div class="mt10"> \(P(B)=\frac{6\cdot 5\cdot 4}{6^3}\) </div> \(P(A\cap B)=\frac{5\cdot
+                                4\cdot 3}{6^3}\)
+                            </div>
+                        </div>
+                        <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                            B)}{P(B)}=\frac{\frac{5\cdot 4\cdot 3}{6^3}}{\frac{6\cdot 5\cdot 4}{6^3}} =\frac{5\cdot
+                            4\cdot 3}{6^3}\cdot \frac{6^3}{6\cdot 5\cdot 4}=\frac{1}{2}\] </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20031" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Wybrano losową rodzinę z dwojgiem dzieci. Oblicz prawdopodobieństwo, że wybrano
+                        rodzinę z dwoma chłopcami, jeśli: <div class="wciecie1">
+                            <div class="abc">
+                                <div class="abc_li">a)</div>młodsze dziecko jest chłopcem.
+                            </div>
+                            <div class="abc">
+                                <div class="abc_li">b)</div>jest co najmniej jeden chłopiec.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_p">
+                        <div class="abc">
+                            <div class="abc_li">a)</div>Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - wybrano
+                                rodzinę z dwoma chłopcami,<br /> \(B\) - młodsze dziecko jest chłopcem,<br /> \(A\cap
+                                B\) - młodsze dziecko jest chłopcem i starsze dziecko jest chłopcem. </div>
+                            <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod
+                                warunkiem, że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}\] </div>
+                            <div class="akapit1"> Obliczamy prawdopodobieństwo zajścia zdarzenia \(B\). Młodsze dziecko
+                                może być z równym prawdopodobieństwem chłopcem jak i dziewczynką. Zatem:
+                                \[P(B)=\frac{1}{2}\] </div>
+                            <div class="akapit1"> Obliczamy teraz prawdopodobieństwo zajścia zdarzenia \(A\cap B\).
+                                Prawdopodobieństwo, że młodsze dziecko jest chłopcem wynosi \(\frac{1}{2}\) oraz
+                                prawdopodobieństwo, że starsze dziecko jest chłopcem wynosi \(\frac{1}{2}\), zatem:
+                                \[P(A\cap B)=\frac{1}{2}\cdot \frac{1}{2}=\frac{1}{4}\] </div>
+                            <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}=\frac{\frac{1}{4}}{\frac{1}{2}}=\frac{1}{4}\cdot 2=\frac{1}{2}\] </div>
+                        </div>
+                        <div class="abc">
+                            <div class="abc_li">b)</div>Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - wybrano
+                                rodzinę z dwoma chłopcami,<br /> \(B\) - w rodzinie jest co najmniej jeden
+                                chłopiec,<br /> \(A\cap B\) - w rodzinie jest dwóch chłopców. </div>
+                            <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod
+                                warunkiem, że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}\] </div>
+                            <div class="akapit1"> Obliczamy prawdopodobieństwo zajścia zdarzenia \(B\). W rodzinie mamy
+                                dwoje dzieci i chcemy, żeby był co najmniej jeden chłopiec, zatem mamy \(3\) możliwości:
+                                \[(\text{chłopiec}, \text{dziewczynka}),\quad (\text{dziewczynka},\text{chłopiec}),\quad
+                                (\text{chłopiec},\text{chłopiec})\] Łączne wszystkich możliwości jest \(4\):
+                                \[(\text{chłopiec}, \text{dziewczynka}),\quad (\text{dziewczynka},\text{chłopiec}),\quad
+                                (\text{chłopiec},\text{chłopiec}),\quad (\text{dziewczynka},\text{dziewczynka}),\]
+                                Zatem: \[P(B)=\frac{3}{4}\] </div>
+                            <div class="akapit1"> Obliczamy teraz prawdopodobieństwo zajścia zdarzenia \(A\cap B\).
+                                Prawdopodobieństwo, że młodsze dziecko jest chłopcem wynosi \(\frac{1}{2}\) oraz
+                                prawdopodobieństwo, że starsze dziecko jest chłopcem wynosi \(\frac{1}{2}\), zatem:
+                                \[P(A\cap B)=\frac{1}{2}\cdot \frac{1}{2}=\frac{1}{4}\] </div>
+                            <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}=\frac{\frac{1}{4}}{\frac{3}{4}}=\frac{1}{4}\cdot \frac{4}{3}=\frac{1}{3}\]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20032" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Łucznik strzela do tarczy \(10\) razy. Przy każdym strzale ma \(90\%\) szansy
+                        na trafienie w cel. Jakie jest prawdopodobieństwo, że łucznik trafił do tarczy \(10\) razy,
+                        jeśli wiadomo, że co najmniej \(3\) z \(5\) ostatnich strzałów były celne?</div>
+                    <div class="p_p">Wprowadźmy oznaczenia: <div class="wciecie1"> \(A\) - łucznik trafił do tarczy
+                            \(10\) razy,<br /> \(B\) - łucznik trafił co najmniej \(3\) z \(5\) ostatnich
+                            strzałów,<br /> \(A\cap B\) - łucznik trafił do tarczy \(10\) razy.<br /> </div>
+                        <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod warunkiem,
+                            że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] </div>
+                        <div class="akapit1"> Liczymy prawdopodobieństwo zdarzenia \(B\). Korzystamy ze <a
+                                href="schemat-bernoulliego.html">schematu Bernoulliego</a>. Ponieważ łucznik ma trafić
+                            co najmniej \(3\) z \(5\) ostatnich strzałów, zatem musimy obliczyć prawdopodobieństwo
+                            uzyskania \(3\) sukcesów w \(5\) próbach, \(4\) sukcesów w \(5\) próbach i \(5\) sukcesów w
+                            \(5\) próbach przy prawdopodobieństwie sukcesu \(p=\frac{9}{10}\). Suma tych
+                            prawdopodobieństw, to prawdopodobieństwo zdarzenia \(B\): \[\begin{split}
+                            P(B)&=\binom{5}{3}\cdot \left (\frac{9}{10} \right )^3 \cdot \left (\frac{1}{10} \right )^2+
+                            \binom{5}{4}\cdot \left (\frac{9}{10} \right )^4 \cdot \left (\frac{1}{10} \right )^1+ \left
+                            (\frac{9}{10} \right )^5=\\[6pt] &=\frac{5!}{3!\cdot 2!}\cdot \frac{9^3}{10^5}+
+                            \frac{5!}{4!}\cdot \frac{9^4}{10^5}+ \frac{9^5}{10^5}=\\[6pt] &=\frac{10\cdot
+                            9^3}{10^5}+\frac{5\cdot 9^4}{10^5}+\frac{9^5}{10^5}=\\[6pt] &=\frac{10\cdot 9^3+5\cdot
+                            9^4+9^5}{10^5}= \frac{9^3(10 +5\cdot 9+9^2)}{10^5}=\frac{136\cdot 9^3}{10^5} \end{split}\]
+                        </div>
+                        <div class="akapit1"> Liczymy prawdopodobieństwo zdarzenia \(A\cap B\): \[ P(A\cap B)=\left
+                            (\frac{9}{10} \right )^{10}=\frac{9^{10}}{10^{10}} \] </div>
+                        <div class="akapit1"> Zatem mamy ostatecznie: \[ P(A|B)=\frac{P(A\cap
+                            B)}{P(B)}=\frac{\frac{9^{10}}{10^{10}}}{\frac{136\cdot 9^3}{10^5}}
+                            =\frac{9^{10}}{10^{10}}\cdot \frac{10^5}{136\cdot 9^3} =\frac{9^7}{136\cdot10^5} \] </div>
+                    </div>
+                </div>
+                <div class="zadanie" id="20033" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Z grupy 8 osób - czterech chłopców i czterech dziewcząt - wybieramy losowo 2
+                        osoby. Oblicz prawdopodobieństwo, że wybrano dwóch chłopców, jeśli wiadomo, że: <div
+                            class="wciecie1">
+                            <div class="abc">
+                                <div class="abc_li">a)</div>wybrano co najmniej jednego chłopca
+                            </div>
+                            <div class="abc">
+                                <div class="abc_li">b)</div>wśród wybranych osób jest najstarszy chłopiec
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_p">
+                        <div class="abc">
+                            <div class="abc_li">a)</div>Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - wybrano
+                                dwóch chłopców,<br /> \(B\) - wybrano co najmniej jednego chłopca,<br /> \(A\cap B\) -
+                                wybrano dwóch chłopców. </div>
+                            <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod
+                                warunkiem, że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}\] </div>
+                            <div class="akapit1"> Obliczamy prawdopodobieństwo zajścia zdarzenia \(B\). Wybrano co
+                                najmniej jednego chłopca, zatem wybrano albo dwóch chłopców, albo chłopca i dziewczynkę.
+                                \[P(B)=\frac{\binom{4}{2}+\binom{4}{1}\cdot \binom{4}{1}}{\binom{8}{2}} =\frac{6+4\cdot
+                                4}{\frac{7\cdot 8}{2}} =\frac{22}{28}\] </div>
+                            <div class="akapit1"> Obliczamy teraz prawdopodobieństwo zajścia zdarzenia \(A\cap B\),
+                                czyli wybrania dwóch chłopców: \[P(A\cap
+                                B)=\frac{\binom{4}{2}}{\binom{8}{2}}=\frac{6}{28}\] </div>
+                            <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}=\frac{\frac{6}{28}}{\frac{22}{28}}=\frac{6}{28}\cdot
+                                \frac{28}{22}=\frac{3}{11}\] </div>
+                        </div>
+                        <div class="abc">
+                            <div class="abc_li">b)</div>Wprowadźmy oznaczenia: <div class="wciecie2"> \(A\) - wybrano
+                                dwóch chłopców,<br /> \(B\) - wśród wybranych osób jest najstarszy chłopiec,<br />
+                                \(A\cap B\) - wybrano dwóch chłopców i jest wśród nich najstarszy chłopiec. </div>
+                            <div class="akapit1"> Chcemy obliczyć prawdopodobieństwo zajścia zdarzenia \(A\), pod
+                                warunkiem, że zaszło zdarzenie \(B\). Skorzystamy ze wzoru: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}\] </div>
+                            <div class="akapit1"> Obliczamy prawdopodobieństwo zajścia zdarzenia \(B\). Wybrano
+                                najstarszego chłopca spośród \(4\) chłopców i do niego dobrano jeszcze dowolną inną
+                                osobę spośród pozostałych \(7\) osób. W tym przypadku wszystkie osoby są rozróżnialne
+                                (ze względu na wiek), zatem musimy uwzględnić kolejność wybierania:
+                                \[P(B)=\frac{\binom{2}{1}\cdot 7}{8\cdot 7}=\frac{2}{8}=\frac{1}{4}\] Symbol Newtona
+                                \(\binom{2}{1}\) w liczniku, to wybór \(1\) miejsca z \(2\) dla najstarszego chłopca.
+                            </div>
+                            <div class="akapit1"> Obliczymy teraz prawdopodobieństwo zajścia zdarzenia \(A\cap B\),
+                                czyli wybrania dwóch chłopców, wśród których jest najstarszy chłopiec. Na początku
+                                wybieramy miejsce dla najstarszego chłopca, a potem dobieramy od niego jednego z \(3\)
+                                pozostałych chłopców: \[P(A\cap B)=\frac{\binom{2}{1}\cdot 3}{8\cdot 7}=\frac{3}{28}\]
+                            </div>
+                            <div class="akapit1"> Zatem mamy ostatecznie: \[P(A|B)=\frac{P(A\cap
+                                B)}{P(B)}=\frac{\frac{3}{28}}{\frac{1}{4}}=\frac{3}{28}\cdot 4=\frac{3}{7}\] </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zadanie" id="1500" tytul="" typ="1" yt="8oToxOdebzw" p="0" lvl="PR" pkt="5" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-12-18">
+                <div class="z_tresc">Oblicz prawdopodobieństwo warunkowe, że w trzykrotnym rzucie symetryczną sześcienną
+                    kostką do gry otrzymamy co najmniej jedną &#8222;jedynkę&#8221;, pod warunkiem że otrzymamy co
+                    najmniej jedną &#8222;szóstkę&#8221;.</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(\frac{30}{91}\)</div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="wlasnosci-rachunku-prawdopodobienstwa.html">&#9664; Własności rachunku
+                        prawdopodobieństwa</a></div>
+                <div class="next_temat"><a href="prawdopodobienstwo-calkowite.html"
+                        class="next_temat">Prawdopodobieństwo całkowite &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

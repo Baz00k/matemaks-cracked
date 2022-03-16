@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Granica funkcji w punkcie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="98" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Elementy analizy matematycznej|Granica funkcji w punkcie">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="elementy-analizy-matematycznej.html">Elementy analizy matematycznej</a> &rarr; <a
+                href="granica-funkcji-w-punkcie.html">Granica funkcji w punkcie</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="elementy-analizy-matematycznej.html">&#9664; Wprowadzenie</a></div>
+            <div class="next_temat"><a href="granice-jednostronne-funkcji.html" class="next_temat">Granice jednostronne
+                    funkcji &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Granica funkcji w punkcie</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_99" poziom="blok_0">
+                <div class="akapit"> Czasami musimy ustalić do jakiej wartości dąży funkcja \(f(x)\), wraz z tym jak
+                    \(x\) dąży do liczby \(x_0\).<br /> Szukana wartość jest granicą funkcji \(f(x)\) w punkcie \(x_0\).
+                </div>
+                <div class="akapit"> Jeśli funkcja \(f(x)\) w punkcie \(x_0\) ma granicę \(g\), to piszemy \[\lim_{x \to
+                    x_0} f(x)=g\] Skrót \(\lim\) pochodzi od łacińskiego słowa <i>limes</i> - granica.<br /> Inny,
+                    rzadziej spotykany sposób zapisu, to: \(f(x)\xrightarrow[x\rightarrow x_0]{} g\). </div>
+                <div class="twierdzenie">
+                    <h3>Definicja granicy funkcji w punkcie (Heinego)</h3> Funkcja \(f(x)\) ma granicę \(g\) w punkcie
+                    \(x_0\), jeśli dla każdego ciągu \((x_n)\) zbieżnego do \(x_0\), ciąg \((f(x_n))\) jest zbieżny do
+                    \(g\).<br /> Zapis matematyczny: \[\lim_{x \to x_0}f(x)=g\Leftrightarrow \underset{x_n\rightarrow
+                    x_0}{\forall }\lim_{x_n \to x_0}f(x_n)=g \] <img src="grafika/g0122.png" class="center" noc="1"
+                        alt="" />
+                    <div class="rys_podpis">Ilustracja graficzna definicji Heinego granicy funkcji w punkcie.</div> Inne
+                    sformułowanie definicji Heinego:<br /> Jeśli dla dowolnego ciągu \((x_n)\) zbieżnego do \(x_0\)
+                    (zarówno z lewej jak i z prawej strony), wartości \((f(x_n))\) zbiegają do liczby \(g\), to \(g\)
+                    jest granicą funkcji \(f(x)\) w punkcie \(x_0\).
+                </div>
+                <div class="twierdzenie">
+                    <h3>Twierdzenie</h3> Jeśli funkcja \(f(x)\) jest ciągła w punkcie \(x_0\), to ma w tym punkcie
+                    granicę równą \(f(x_0)\).
+                </div>
+                <div class="akapit bt"> Liczenie granic funkcji w punktach ciągłości jest bardzo łatwe. Zgodnie z
+                    powyższym twierdzeniem granica funkcji w punkcie ciągłości jest równa wartości funkcji w tym
+                    punkcie. </div>
+                <div class="zadanie" id="20051" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz granicę funkcji \(f(x)=x^2-3\) w punkcie \(x_0=2\).</div>
+                    <div class="p_p">Funkcja \(f(x)=x^2-3\) jest ciągła w punkcie \(x_0=2\), zatem: \[\lim_{x \to 2}
+                        f(x)=f(2)=2^2-3=1\]</div>
+                </div>
+                <div class="zadanie" id="20052" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz granicę funkcji \(f(x)=\frac{1}{x}\) w punkcie \(x_0=3\).</div>
+                    <div class="p_p">Funkcja <span class="ml1 mr4">\(f(x)=\frac{1}{x}\)</span> jest ciągła w punkcie
+                        \(x_0=3\), zatem: \[\lim_{x \to 3} f(x)=f(3)=\frac{1}{3}\]</div>
+                </div>
+                <div class="akapit bt"> Granicę funkcji badamy zazwyczaj w punktach nieciągłości - tam gdzie funkcja nie
+                    przyjmuje żadnej wartości. W punktach nieciągłości granica może nie istnieć. </div>
+                <div class="zadanie" id="20053" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Zbadaj granicę funkcji <span class="ml2 mr5">\(f(x)=\begin{cases} x+1\quad
+                            \text{dla } x\le 1\\ x-2\quad \text{dla } x\gt 1 \end{cases} \)</span> w punkcie \(x_0=1\).
+                    </div>
+                    <div class="p_p">Narysujmy wykres funkcji \(f(x)\). <img src="grafika/g0123.png" class="center"
+                            noc="1" alt="" />
+                        <div class="rys_podpis"></div>
+                        <div class="akapit1"> Widzimy, że dla argumentu \(x_0=1\) funkcja jest nieciągła.<br /> Jeżeli
+                            zbliżamy się z argumentami \(x\) do \(x_0=1\) z lewej strony, to wartości funkcji dążą do
+                            \(2\). Jeśli natomiast zbliżamy się z argumentami \(x\) do \(x_0=1\) z prawej strony, to
+                            wartości funkcji dążą do \(-1\). Zatem w punkcie \(x_0=1\) funkcja \(f(x)\) nie ma granicy.
+                        </div>
+                        <div class="akapit1"> Funkcja \(f(x)\) ma w punkcie \(x_0=1\) granicę lewostronną i
+                            prawostronną.<br /> Granica lewostronna jest równa \(2\) i zapisujemy to w taki sposób:
+                            \[\lim_{x \to 1^{-}}f(x)=2 \] Granica prawostronna jest równa \(-1\) i zapisujemy to w taki
+                            sposób: \[\lim_{x \to 1^{+}}f(x)=-1 \] Granica lewostronna i prawostronna są różne, zatem
+                            funkcja \(f(x)\) nie ma granicy w punkcie \(x_0=1\). </div>
+                    </div>
+                </div>
+                <div class="akapit bt"> W powyższym przykładzie pojawiło się pojęcie granicy lewostronnej i
+                    prawostronnej. Teraz podamy ich formalne definicje. </div>
+                <div class="twierdzenie">
+                    <h3>Definicja granicy lewostronnej</h3>
+                    <div class="akapit"> Liczbę \(g\) nazywamy <b>granicą lewostronną</b> funkcji \(f(x)\) w punkcie
+                        \(x_0\), jeśli dla każdego ciągu \((x_n)\) zbieżnego do \(x_0\) z lewej strony (tzn. takiego, że
+                        <span class="ml3 mr3">\(\underset{n\in \mathbb{N} }{\forall }\ x_n\lt x_0\)</span>), ciąg
+                        \((f(x_n))\) jest zbieżny do \(g\). </div>
+                    <div class="akapit"> Jeśli granica lewostronna funkcji \(f(x)\) w punkcie \(x_0\) jest równa \(g\),
+                        to zapiszemy: \[\lim_{x \to {x_0}^{-}}f(x)=g \] </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Definicja granicy prawostronnej</h3>
+                    <div class="akapit"> Liczbę \(g\) nazywamy <b>granicą prawostronną</b> funkcji \(f(x)\) w punkcie
+                        \(x_0\), jeśli dla każdego ciągu \((x_n)\) zbieżnego do \(x_0\) z prawej strony (tzn. takiego,
+                        że <span class="ml3 mr3">\(\underset{n\in \mathbb{N} }{\forall }\ x_n\gt x_0\)</span>), ciąg
+                        \((f(x_n))\) jest zbieżny do \(g\). </div>
+                    <div class="akapit"> Jeśli granica prawostronna funkcji \(f(x)\) w punkcie \(x_0\) jest równa \(g\),
+                        to zapiszemy: \[\lim_{x \to {x_0}^{+}}f(x)=g \] </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Warunek koniczny i wystarczający istnienia granicy w punkcie</h3> Funkcja \(f(x)\) ma granicę
+                    \(g\) w punkcie \(x_0\), jeśli granica lewostronna i prawostronna w tym punkcie jest równa \(g\):
+                    \[\text{jeśli}\quad \lim_{x \to {x_0}^{-}}f(x)= \lim_{x \to {x_0}^{+}}f(x)=g\quad \text{to}\quad
+                    \lim_{x \to x_0}f(x)=g\]
+                </div>
+                <div class="zadanie" id="20054" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Zbadaj granicę funkcji <span class="ml3 mr3">\(f(x)=\begin{cases} x+1\quad
+                            \text{dla } x\lt 2\\ \frac{1}{2}x-3 \quad \text{dla } x\ge 2 \end{cases} \)</span> w punkcie
+                        \(x = 2\).</div>
+                    <div class="p_p">Dla ułatwienia rysujemy wykres funkcji \(f(x)\): <img
+                            src="grafika/studia/granica_funkcji/cwiczenie1b.gif" class="center" alt="" /> Granica w
+                        punkcie \(x = 2\) nie istnieje, ponieważ granice lewostronna i prawostronna przyjmują różne
+                        wartości: \[\begin{split} &\lim_{x \to 2^{-}}f(x)=3\\[6pt] &\lim_{x \to 2^{+}}f(x)=-2
+                        \end{split}\]</div>
+                </div>
+                <div class="zadanie" id="20055" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Zbadaj granicę funkcji <span class="ml3 mr3">\(f(x)=\begin{cases} x^2\quad
+                            \text{dla } x\le 0\\ 2^x\quad \text{dla } x\gt 0 \end{cases} \)</span> w punkcie \(x = 0\).
+                    </div>
+                    <div class="p_p">Dla ułatwienia szkicujemy wykres podanej funkcji:<br /> <img
+                            src="grafika/studia/granica_funkcji/cwiczenie2b.gif" class="center mt10 mb10" alt="" />
+                        Granica w punkcie \(x = 0\) nie istnieje, ponieważ granica lewostronna jest różna od
+                        prawostronnej: \[\begin{split} &\lim_{x \to 0^{-}}f(x)=0\\[6pt] &\lim_{x \to 0^{+}}f(x)=1
+                        \end{split}\]</div>
+                </div>
+                <div class="zadanie" id="20056" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Zbadaj granicę funkcji <span class="ml3 mr3">\(f(x)=\begin{cases} -x^2-3\quad
+                            \text{dla } x\le 0\\ \sqrt{x}-3 \quad \text{dla } x\gt 0 \end{cases} \)</span> w punkcie \(x
+                        = 0\).</div>
+                    <div class="p_p">Dla ułatwienia szkicujemy wykres podanej funkcji:<br /> <img
+                            src="grafika/studia/granica_funkcji/cwiczenie3b.gif" class="center mt10 mb10" alt="" />
+                        Granica w punkcie \(x = 0\) istnieje, ponieważ granica lewostronna w tym punkcie jest równa
+                        prawostronnej: \[\begin{split} &\lim_{x \to 0^{-}}f(x)=-3\\[6pt] &\lim_{x \to 0^{+}}f(x)=-3
+                        \end{split}\] Można zatem krótko napisać: \[\lim_{x \to 0}f(x)=-3\]</div>
+                </div>
+                <div class="akapit bt"> Granicę funkcji można również liczyć w \(+\infty\) oraz \(-\infty\). (tzn. przy
+                    \(x\)-ch dążących do \(+\infty\) lub \(-\infty\)). Zapisujemy to w następujący sposób: \[\lim_{x \to
+                    +\infty }f(x)\quad \text{oraz}\quad \lim_{x \to -\infty }f(x) \] </div>
+                <div class="zadanie" id="20057" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Dana jest funkcja: \[f(x)=\begin{cases} \left |\frac{1}{x+2} \right |\quad
+                        \text{dla } x\lt 0\\ \sin x \quad \text{dla } x\ge 0 \end{cases} \] Oblicz granicę tej funkcji w
+                        punktach \(x_1 = -2\), \(x_2 = 0\), \(x_3 = \pi\) oraz w \(+\infty\) i \(-\infty\).</div>
+                    <div class="p_p">Zacznijmy od naszkicowania wykresu tej funkcji: <img
+                            src="grafika/studia/granica_funkcji/przyklad1b.gif" class="center" alt="" /> W punkcie \(x_1
+                        = -2\) funkcja nie jest określona, zatem badamy granicę lewostronną i prawostronną:
+                        \[\begin{split} &\lim_{x \to -2^{-}}f(x)=+\infty \\[6pt] &\lim_{x \to -2^{+}}f(x)=+\infty
+                        \end{split}\] Obie granice są równe, zatem: \[\lim_{x \to -2}f(x)=+\infty \] W punkcie \(x_2 =
+                        0\) funkcja jest nieciągła, zatem liczymy granicę lewostronną i prawostronną: \[\begin{split}
+                        &\lim_{x \to 0^{-}}f(x)=\frac{1}{2} \\[6pt] &\lim_{x \to 0^{+}}f(x)=0 \end{split}\] Granica
+                        lewostronna jest różna od prawostronnej zatem granica w punkcie \(x_2\) nie istnieje. W punkcie
+                        \(x_3 = \pi\) funkcja jest określona i ciągła, zatem liczymy granicę wprost ze wzoru: \[\lim_{x
+                        \to \pi }f(x)=f(\pi )=\sin \pi =0 \] W \(-\infty\) funkcja dąży do osi \(x\)-ów, zatem:
+                        \[\lim_{x \to -\infty }f(x)=0 \] W \(+\infty\) funkcja nie ma granicy, ponieważ \(\sin x\) jest
+                        funkcją okresową i nie dąży do żadnej konkretnej wartości (tylko waha się w przedziale \((-1,
+                        1)\)).</div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="elementy-analizy-matematycznej.html">&#9664; Wprowadzenie</a></div>
+                <div class="next_temat"><a href="granice-jednostronne-funkcji.html" class="next_temat">Granice
+                        jednostronne funkcji &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

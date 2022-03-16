@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Podstawowe sposoby rozkładu wielomianu na czynniki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="272" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Szkoła|Wielomiany|Rozkład wielomianu na czynniki|Podstawowe sposoby rozkładu wielomianu na czynniki">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="wielomiany.html">Wielomiany</a> &rarr; <a href="rozklad-wielomianu-na-czynniki.html">Rozkład
+                wielomianu na czynniki</a> &rarr; <a
+                href="podstawowe-sposoby-rozkladu-wielomianu-na-czynniki.html">Podstawowe sposoby rozkładu wielomianu na
+                czynniki</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="rozklad-wielomianu-na-czynniki.html">&#9664; Wprowadzenie do rozkładania wielomianu na
+                    czynniki</a></div>
+            <div class="next_temat"><a href="rozkladanie-wielomianu-na-czynniki-zadania.html"
+                    class="next_temat">Rozkładanie wielomianu na czynniki - zadania &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Podstawowe sposoby rozkładu wielomianu na czynniki</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_269" poziom="blok_0">Do rozkładania wielomianów na iloczyn czynników
+                najczęściej stosujemy takie metody jak: <ul style="margin-top: 5px; margin-bottom: 25px;">
+                    <li class="punkt9">wyciąganie wspólnego czynnika przed nawias,</li>
+                    <li class="punkt9">wzory skróconego mnożenia,</li>
+                    <li class="punkt9">deltę (\(\Delta \)),</li>
+                    <li class="punkt9">grupowanie wyrazów.</li>
+                </ul>
+                <div class="twierdzenie">
+                    <h3>Metoda wyciągania wspólnego czynnika przed nawias</h3>
+                    <div class="m10"> Przed nawias możemy wyciągać zarówno liczbę jak i literkę, która występuje w
+                        każdym z <a href="jednomiany.html">jednomianów</a> tworzących wielomian. </div>
+                    <div class="m10"> Rozkładając wielomian na czynniki zawsze zaczynamy od sprawdzenia, czy nie da się
+                        wyciągnąć wspólnego czynnika przed nawias ze wszystkich jednomianów. </div> Metoda wyciągania
+                    wspólnego czynnika przed nawias została zilustrowana na poniższych przykładach.
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = x^2 - 7x\) na czynniki. <div class="p_p"> Wspólnym
+                        czynnikiem każdego z dwóch jednomianów tworzących ten wielomian jest \(x\).<br /> Wyciągamy go
+                        przed nawias: \[W(x) = x^2 - 7x = x(x - 7)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = 7x^3 + 21x\) na czynniki. <div class="p_p"> Wspólnym
+                        czynnikiem każdego z dwóch jednomianów tworzących ten wielomian jest \(7x\).<br /> Wyciągamy go
+                        przed nawias: \[W(x) = 7x^3 + 21x = 7x(x^2 + 3)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = 4x^3 + 6x^2\) na czynniki. <div class="p_p"> Wspólnym
+                        czynnikiem każdego z dwóch jednomianów tworzących ten wielomian jest \(2x^2\).<br /> Wyciągamy
+                        go przed nawias: \[W(x) = 4x^3 + 6x^2 = 2x^2(2x + 3)\] <b>Uwaga!</b> Jeżeli chcemy upewnić się,
+                        że dobrze wyciągnęliśmy wspólny czynnik przed nawias, to wystarczy, że wymnożymy czynniki, np.:
+                        \[W(x) = 2x^2(2x + 3) = 2x^2 \cdot 2x + 2x^2 \cdot 3 = 4x^3 + 6x^2\] </div>
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = 9x^3 - 3x^2 + 18x\) na czynniki. <div class="p_p">
+                        Wspólnym czynnikiem każdego z trzech jednomianów tworzących ten wielomian jest \(3x\).<br />
+                        Wyciągamy go przed nawias: \[W(x) = 9x^3 - 3x^2 + 18x = 3x(3x^2 - x + 6)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = 10x^5 - 2x^4 + 4x^3 + 12x^2\) na czynniki. <div
+                        class="p_p"> Wspólnym czynnikiem każdego z czterech jednomianów tworzących ten wielomian jest
+                        \(2x^2\).<br /> Wyciągamy go przed nawias: \[W(x) = 10x^5 - 2x^4 + 4x^3 + 12x^2= 2x^2(5x^3 - x^2
+                        + 2x + 6)\] </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Metoda wzorów skróconego mnożenia</h3> Wzory skróconego mnożenia zostały dokładnie omówione w <a
+                        href="wzory-skroconego-mnozenia.html">tym miejscu</a>.<br /> Podczas rozkładania wielomianów na
+                    czynniki najczęściej wykorzystujemy wzór: \[a^2-b^2=(a-b)(a+b)\] Dla przypomnienia wypiszmy i
+                    ponumerujmy najczęściej stosowane wzory skróconego mnożenia: \[\begin{split} (1)\qquad
+                    &(a+b)^2=a^2+2ab+b^2\\[6pt] (2)\qquad &(a-b)^2=a^2-2ab+b^2\\[6pt] (3)\qquad
+                    &a^2-b^2=(a-b)(a+b)\\[6pt] (4)\qquad &a^3-b^3=(a-b)(a^2+ab+b^2)\\[6pt] (5)\qquad
+                    &a^3+b^3=(a+b)(a^2-ab+b^2)\\[6pt] (6)\qquad &(a+b)^3=a^3+3a^2b+3ab^2+b^3\\[6pt] (7)\qquad
+                    &(a-b)^3=a^3-3a^2b+3ab^2-b^3 \end{split}\]
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = x^2 - 9\) na czynniki stosując wzory skróconego mnożenia.
+                    <div class="p_p"> Stosujemy wzór \((3)\): \[W(x) = x^2 - 9 = (x - 3)(x + 3)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż wielomian \(W(x) = x^2 - 36\) na czynniki stosując wzory skróconego
+                    mnożenia. <div class="p_p"> Stosujemy wzór \((3)\): \[W(x) = x^2 - 36 = (x - 6)(x + 6)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^2 + 6x + 9\). <div class="p_p"> Stosujemy
+                        wzór \((1)\): \[W(x) = x^2 + 6x + 9 = (x + 3)^2\] </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^2 - 10x + 25\). <div class="p_p"> Stosujemy
+                        wzór \((2)\): \[W(x) = x^2 - 10x + 25 = (x - 5)^2\] </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^3 - 27\). <div class="p_p"> Stosujemy wzór
+                        \((4)\): \[W(x) = x^3 - 27 = (x - 3)(x^2 + 3x + 9)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^3 - 16x\). <div class="p_p"> W tym
+                        przykładzie możemy wyciągnąć wspólny czynnik przed nawias, więc zaczynamy od wykonania tego
+                        kroku: \[W(x) = x^3 - 16x = x(x^2 - 16)\] Teraz do wyrażenia w nawiasie stosujemy wzór \((3)\):
+                        \[W(x) = x(x^2 - 16) = x(x - 4)(x + 4)\] </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = 4x^4 - 36x^2\). <div class="p_p"> W tym
+                        przykładzie możemy wyciągnąć wspólny czynnik przed nawias, więc zaczynamy od wykonania tego
+                        kroku: \[W(x) = 4x^4 - 36x^2 = 4x^2(x^2 - 9)\] Teraz do wyrażenia w nawiasie stosujemy wzór
+                        \((3)\): \[W(x) = 4x^2(x^2 - 9) = 4x^2(x - 3)(x + 3)\] </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Metoda delty</h3> Metodę delty stosujemy do rozkładania na czynniki wyrażeń drugiego stopnia. W
+                    prostych przypadkach można posługiwać się wzorami skróconego mnożenia, np.: \[x^2 - 4 = (x - 2)(x +
+                    2)\] W bardziej złożonych przykładach, np.: \(x^2 - x - 6\), ciężko jest zastosować wzory skróconego
+                    mnożenia i wtedy stosujemy metodę delty. <div class="akapit"> Metoda delty - to zamiana postaci
+                        ogólnej wyrażenia kwadratowego na postać iloczynową. Zagadnienie to zostało omówione w dziale o
+                        <a href="postac-ogolna-kanoniczna-i-iloczynowa-funkcji-kwadratowej.html">postaciach funkcji
+                            kwadratowej</a>. </div> Przypomnijmy jak robimy taką zamianę.<br /> Załóżmy, że mam do
+                    rozłożenia na czynniki następujący wielomian drugiego stopnia: \[W(x)=ax^2+bx+c\] Na początku
+                    liczymy deltę korzystając ze wzoru: \[\Delta =b^2-4ac\] Mogą zajść trzy przypadki: <ul
+                        class="lista4">
+                        <li> Jeżeli delta wyszła mniejsza od zera, to rozkład na czynniki nie istnieje. </li>
+                        <li> Jeżeli delta wyszła większa od zera, to istnieją miejsca zerowe wielomianu i możemy je
+                            obliczyć korzystając ze wzorów: \[\begin{split}{x}_{1}&=\frac{-b-\sqrt{\Delta
+                            }}{2a}\\{x}_{2}&=\frac{-b+\sqrt{\Delta }}{2a}\end{split}\] Postać iloczynowa wygląda wówczas
+                            tak: \[W(x)=a(x-x_1)(x-x_2)\] </li>
+                        <li> Jeżeli delta wyszła równa zero, to istnieje jedno miejsce zerowe i możemy je obliczyć ze
+                            wzoru: \[x_1=\frac{-b}{2a}\] Postać iloczynowa wielomianu wygląda wówczas tak:
+                            \[W(x)=a(x-x_1)^2\] </li>
+                    </ul>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^2 - x - 6\). <div class="p_p"> Zacznijmy od
+                        wypisania współczynników \(a\), \(b\), \(c\): <div class="blok_wciecie1"> \[\begin{split}&a =
+                            1\\[6pt] &b = -1\\[6pt] &c = -6\end{split}\] </div> Teraz liczymy deltę: \[\Delta = (-1)^2 -
+                        4\cdot 1\cdot (-6) = 1 + 24 = 25\] Delta wyszła większa od zera, zatem mamy dwa miejsca zerowe:
+                        \[\begin{split} x_1=\frac{-b-\sqrt{\Delta }}{2a}=\frac{1-5}{2}=-2\\[6pt]
+                        x_2=\frac{-b+\sqrt{\Delta }}{2a}=\frac{1+5}{2}=3 \end{split}\] Zapisujemy postać iloczynową:
+                        \[W(x) = 1\cdot (x - 3)(x - (-2)) = (x - 3)(x + 2)\] </div>
+                </div>
+                <div class="twierdzenie">
+                    <h3>Metoda grupowania wyrazów</h3>
+                    <div class="mb10"> Metodę grupowania wyrazów stosujemy najczęściej do rozkładania na czynniki
+                        wielomianów stopnia czwartego oraz wyższych. </div> Można powiedzieć, że jest to rozszerzenie <a
+                        href="#metoda_wyciagania_wspolnego_czynnika"> metody wyciągania wspólnego czynnika przed
+                        nawias</a>.<br /> Jeżeli np. we wzorze wielomianu występują \(4\) wyrazy, to możemy wyciągnąć
+                    przed nawias wspólny czynnik tylko z pierwszych dwóch wyrazów, a następnie wspólny czynnik z wyrazu
+                    trzeciego i czwartego. Spójrzmy na poniższy przykład:<br /> <img
+                        src="grafika/wielomiany/rozklad-wielomianu-na-czynniki/metoda_grupowania_p1.png" class="center"
+                        style="margin: 15px auto" alt="" /> W tym przykładzie zgrupowaliśmy pierwszy wyraz z drugim, a
+                    trzeci z czwartym. Następnie w ramach każdej grupy wyciągnęliśmy wspólny czynnik przed nawias.<br />
+                    Z pierwszych dwóch wyrazów wyciągnęliśmy przed nawias wspólny czynnik \(x^2\), a z ostatnich dwóch
+                    wyrazów wyciągnęliśmy przed nawias liczbę \(2\). Tak się szczęśliwie złożyło, że w obu nawiasach
+                    pojawiło się to samo wyrażenie \(x + 4\). Dzięki temu można teraz wyciągnąć cały taki nawias przed
+                    nawias:<br /> <img src="grafika/wielomiany/rozklad-wielomianu-na-czynniki/metoda_grupowania_p1a.png"
+                        class="center" style="margin: 15px auto" alt="" /> W ten sposób rozłożyliśmy wielomian trzeciego
+                    stopnia na iloczyn czynników (nawiasu \((x^2 + 2)\) nie da się już bardziej rozłożyć, choćby
+                    dlatego, że delta dla niego wychodzi ujemna).
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = 5x^3 + 10x^2 + 2x + 4\). <div class="p_p">
+                        Grupujemy pierwszy wyraz z drugim, a trzeci z czwartym: \[\begin{split} W(x) &= 5x^3 + 10x^2 +
+                        2x + 4 =\\[6pt] &=5x^2(x + 2) + 2(x + 2) = \\[6pt] &=(x + 2)(5x^2 + 2)\end{split}\] Z pierwszych
+                        dwóch wyrazów wyciągnęliśmy przed nawias wspólny czynnik \(5x^2\).<br /> Z ostatnich dwóch
+                        wyrazów wyciągnęliśmy przed nawias liczbę \(2\).<br /> W obu nawiasach otrzymaliśmy to samo
+                        wyrażenie \((x + 2)\), które następnie wyciągnęliśmy przed nawias. Ostatecznie otrzymaliśmy
+                        postać iloczynową wielomianu: \[W(x) = (x + 2)(5x^2 + 2)\] Uwaga! Należy jeszcze upewnić się,
+                        czy drugiego nawiasu nie da się rozłożyć na czynniki \(1\)-szego stopnia. Liczymy w tym celu
+                        deltę: \[\Delta = 0^2 - 4\cdot 5\cdot 2 = -40 \lt 0\] Delta wyszła ujemna, czyli nie istnieje
+                        rozkład nawiasu \((5x^2 + 2)\) na czynniki pierwszego stopnia. </div>
+                </div>
+                <div class="zadanie">Rozłóż na czynniki wielomian \(W(x) = x^3 + 2x^2 - 9x - 18\). <div class="p_p">
+                        Grupujemy pierwszy wyraz z drugim, a trzeci z czwartym: \[\begin{split} W(x) &= x^3 + 2x^2 - 9x
+                        - 18 =\\[6pt] &=x^2(x + 2) - 9(x + 2) =\\[6pt] &= (x + 2)(x^2 - 9) = \\[6pt] &=(x + 2)(x - 3)(x
+                        + 3) \end{split}\] W tym przykładzie drugi nawias można było rozłożyć na iloczyn czynników
+                        liniowych stosując wzór skróconego mnożenia. Ostatecznie otrzymaliśmy postać iloczynową
+                        wielomianu: \[W(x) = (x + 2)(x - 3)(x + 3)\] </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="rozklad-wielomianu-na-czynniki.html">&#9664; Wprowadzenie do rozkładania wielomianu na
+                        czynniki</a></div>
+                <div class="next_temat"><a href="rozkladanie-wielomianu-na-czynniki-zadania.html"
+                        class="next_temat">Rozkładanie wielomianu na czynniki - zadania &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

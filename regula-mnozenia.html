@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reguła mnożenia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="333" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Kombinatoryka|Reguła mnożenia">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="kombinatoryka.html">Kombinatoryka</a> &rarr; <a href="regula-mnozenia.html">Reguła mnożenia</a>
+        </div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="kombinatoryka.html">&#9664; Wprowadzenie do kombinatoryki</a></div>
+            <div class="next_temat"><a href="silnia.html" class="next_temat">Silnia &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Reguła mnożenia</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_329" poziom="blok_0">Reguła mnożenia przydaje się podczas rozwiązywania
+                wielu zadań z kombinatoryki. Omówimy ją na konkretnych przykładach. <div class="zadanie" id="1787" p="0"
+                    lvl="" typ="1">
+                    <div class="z_tresc">Rzucamy trzy razy monetą. Ile jest wszystkich możliwych wyników tego
+                        doświadczenia?</div>
+                    <div class="p_p">
+                        <div class="mb10"> Możliwe wyniki to np.: \((Orzeł,Orzeł,Reszka)\), \((O,R,R)\), \((R,O,R)\),
+                            \((R,R,R)\)... </div>
+                        <div class="mb10"> Zatem:<br /> W <b>I rzucie</b> może wypaść orzeł lub reszka, czyli są
+                            <b>2</b> możliwości.<br /> W <b>II rzucie</b> również może wypaść orzeł lub reszka, czyli są
+                            <b>2</b> możliwości.<br /> W <b>III rzucie</b> również może wypaść orzeł lub reszka, czyli
+                            są <b>2</b> możliwości. </div> Powiemy: <img src="grafika/g0358.png" class="center" noc="1"
+                            alt="" />
+                        <div class="mb10"> Reguła mnożenia mówi, że w takiej sytuacji mamy: \[2\cdot 2\cdot 2=8\]
+                            możliwości. </div> W regule mnożenia zawsze zamieniamy spójnik "<b>i</b>" na mnożenie.
+                    </div>
+                </div>
+                <div class="zadanie" id="1788" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rzucamy 10 razy monetą. Ile jest możliwych wyników?</div>
+                    <div class="p_p">W każdym rzucie możemy otrzymać 2 wyniki: \(Orzeł\) albo \(Reszka\). Powiemy: <div
+                            class="mb20 mt20 ml20 mr20 i"> W pierwszym rzucie mamy \(2\) możliwości i w drugim rzucie
+                            mamy \(2\) możliwości i w trzecim rzucie mamy \(2\) możliwości... i w dziesiątym rzucie mamy
+                            \(2\) możliwości. </div> Zatem łącznie mamy: \[\underbrace{2\cdot 2\cdot 2\cdot ...\cdot
+                        2}_{10\text{ razy}}=2^{10}\] możliwości.</div>
+                </div>
+                <div class="zadanie" id="1789" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rzucamy 3 razy sześcienną kostką do gry. Ile jest możliwych wyników?</div>
+                    <div class="p_p">W każdym rzucie możemy otrzymać jeden z sześciu wyników. Powiemy: <div
+                            class="mb20 mt20 ml20 mr20 i"> W pierwszym rzucie mamy \(6\) możliwości i w drugim rzucie
+                            mamy \(6\) możliwości i w trzecim rzucie mamy \(6\) możliwości. </div> Zatem łącznie mamy:
+                        \[6\cdot 6\cdot 6=6^3\] możliwości.</div>
+                </div>
+                <div class="zadanie" id="1790" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rzucamy 5 razy sześcienną kostką do gry. Ile jest możliwych wyników?</div>
+                    <div class="p_p">W każdym rzucie możemy otrzymać jeden z sześciu wyników.<br /> Zatem łącznie mamy:
+                        \[6\cdot 6\cdot 6\cdot 6\cdot 6=6^5\] możliwości.</div>
+                </div>
+            </div>
+            <div class="zadanie" id="770" tytul="" typ="1" yt="UsxcMD7_Mjg" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-09-24">
+                <div class="z_tresc">Ze wsi \(A\) do wsi \(B\) prowadzi \(5\) ścieżek przez las. Na ile sposobów można
+                    odbyć spacer <span class="odsu1">\(A-B-A\)</span> tak, aby spacer ze wsi \(B\) do wsi \(A\) odbyć
+                    inną ścieżką niż ze wsi \(A\) do wsi \(B\)? <div class="blok_odp">
+                        <div><b>A.</b>\( 5^4 \)</div>
+                        <div><b>B.</b>\( 5+4 \)</div>
+                        <div><b>C.</b>\( 4^5 \)</div>
+                        <div><b>D.</b>\( 5\cdot 4 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="750" tytul="" typ="1" yt="gpeDxU8kodi" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-07-31">
+                <div class="z_tresc">Na rysunku dany jest kwadrat, trójkąt i elipsa. Mamy również do dyspozycji \(8\)
+                    kolorów farb. Na ile różnych sposobów można pomalować wszystkie trzy figury tymi ośmioma kolorami,
+                    tak aby każda figura była w innym kolorze? <img src="./grafika/g0266.png" class="center" noc="1"
+                        alt="" />
+                    <div class="blok_odp">
+                        <div><b>A.</b>\( 27 \)</div>
+                        <div><b>B.</b>\( 336 \)</div>
+                        <div><b>C.</b>\( 512 \)</div>
+                        <div><b>D.</b>\( {8}^{8} \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="327" tytul="" typ="1" yt="sRMSSAOwx0a" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-05-08">
+                <div class="z_tresc">Flagę, taką jak pokazano na rysunku, należy zszyć z trzech jednakowej szerokości
+                    pasów kolorowej tkaniny. Oba pasy zewnętrzne mają być tego samego koloru, a pas znajdujący się
+                    między nimi ma być innego koloru. Liczba różnych takich flag, które można uszyć, mając do dyspozycji
+                    tkaniny w \( 10 \) kolorach, jest równa <img src="./grafika/g0218.png" class="center" noc="1"
+                        alt="" />
+                    <div class="blok_odp">
+                        <div><b>A.</b>\(100 \)</div>
+                        <div><b>B.</b>\(99 \)</div>
+                        <div><b>C.</b>\(90 \)</div>
+                        <div><b>D.</b>\(19 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="134" tytul="" typ="1" yt="UvAC2GVeCtu" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Wszystkich liczb naturalnych dwucyfrowych, których obie cyfry są mniejsze od \(5\)
+                    jest <div class="blok_odp">
+                        <div><b>A.</b>\( 16 \)</div>
+                        <div><b>B.</b>\( 20 \)</div>
+                        <div><b>C.</b>\( 25 \)</div>
+                        <div><b>D.</b>\( 30 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="135" tytul="" typ="1" yt="Y9Q8UbGltWC" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Liczba sposobów, na jakie Ala i Bartek mogą usiąść na dwóch spośród pięciu miejsc w
+                    kinie, jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( 25 \)</div>
+                        <div><b>B.</b>\( 20 \)</div>
+                        <div><b>C.</b>\( 15 \)</div>
+                        <div><b>D.</b>\( 12 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="172" tytul="" typ="1" yt="0ARKO_SeNm5" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Ile jest liczb naturalnych czterocyfrowych takich, że w ich zapisie dziesiętnym
+                    występuje jedna cyfra nieparzysta i trzy cyfry parzyste.</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(2125\)</div>
+            </div>
+            <div class="zadanie" id="173" tytul="" typ="1" yt="YgucRSRl7no" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Ile jest liczb naturalnych dwucyfrowych podzielnych przez \(15\) lub <span
+                        class="mr3">\(20\)</span>?</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(9\)</div>
+            </div>
+            <div class="zadanie" id="174" tytul="" typ="1" yt="4KECUteYSbs" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Ile jest liczb naturalnych trzycyfrowych, w których cyfra dziesiątek jest o \(2\)
+                    większa od cyfry jedności?</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(72\)</div>
+            </div>
+            <div class="zadanie" id="607" tytul="" typ="1" yt="81xiALZA3D1" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Ile jest wszystkich liczb naturalnych dwucyfrowych, w których obie cyfry są
+                    parzyste? <div class="blok_odp">
+                        <div><b>A.</b>\( 16 \)</div>
+                        <div><b>B.</b>\( 20 \)</div>
+                        <div><b>C.</b>\( 24 \)</div>
+                        <div><b>D.</b>\( 25 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="608" tytul="" typ="1" yt="0JngQXR8_nC" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Ile jest wszystkich liczb naturalnych dwucyfrowych, w których obie cyfry są
+                    nieparzyste? <div class="blok_odp">
+                        <div><b>A.</b>\( 16 \)</div>
+                        <div><b>B.</b>\( 20 \)</div>
+                        <div><b>C.</b>\( 24 \)</div>
+                        <div><b>D.</b>\( 25 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="609" tytul="" typ="1" yt="ADAKLmCVoSE" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Ile jest wszystkich liczb naturalnych trzycyfrowych, w których wszystkie trzy cyfry
+                    są parzyste? <div class="blok_odp">
+                        <div><b>A.</b>\( 40 \)</div>
+                        <div><b>B.</b>\( 64 \)</div>
+                        <div><b>C.</b>\( 100 \)</div>
+                        <div><b>D.</b>\( 125 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="17" tytul="" typ="1" yt="w1EeRxG33RJ" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-03-06">
+                <div class="z_tresc">Wszystkich dodatnich liczb całkowitych czterocyfrowych mniejszych od \(4000\),
+                    zapisanych za pomocą cyfr: \(3, 5, 7, 9\) tak, że żadna cyfra się nie powtarza, jest <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 6 \)</div>
+                        <div><b>B.</b>\( 24 \)</div>
+                        <div><b>C.</b>\( 64 \)</div>
+                        <div><b>D.</b>\( 256 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="1205" tytul="" typ="1" yt="8102uIDAhYw" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-08-27">
+                <div class="z_tresc">Ile jest wszystkich liczb naturalnych trzycyfrowych podzielnych przez \(5\)? <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 90 \)</div>
+                        <div><b>B.</b>\( 100 \)</div>
+                        <div><b>C.</b>\( 180 \)</div>
+                        <div><b>D.</b>\( 200 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="1396" tytul="" typ="1" yt="E6a59z3rcoc" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-05-06">
+                <div class="z_tresc">Na ile sposobów można wybrać dwóch graczy spośród \( 10 \) zawodników? <div
+                        class="blok_odp">
+                        <div><b>A.</b>\(100 \)</div>
+                        <div><b>B.</b>\(90 \)</div>
+                        <div><b>C.</b>\(45 \)</div>
+                        <div><b>D.</b>\(20 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="1258" tytul="" typ="1" yt="E1WMImsgo-O" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-11-25">
+                <div class="z_tresc">Oblicz, ile jest liczb naturalnych czterocyfrowych, w których cyfra jedności jest o
+                    \(3\) większa od cyfry setek.</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(630\)</div>
+            </div>
+            <div class="zadanie" id="1748" tytul="" typ="1" yt="4QtvsUxHMX6" p="0" lvl="PP" pkt="1" typ_v="2" pisz=""
+                odp="1" wsk="" data="2015-08-25">
+                <div class="z_tresc">Ile jest wszystkich liczb czterocyfrowych, większych od \(3000\), utworzonych
+                    wyłącznie z cyfr \(1, 2, 3\), przy założeniu, że cyfry mogą się powtarzać, ale nie wszystkie z tych
+                    cyfr muszą być wykorzystane? <div class="blok_odp">
+                        <div><b>A.</b>\( 3 \)</div>
+                        <div><b>B.</b>\( 6 \)</div>
+                        <div><b>C.</b>\( 9 \)</div>
+                        <div><b>D.</b>\( 27 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="kombinatoryka.html">&#9664; Wprowadzenie do kombinatoryki</a></div>
+                <div class="next_temat"><a href="silnia.html" class="next_temat">Silnia &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

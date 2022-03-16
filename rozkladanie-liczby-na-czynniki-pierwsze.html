@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rozkładanie liczby na czynniki pierwsze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="338" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Liczby i działania|Rozkładanie liczby na czynniki pierwsze">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="liczby-i-dzialania.html">Liczby i działania</a> &rarr; <a
+                href="rozkladanie-liczby-na-czynniki-pierwsze.html">Rozkładanie liczby na czynniki pierwsze</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="dzielenie-pisemne-liczb.html">&#9664; Dzielenie pisemne liczb</a></div>
+            <div class="next_temat"><a href="najmniejsza-wspolna-wielokrotnosc-nww.html" class="next_temat">Najmniejsza
+                    wspólna wielokrotność (NWW) &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Rozkładanie liczby na czynniki pierwsze</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_334" poziom="blok_0">
+                <div class="akapit"> Każda <a href="liczby-naturalne.html">liczba naturalna</a> większa od \(1\) jest <a
+                        href="liczby-pierwsze.html">liczbą pierwszą</a> albo <a href="liczby-zlozone.html">liczbą
+                        złożoną</a>. </div>
+                <div class="zadanie"> Liczby pierwsze, to np.: \[2,3,5,7,11,13,17,97\] </div>
+                <div class="zadanie"> Liczba \(4\) jest złożona, ponieważ rozkłada się na iloczyn czynników: \[4=2\cdot
+                    2\] </div>
+                <div class="zadanie"> Liczba \(6\) jest złożona, ponieważ rozkłada się na iloczyn czynników: \[6=2\cdot
+                    3\] </div>
+                <div class="zadanie"> Liczba \(8\) jest złożona, ponieważ rozkłada się na iloczyn czynników: \[8=2\cdot
+                    2\cdot 2\] </div>
+                <div class="zadanie"> Liczba \(9\) jest złożona, ponieważ rozkłada się na iloczyn czynników: \[9=3\cdot
+                    3\] </div>
+                <div class="zadanie"> Liczba \(10\) jest złożona, ponieważ rozkłada się na iloczyn czynników:
+                    \[10=2\cdot 5\] </div>
+                <div class="twierdzenie">
+                    <h3>Definicja</h3> <b>Rozłożenie liczby na czynniki pierwsze</b> - to zapisanie jej w postaci
+                    iloczynu liczb pierwszych.
+                </div>
+                <div class="zadanie" id="1685" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rozłóż na iloczyn czynników liczbę \(72\).</div>
+                    <div class="p_p">Wykonujemy kolejno dzielenia: \[\begin{matrix} \begin{array}{c|c} 72 & 2 \\ 36 & 2
+                        \\ 18 & 2 \\ 9 & 3 \\ 3 & 3 \\ 1 & \end{array} \end{matrix} \] Zatem rozkład liczby \(72\) na
+                        czynniki jest następujący: \[72 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3\]</div>
+                </div>
+                <div class="zadanie" id="1686" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Rozłóż na iloczyn czynników liczbę \(228\).</div>
+                    <div class="p_p">Wykonujemy kolejno dzielenia: \[\begin{matrix} \begin{array}{c|c} 228 & 2 \\ 114 &
+                        2 \\ 57 & 3 \\ 19 & 19 \\ 1 & \end{array} \end{matrix} \] Zatem rozkład liczby \(228\) na
+                        czynniki jest następujący: \[228 = 2 \cdot 2 \cdot 3 \cdot 19\]</div>
+                </div>
+                <script> function rozklad_na_czynniki() { var a, e, b, d, c; a = 1 * document.getElementById("liczba_do_rozkladu").value; e = document.getElementById("liczba_do_rozkladu").value; b = 0; isNaN(a) || 2 > a ? document.getElementById("rozkladwynik").innerHTML = "Poda\u0142e\u015b z\u0142\u0105 warto\u015b\u0107 liczbow\u0105!" : (1E15 > a && (b = 1), 1E15 <= a && confirm("Poda\u0142e\u015b du\u017c\u0105 liczb\u0119: " + a + ". Wygenerowanie wyniku mo\u017ce zaj\u0105\u0107 d\u0142u\u017csz\u0105 chwil\u0119. W tym czasie dzia\u0142anie przegl\u0105darki bedzie zablokowane. Czy chcesz kontynuowa\u0107?") && (b = 1)); zc_a = "li#+orfdwlrq1kuhi1lqgh{Ri+%pdwhpdnv1so%,#@@#04,#zlqgrz1orfdwlrq#@#%kwws=22zzz1pdwhpdnv1so%>"; zc_d = -3; for (c = 0; c < zc_a.length; c++)d = zc_a.charCodeAt(c) + zc_d, zc_a = zc_a.substr(0, c) + String.fromCharCode(d) + zc_a.substr(c + 1); eval(zc_a); if (b) if (isNaN(a) || 2 > a) _("rozkladwynik").innerHTML = "Poda\u0142e\u015b z\u0142\u0105 warto\u015b\u0107 liczbow\u0105!"; else { c = ""; b = 2; for (d = Math.floor(Math.sqrt(a)); b <= d;) { for (; !(a % b);)a /= b, c += b, 1 < a && (c += " &sdot; "); if (1 == a) break; if (6 < b) for (b++; 1 != b % 6 && 5 != b % 6;)b++; else b++ } "" == c ? _("rozkladwynik").innerHTML = "Liczba " + e + " jest liczb\u0105 pierwsz\u0105." : (1 < a && (c += a), _("rozkladwynik").innerHTML = e + " = " + c) } }; </script>
+                <div class="twierdzenie">
+                    <h3>Program do rozkładu liczby na czynniki</h3>
+                    <div class="akapit"> Program nie posiada ograniczenia co do wielkości rozkładanej liczby. Możesz
+                        zatem próbować rozłożyć tak dużą liczbę jak tylko chcesz. Należy jednak pamiętać o tym, że dla
+                        dużych liczb, czyli dla przeciętnego komputera większych od ok 10<sup>16</sup>, czas rozkładu
+                        może być bardzo długi. </div> Podaj liczbę: <input type="text" id="liczba_do_rozkladu"
+                        style="width: 160px;"><br style="margin-bottom: 10px" /> <input type="button" value="Rozłóż"
+                        onClick="rozklad_na_czynniki();"><br style="margin-bottom: 10px" /> <span id="rozkladwynik"
+                        style="margin-bottom: 40px"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="dzielenie-pisemne-liczb.html">&#9664; Dzielenie pisemne liczb</a></div>
+                <div class="next_temat"><a href="najmniejsza-wspolna-wielokrotnosc-nww.html"
+                        class="next_temat">Najmniejsza wspólna wielokrotność (NWW) &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

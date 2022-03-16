@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Całkowanie przez podstawianie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="20" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="25" p_procent="60" nadtematy="|Studia|Całki|Całkowanie przez podstawianie">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="calki.html">Całki</a> &rarr; <a href="calkowanie-przez-podstawianie.html">Całkowanie przez
+                podstawianie</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="przyklady-calek-elementarnych.html">&#9664; Przykłady całek elementarnych</a></div>
+            <div class="next_temat"><a href="calkowanie-przez-czesci.html" class="next_temat">Całkowanie przez części
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Całkowanie przez podstawianie</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_21" poziom="blok_0">Jeżeli funkcję \(f(x)\) można zapisać w postaci:
+                \[f(x) = g(h(x))\cdot h'(x)\] gdzie funkcja \(h(x)\) ma ciągłą pochodną, to wówczas: \[ \int f(x)\ dx
+                =\int g(t)\ dt \] ponieważ: \[ \begin{split} \int f(x)\ dx &=\int g(h(x))\cdot h'(x)\ dx=\\[6pt]
+                &=\begin{vmatrix}\text{teraz wykonujemy podstawienie:}\\t=h(x)\\dt=h'(x)\ dx\end{vmatrix} =\\[6pt]
+                &=\int g(t)\ dt \end{split} \]</div>
+            <div class="zadanie" id="2563" tytul="" typ="1" yt="c2H27BBif0L" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int 2\sin (4x)\ dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="2564" tytul="" typ="1" yt="ICCQoadJOY8" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int \cos^{3} x\sin x\ dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1659" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \sin{x}\cos^{10}{\!x}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    \sin{x}\cos^{10}{\!x}dx &= \begin{vmatrix} t=\cos{x} \\ dt=-\sin{x}dx \\ -dt=\sin{x}dx
+                    \\\end{vmatrix}=\\[6pt] &=\int -t^{10}dt=\\[6pt] &=-\int t^{10}dt=\\[6pt]
+                    &=-\frac{t^{11}}{11}+C=\\[6pt] &=-\frac{\cos^{11}{\!x}}{11}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2565" tytul="" typ="1" yt="sJk4ORBIV30" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{7x+2}{7x^2+4x-3} dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1660" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{x-5}{x^2-10x+9}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    \frac{x-5}{x^2-10x+9}dx &=\int \frac{(x-5)dx}{x^2-10x+9}=\\[6pt] &=\begin{vmatrix} t=x^2-10x+9 \\
+                    dt=(2x-10)dx \\ dt=2(x-5)dx \\ \frac{dt}{2}=(x-5)dx\end{vmatrix}=\\[6pt] &=\int
+                    \frac{\frac{dt}{2}}{t}=\\[6pt] &=\int \frac{dt}{2t}=\\[6pt] &=\frac{1}{2}\int \frac{1}{t}dt=\\[6pt]
+                    &=\frac{1}{2}\ln |t|+C=\\[6pt] &=\frac{1}{2}\ln |x^2-10x+9|+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2566" tytul="" typ="1" yt="U7iVd3dsRX2" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{dx}{\cos^{2}(2x+1)}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1661" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{dx}{\cos^{2\!}{(1-9x)}}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    \frac{dx}{\cos^{2\!}{(1-9x)}} &=\begin{vmatrix}t=1-9x \\ dt=-9dx \\-\frac{dt}{9}=dx\end{vmatrix}
+                    =\\[6pt] &=\int \frac{-\frac{dt}{9}}{\cos^{2\!}{t}}=\\[6pt] &=-\frac{1}{9}\int
+                    \frac{dt}{\cos^{2\!}{t}}=\\[6pt] &=-\frac{1}{9}\operatorname{tg}{t}+C=\\[6pt]
+                    &=-\frac{1}{9}\operatorname{tg}(1-9x)+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2567" tytul="" typ="1" yt="M3Fzwd3hAhw" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{2xdx}{\cos^{2}(1-3x^2)}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="2568" tytul="" typ="1" yt="Em-6ZMThAhC" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int x^2e^{7x^3-1} dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1662" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int {e}^{10x^2-4}xdx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    {e}^{10x^2-4}xdx &=\begin{vmatrix}t=10x^2-4 \\ dt=20xdx \\\frac{dt}{20}=xdx\end{vmatrix}=\\[6pt]
+                    &=\int e^t\frac{dt}{20}=\\[6pt] &=\frac{1}{20}\int e^t\ dt=\\[6pt] &=\frac{1}{20}e^t + C=\\[6pt]
+                    &=\frac{1}{20}e^{10x^2-4} + C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2569" tytul="" typ="1" yt="Q_FjuprPlMy" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-16">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{x^4dx}{\sqrt[7]{x^5+1}}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1663" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int\frac{-5x}{\sqrt[3]{x^2 +2}}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split}
+                    \int\frac{-5x}{\sqrt[3]{x^2 +2}}dx &=\begin{vmatrix} t=x^2+2 \\ dt = 2xdx \\ dx=
+                    \frac{dt}{2x}\end{vmatrix}=\\[6pt] &=\int\frac{-5x}{\sqrt[3]{t}}\frac{dt}{2x}=\\[6pt] &=\int
+                    \frac{-5dt}{2\sqrt[3]{t}}=\\[6pt] &=-\frac{5}{2}\int t^{-\frac{1}{3}}dt=\\[6pt] &=-\frac{5}{2}\cdot
+                    \frac{3}{2}t^{\frac{2}{3}}+C=\\[6pt] &=-\frac{15}{4}t^{\frac{2}{3}}+C=\\[6pt] &=-\frac{15}{4}\left (
+                    x^2+2 \right )^{\frac{2}{3}}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2574" tytul="" typ="1" yt="8kd9S3pc7kl" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-24">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{e^{\frac{1}{x^2}}}{x^3}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1664" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int x^{-2}e^{\frac{1}{x}}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    x^{-2}e^{\frac{1}{x}}dx &=\begin{vmatrix} t=\frac{1}{x}\\dt=-x^{-2}dx\end{vmatrix}=\\[6pt]
+                    &=\int-e^tdt=\\[6pt] &=-e^{t}+C=\\[6pt] &=-e^{\frac{1}{x}}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2575" tytul="" typ="1" yt="gBJprP_Etb3" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-24">
+                <div class="z_tresc">Oblicz całkę \(\int 5^{3x+1}dx \).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1665" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int 3^{4x-1}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int 3^{4x-1}dx
+                    &=\begin{vmatrix} t=4x-1 \\ dt=4dx \\dx = \frac{1}{4}dt\end{vmatrix}=\\[6pt] &=\int 3^t\cdot
+                    \frac{1}{4}dt=\\[6pt] &=\frac{1}{4}\int3^tdt=\\[6pt] &=\frac{1}{4}\cdot \frac{3^t}{\ln 3}+C=\\[6pt]
+                    &=\frac{3^{4x-1}}{4\ln 3}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2576" tytul="" typ="1" yt="ocmppLmZVyr" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-24">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{x^{-1}}{\ln x}dx \).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1666" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{2}{x\ln x}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    \frac{2}{x\ln x}dx &=\begin{vmatrix} t=\ln x \\ dt=\frac{1}{x}dx \\ dx=xdt\end{vmatrix}=\\[6pt]
+                    &=\int \frac{2}{x\cdot t}xdt=\\[6pt] &=\int \frac{2}{t}dt=\\[6pt] &=2\ln |t| + C=\\[6pt] &=2\ln |\ln
+                    x| + C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="1667" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int\frac{dx}{\sqrt[3]{x-1}}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split}
+                    \int\frac{dx}{\sqrt[3]{x-1}} &=\begin{vmatrix} t=x-1\\dt=dx\end{vmatrix}=\\[6pt]
+                    &=\int\frac{dt}{\sqrt[3]{t}}=\\[6pt] &=\int t^{-\frac{1}{3}}dt=\\[6pt]
+                    &=\frac{3}{2}t^{\frac{2}{3}}+C=\\[6pt] &=\frac{3}{2}(x-1)^{\frac{2}{3}}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="1668" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{1-\ln x}{x}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int \frac{1-\ln
+                    x}{x}dx &=\begin{vmatrix} t=1-\ln x\\dt=-\frac{1}{x}dx\\dx=-xdt\end{vmatrix}=\\[6pt]
+                    &=\int\frac{t}{x}\cdot \left ( -xdt \right )=\\[6pt] &=-\int t\ dt=\\[6pt]
+                    &=-\frac{t^2}{2}+C=\\[6pt] &=-\frac{(1-\ln x)^2}{2}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2577" tytul="" typ="1" yt="8HJfTK3Zngn" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-24">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{dx}{e^x+e^{-x}}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="2578" tytul="" typ="1" yt="oVC2ae6y3oN" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2018-01-25">
+                <div class="z_tresc">Oblicz całkę \(\int \left (e^{6x}+\frac{1}{e^x}\right )dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="1669" tytul="" typ="1" yt="" p="0" lvl="" pkt="1" typ_v="1" pisz="1" odp="" wsk=""
+                data="2015-05-19">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{e^{4x}-e^{-x}}{4}dx\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_p hide no-mathjax">Obliczamy całkę metodą podstawiania: \[ \begin{split} \int
+                    \frac{e^{4x}-e^{-x}}{4}dx &=\int \frac{\dfrac{e^{5x}}{e^x}-\dfrac{1}{e^x}}{4}dx=\\[6pt] &=\int
+                    \frac{e^{5x}-1}{4e^x}dx=\\[6pt] &=\begin{vmatrix}
+                    t=e^x\\dt=e^xdx\\dx=\frac{dt}{e^x}\end{vmatrix}=\\[6pt] &=\int \frac{t^5-1}{4t}\cdot
+                    \frac{dt}{t}=\\[6pt] &=\frac{1}{4}\int\frac{t^5-1}{t^2}dt=\\[6pt] &=\frac{1}{4} \left ( \int t^3
+                    dt-\int t^{-2} dt \right )=\\[6pt] &=\frac{1}{4} \left ( \frac{t^4}{4}-\frac{t^{-1}}{-1}+C \right
+                    )=\\[6pt] &=\frac{t^4}{16}+\frac{1}{4t}+C=\\[6pt] &=\frac{t^5+4}{16t}+C=\\[6pt]
+                    &=\frac{e^{5x}+4}{16e^x}+C \end{split} \]</div>
+            </div>
+            <div class="zadanie" id="2864" tytul="" typ="1" yt="8VGgi4tUwiv" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2019-01-30">
+                <div class="z_tresc">Oblicz całkę \(\int \frac{dx}{4+x^2}\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="przyklady-calek-elementarnych.html">&#9664; Przykłady całek elementarnych</a></div>
+                <div class="next_temat"><a href="calkowanie-przez-czesci.html" class="next_temat">Całkowanie przez
+                        części &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

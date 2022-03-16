@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ekstrema lokalne funkcji dwóch zmiennych - przykład 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="73" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Studia|Funkcje wielu zmiennych|Ekstrema lokalne funkcji dwóch zmiennych|Ekstrema lokalne funkcji dwóch zmiennych - przykład 1">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="funkcje-wielu-zmiennych.html">Funkcje wielu zmiennych</a> &rarr; <a
+                href="ekstrema-lokalne-funkcji-dwoch-zmiennych.html">Ekstrema lokalne funkcji dwóch zmiennych</a> &rarr;
+            <a href="ekstrema-lokalne-funkcji-dwoch-zmiennych-przyklad-1.html">Ekstrema lokalne funkcji dwóch zmiennych
+                - przykład 1</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="ekstrema-lokalne-funkcji-dwoch-zmiennych.html">&#9664; Algorytm wyznaczania ekstremów
+                    lokalnych funkcji dwóch zmiennych</a></div>
+            <div class="next_temat"><a href="ekstrema-lokalne-funkcji-dwoch-zmiennych-przyklad-2.html"
+                    class="next_temat">Ekstrema lokalne funkcji dwóch zmiennych - przykład 2 &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Ekstrema lokalne funkcji dwóch zmiennych - przykład 1</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_74" poziom="blok_0">Wyznacz ekstrema lokalne funkcji:
+                \[f(x,y)=3x^4-\frac{2}{3}y^3+2x^2y-2x^2+y^2\] <span class="u">Rozwiązanie:</span>
+                <ul style="margin:10px 0;list-style-type:decimal;">
+                    <li style="margin:10px auto">Liczymy pochodne cząstkowe pierwszego rzędu: \[\begin{split}
+                        f'_{x}&=12x^3+4xy-4x\\f'_{y}&=-2y^2+2x^2+2y \end{split}\] </li>
+                    <li style="margin:10px auto"> Przyrównujemy te pochodne do zera, tworząc układ równań:
+                        \[\begin{cases}12x^3+4xy-4x=0\\[6pt]-2y^2+2x^2+2y=0\end{cases} \] </li>
+                    <li style="margin:10px auto"> Rozwiązujemy powyższy układ równań: \[\begin{split}
+                        &\begin{cases}12x^3+4xy-4x=0 \qquad //:4\\-2y^2+2x^2+2y=0 \qquad //:(-2)\end{cases} \\[5pt]
+                        \\&\begin{cases}3x^3+xy-x=0\\y^2-x^2-y=0\end{cases} \end{split}\] Rozwiązujemy pierwsze
+                        równanie: \[\begin{split} 3x^3+xy-x&=0\\[6pt]x(3x^2+y-1)&=0\\[6pt]x=0\quad &\lor\quad
+                        3x^2+y-1=0\\[6pt]&\lor\quad y=-3x^2+1 \end{split}\] Zatem mamy do rozwiązania dwa układy:
+                        \[\begin{cases}x=0\\y^2-x^2-y=0\end{cases} \qquad \text{oraz}\qquad
+                        \begin{cases}y=-3x^2+1\\y^2-x^2-y=0\end{cases}\] Rozwiążemy na początku pierwszy układ:
+                        \[\begin{split}
+                        &\begin{cases}x=0\\[6pt]y^2-x^2-y=0\end{cases}\\[6pt]&\begin{cases}x=0\\[6pt]y^2-y=0\end{cases}\\[6pt]&\begin{cases}x=0\\y(y-1)=0\end{cases}\\[6pt]&\begin{cases}x=0\\[6pt]y=0\end{cases}\qquad
+                        \text{lub}\qquad \begin{cases}x=0\\[6pt]y=1\end{cases} \end{split}\] Teraz rozwiążemy drugi
+                        układ równań:
+                        \[\begin{cases}y=-3x^2+1\\[6pt]y^2-x^2-y=0\end{cases}\\[12pt]\begin{cases}\frac{y-1}{3}=-x^2\\[6pt]y^2-x^2-y=0\end{cases}\]
+                        Podstawiamy w drugim równaniu pod \(-x^2\) wyliczone wyrażenie z pierwszego równania:
+                        \[\begin{split} y^2+\frac{y-1}{3}-y&=0\qquad //\cdot
+                        3\\[6pt]3y^2+y-1-3y&=0\\[6pt]3y^2-2y-1&=0\\[6pt]\Delta
+                        &=4+12=16\\[6pt]y_{1}=\frac{2-4}{6}=-\frac{1}{3}\quad &\lor \quad y_{2}=\frac{2+4}{6}=1
+                        \end{split}\] Czyli mamy: \[\begin{split}
+                        &\begin{cases}\frac{y-1}{3}=-x^2\\[6pt]y=-\frac{1}{3}\end{cases}\qquad &\lor \qquad
+                        \begin{cases}\frac{y-1}{3}=-x^2\\y=1\end{cases}\\[16pt]&\begin{cases}\frac{-\frac{1}{3}-1}{3}=-x^2\\[6pt]y=-\frac{1}{3}\end{cases}\qquad
+                        &\lor \qquad
+                        \begin{cases}\frac{1-1}{3}=-x^2\\[6pt]y=1\end{cases}\\[16pt]&\begin{cases}\frac{4}{9}=x^2\\[6pt]y=-\frac{1}{3}\end{cases}\qquad
+                        &\lor \qquad
+                        \begin{cases}0=x^2\\[6pt]y=1\end{cases}\\[16pt]\begin{cases}x=\frac{2}{3}\\[6pt]y=-\frac{1}{3}\end{cases}&\quad
+                        \lor \quad \begin{cases}x=-\frac{2}{3}\\[6pt]y=-\frac{1}{3}\end{cases}\qquad &\lor \qquad
+                        \begin{cases}x=0\\[6pt]y=1\end{cases} \end{split}\] Zatem ostatecznie rozwiązaniami układu
+                        równań są punkty: \[\begin{cases}x=0\\y=0\end{cases}\quad \lor \quad
+                        \begin{cases}x=0\\y=1\end{cases}\quad \lor \quad
+                        \begin{cases}x=\frac{2}{3}\\y=-\frac{1}{3}\end{cases}\quad \lor \quad
+                        \begin{cases}x=-\frac{2}{3}\\y=-\frac{1}{3}\end{cases}\] </li>
+                    <li style="margin:10px auto"> Wypisujemy punkty stacjonarne \[P_{1}=(0,0),\quad P_{2}=(0,1),\quad
+                        P_{3}=\left ( \frac{2}{3},-\frac{1}{3} \right ),\quad P_{4}=\left ( -\frac{2}{3},-\frac{1}{3}
+                        \right )\] </li>
+                    <li style="margin:10px auto"> Liczymy pochodne cząstkowe drugiego rzędu:<br /> Zaczynamy od
+                        przypomnienia sobie obliczonych pochodnych pierwszego rzędu: \[\begin{split}
+                        f'_{x}&=12x^3+4xy-4x\\[6pt]f'_{y}&=-2y^2+2x^2+2y \end{split}\] I teraz liczymy drugie pochodne:
+                        \[\begin{split} f''_{xx}&=36x^2+4y-4\\[6pt]f''_{xy}&=4x\\[6pt]f''_{yx}&=4x\\[6pt]f''_{yy}&=-4y+2
+                        \end{split}\] </li>
+                    <li style="margin:10px auto"> Z otrzymanych pochodnych tworzymy wyznacznik:
+                        \[W(x,y)=\begin{vmatrix}36x^2+4y-4 & 4x\\4x & -4y+2\end{vmatrix} \] </li>
+                    <li style="margin:10px auto"> Obliczamy powyższy wyznacznik kolejno dla wszystkich punktów
+                        stacjonarnych: <div class="math_left">
+                            <div class="mb30"> \[\begin{split} &W(P_{1})=W(0,0)=\begin{vmatrix}36\cdot 0^2+4\cdot 0-4 &
+                                4\cdot 0\\4\cdot 0 & -4\cdot 0+2\end{vmatrix} =\begin{vmatrix}-4 & 0\\0 & 2\end{vmatrix}
+                                =-8-0=-8 \end{split} \] </div>
+                            <div class="mb30"> \[\begin{split} &W(P_{2})=W(0,1)=\begin{vmatrix}36\cdot 0^2+4\cdot 1-4 &
+                                4\cdot 0\\4\cdot 0 & -4\cdot 1+2\end{vmatrix} =\begin{vmatrix}0 & 0\\0 & -2\end{vmatrix}
+                                =0-0=0 \end{split} \] </div>
+                            <div class="mb30"> \[\begin{split}
+                                W(P_{3})&=W(\frac{2}{3},-\frac{1}{3})=\begin{vmatrix}36\cdot \left ( \frac{2}{3} \right
+                                )^2+4\cdot \left ( -\frac{1}{3} \right )-4 & 4\cdot \frac{2}{3}\\4\cdot \frac{2}{3} &
+                                -4\cdot \left ( -\frac{1}{3} \right )+2\end{vmatrix} =\begin{vmatrix}\frac{32}{3} &
+                                \frac{8}{3}\\\frac{8}{3} & \frac{10}{3}\end{vmatrix} =\\[6pt]&=
+                                \frac{320}{9}-\frac{64}{9}=\frac{256}{9} \end{split}\] </div>
+                            <div class="mb30"> \[\begin{split}
+                                W(P_{4})&=W(-\frac{2}{3},-\frac{1}{3})=\begin{vmatrix}36\cdot \left ( -\frac{2}{3}
+                                \right )^2+4\cdot \left ( -\frac{1}{3} \right )-4 & 4\cdot \left ( -\frac{2}{3} \right
+                                )\\4\cdot \left ( -\frac{2}{3} \right ) & -4\cdot \left ( -\frac{1}{3} \right
+                                )+2\end{vmatrix} =\begin{vmatrix}\frac{32}{3} & -\frac{8}{3}\\-\frac{8}{3} &
+                                \frac{10}{3}\end{vmatrix} =\\[6pt]&= \frac{320}{9}-\frac{64}{9}=\frac{256}{9}
+                                \end{split} \] </div>
+                        </div>
+                    </li>
+                    <li style="margin:10px auto"> Sprawdzamy dla każdego punktu stacjonarnego czy istnieje w nim
+                        ekstremum: <div style='margin: 10px 0 0 10px'> \(W(P_{1})=-8
+                            <0\) zatem w punkcie \(P_{1}\) nie ma ekstremum.<br /> \(W(P_{2})=0\) zatem na razie nie
+                            wiemy czy w punkcie \(P_{2}\) jest ekstremum.<br /> \(W(P_{3})=\frac{256}{9}>0\) zatem w
+                            punkcie \(P_{3}\) jest ekstremum.<br /> \(W(P_{4})=\frac{256}{9}>0\) zatem w punkcie
+                            \(P_{4}\) jest ekstremum.
+                        </div>
+                    </li>
+                    <li style="margin:10px auto"> Sprawdzamy jakie ekstrema przyjmuje funkcja w punktach \(P_{3}\) i
+                        \(P_{4}\).<br />
+                        <div style='margin: 10px 0 10px 10px'> \(f''_{xx}(P_{3})=\frac{32}{3}\) zatem w punkcie
+                            \(P_{3}\) funkcja ma <b>minimum</b>.<br /> \(f''_{xx}(P_{4})=\frac{32}{3}\) zatem w punkcie
+                            \(P_{4}\) funkcja ma <b>minimum</b>. </div> Obliczamy teraz te minima, korzystając ze wzoru
+                        funkcji \(f(x,y)=3x^4-\frac{2}{3}y^3+2x^2y-2x^2+y^2\). <div class="math_left"
+                            style='margin: 10px 0 10px 10px'> \[\begin{split} f(P_{3})&=f\left (
+                            \frac{2}{3},-\frac{1}{3} \right )=3\left ( \frac{2}{3} \right )^4-\frac{2}{3}\cdot \left (
+                            -\frac{1}{3} \right )^3+2\left ( \frac{2}{3} \right )^2\cdot \left ( -\frac{1}{3} \right
+                            )-2\left ( \frac{2}{3} \right )^2+\left ( -\frac{1}{3} \right )^2=-\frac{37}{81}
+                            \end{split}\] \[\begin{split} f(P_{4})&=f\left ( -\frac{2}{3},-\frac{1}{3} \right )=3\left (
+                            -\frac{2}{3} \right )^4-\frac{2}{3}\cdot \left ( -\frac{1}{3} \right )^3+2\left (
+                            -\frac{2}{3} \right )^2\cdot \left ( -\frac{1}{3} \right )-2\left ( -\frac{2}{3} \right
+                            )^2+\left ( -\frac{1}{3} \right )^2=-\frac{37}{81} \end{split}\] </div>
+                    </li>
+                    <li style="margin:10px auto"> Sprawdzamy czy istnieje ekstremum w punkcie \(P_{2}=(0,1)\), w którym
+                        wyzerował się wyznacznik.<br /> Przypomnijmy sobie macierz drugich pochodnych dla tego punktu:
+                        \[f''(P_{2})=\begin{bmatrix}0 & 0\\0 & -2\end{bmatrix}\] Zbadajmy na początku funkcję jednej
+                        zmiennej, ze względu na niewiadomą \(x\), przechodzącą przez punkt \(P_{2}=(0,1)\). Jej wzór to:
+                        \[\begin{split} f(x,1)&=3x^4-\frac{2}{3}\cdot 1^3+2x^2\cdot
+                        1-2x^2+1^2\\f(x,1)&=3x^4-\frac{2}{3}+2x^2-2x^2+1\\f(x,1)&=3x^4+\frac{1}{3} \end{split}\] Z
+                        powyższego wzoru widać, że funkcja dla \(x=0\) ma minimum równe \(\frac{1}{3}\).<br /> Teraz
+                        zbadamy funkcję jednej zmiennej, ze względu na niewiadomą \(y\), przechodzącą przez punkt
+                        \(P_{2}=(0,1)\). Jej wzór to: \[\begin{split} f(0,y)&=3\cdot 0^4-\frac{2}{3}y^3+2\cdot 0^2\cdot
+                        y-2\cdot 0^2+y^2\\f(0,y)&=-\frac{2}{3}y^3+y^2 \end{split}\] Musimy określić, czy ta funkcja
+                        osiąga ekstremum dla \(y=1\). W tym celu nie musimy analizować wzoru tej funkcji, ponieważ
+                        widzimy, że druga pochodna w tym punkcie jest ujemna: \[f''_{yy}=-2
+                        <0\] (odczytujemy to z macierzy drugich pochodnych)<br /> Ponieważ \(f''_{yy}
+                        <0\) zatem funkcja jednej zmiennej osiąga dla \(y=1\) ekstremum maksimum.<br /> Podsumowując:
+                        <div style='margin: 0px 0 0 20px'> Funkcja jednej zmiennej \(f(x,1)\) osiąga w punkcie \(x=0\)
+                            ekstremum minimum.<br /> Funkcja jednej zmiennej \(f(0,y)\) osiąga w punkcie \(y=1\)
+                            ekstremum maksimum.<br /> Zatem funkcja dwóch zmiennych \(f(x,y)\) <b>nie ma ekstremum</b> w
+                            punkcie \(P_{2}=(0,1)\) (płaszczyzna ma w nim lokalnie kształt siodła). </div>
+                    </li>
+                </ul> Fragment płaszczyzny będącej wykresem funkcji \(f(x,y)\) przedstawiono na poniższym rysunku: <img
+                    src="grafika/rozne/r2.jpg" class="center" alt="" /> Ten sam wykres nieco obrócony: <img
+                    src="grafika/rozne/r3.jpg" class="center" alt="" />
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="ekstrema-lokalne-funkcji-dwoch-zmiennych.html">&#9664; Algorytm wyznaczania ekstremów
+                        lokalnych funkcji dwóch zmiennych</a></div>
+                <div class="next_temat"><a href="ekstrema-lokalne-funkcji-dwoch-zmiennych-przyklad-2.html"
+                        class="next_temat">Ekstrema lokalne funkcji dwóch zmiennych - przykład 2 &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sprowadzanie macierzy do postaci schodkowej zredukowanej</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="394" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Studia|Macierze|Sprowadzanie macierzy do postaci schodkowej zredukowanej">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="macierze.html">Macierze</a> &rarr; <a
+                href="sprowadzanie-macierzy-do-postaci-schodkowej-zredukowanej.html">Sprowadzanie macierzy do postaci
+                schodkowej zredukowanej</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="operacje-elementarne-na-macierzach.html">&#9664; Operacje elementarne na macierzach</a></div>
+            <div class="next_temat"><a href="transponowanie-macierzy.html" class="next_temat">Transponowanie macierzy
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Sprowadzanie macierzy do postaci schodkowej zredukowanej</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_788" poziom="blok_0">
+                <div class="definicja"> Mówimy, że macierz \(A\in M_{m\times n}(\mathbb{R} )\) jest w <b>postaci
+                        schodkowej</b>, jeżeli \(A\) spełnia warunki: <ul style="margin: 5px auto 0 auto;">
+                        <li class="punkt9">każdy wiersz zerowy (składający się z samych zer) znajduje się poniżej
+                            każdego wiersza niezerowego,</li>
+                        <li class="punkt9">w każdym wierszu pierwszy (licząc od lewej) niezerowy wyraz znajduje się w
+                            kolumnie stojącej na prawo od pierwszego niezerowego wyrazu wiersza poprzedniego.</li>
+                    </ul>
+                </div>
+                <div class="akapit bt"> Mówiąc intuicyjnie - macierz jest w postaci schodkowej, jeżeli w kolejnych
+                    wierszach występuje na początku coraz więcej zer (kolejne wiersze macierzy przypominają schodki).
+                </div>
+            </div>
+            <div class="zadanie druk_ukryj" id="2759" tytul="Postać schodkowa macierzy" typ="2" yt="48UpM2B5FCI" p="0"
+                lvl="S" pkt="1" typ_v="1" pisz="" odp="" wsk="" data="2018-10-31">
+                <div class="z_tresc">W tym nagraniu pokazuje na kilku przykładach jak wygląda macierz w postaci
+                    schodkowej zredukowanej.<div class="m10"><b>Czas nagrania:</b> 8 min.</div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="blok_strony" id="blok_390" poziom="blok_0">
+                <div class="zadanie"> Przykładowy macierzy zapisanych w postaci schodkowej: <img
+                        src="grafika/studia/macierze/macierz_schodkowa1.png" class="center m20" alt="" /> </div>
+                <div class="zadanie"> Przykłady macierzy które <b>nie</b> są zapisane w postaci schodkowej: <img
+                        src="grafika/studia/macierze/macierz_schodkowa2.png" class="center m20" alt="" /> </div>
+                <div class="twierdzenie">
+                    <h3>Definicja</h3> Mówimy, że macierz jest w <b>zredukowanej postaci schodkowej</b>, jeżeli spełnia
+                    warunki: <ul style="margin: 5px auto 15px auto;">
+                        <li class="punkt9">jest w postaci schodkowej,</li>
+                        <li class="punkt9">w każdym wierszu pierwszy niezerowy wyraz jest równy \(1\), a ponadto inne
+                            wyrazy w jego kolumnie są zerami.</li>
+                    </ul>
+                </div>
+                <div class="zadanie"> Przykładowy macierzy zapisanych w zredukowanej postaci schodkowej: <img
+                        src="grafika/studia/macierze/macierz_schodkowa3.png" class="center m20" alt="" /> </div>
+                <div class="twierdzenie">
+                    <h3>Fakt</h3> Każdą macierz można za pomocą <a
+                        href="operacje-elementarne-na-macierzach.html">operacji elementarnych</a> sprowadzić do postaci
+                    schodkowej zredukowanej.
+                </div>
+                <div class="akapit bt"> Powyższy fakt jest niezwykle ważny, ponieważ dzięki niemu możemy rozwiązywać
+                    dowolnie skomplikowane układy równań liniowych. Wystarczy sprowadzić do postaci schodkowej
+                    zredukowanej macierz odpowiadającą takiemu układowi, a następnie odczytać z niej rozwiązanie. </div>
+                <div class="akapit"> Już w poprzednim rozdziale, podczas wykonywania operacji elementarnych,
+                    sprowadziliśmy macierz do postaci schodkowej zredukowanej. Wszystkie rachunki są przedstawione w <a
+                        href="operacje-elementarne-na-macierzach.html#przyklad_schodkowa0">tym przykładzie</a>. </div>
+                <div class="akapit"> Poniżej podam kolejne przykłady na sprowadzanie macierzy do postaci schodkowej
+                    zredukowanej. Operacje elementarne na wierszach będziemy oznaczali tak jak we <a
+                        href="operacje-elementarne-na-macierzach.html#przyklad_schodkowa0">wspomnianym przykładzie</a>.
+                </div>
+                <div class="zadanie"> Sprowadź podaną macierz do postaci schodkowej zredukowanej. <img
+                        src="grafika/studia/macierze/macierz_schodkowa_zredukowana1a.png" class="center m20" alt="" />
+                    <div class="p_p"> <img src="grafika/studia/macierze/macierz_schodkowa_zredukowana1.png"
+                            class="center m20" alt="" /> </div>
+                </div>
+                <div class="zadanie"> Sprowadź podaną macierz do postaci schodkowej zredukowanej.<br /> <img
+                        src="grafika/studia/macierze/macierz_schodkowa_zredukowana2a.png" class="center"
+                        style="margin: 5px auto 0px auto" alt="" />
+                    <div class="p_p"> <img src="grafika/studia/macierze/macierz_schodkowa_zredukowana2.png"
+                            class="center" style="margin: 15px auto" alt="" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="operacje-elementarne-na-macierzach.html">&#9664; Operacje elementarne na macierzach</a>
+                </div>
+                <div class="next_temat"><a href="transponowanie-macierzy.html" class="next_temat">Transponowanie
+                        macierzy &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

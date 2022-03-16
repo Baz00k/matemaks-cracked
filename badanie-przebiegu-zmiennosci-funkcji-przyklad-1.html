@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Badanie przebiegu zmienności funkcji - przykład 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="11" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60"
+        nadtematy="|Studia|Badanie przebiegu zmienności funkcji II|Badanie przebiegu zmienności funkcji - przykład 1">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="studia.html">Studia</a> &rarr; <a
+                href="badanie-przebiegu-zmiennosci-funkcji-ii.html">Badanie przebiegu zmienności funkcji II</a> &rarr;
+            <a href="badanie-przebiegu-zmiennosci-funkcji-przyklad-1.html">Badanie przebiegu zmienności funkcji -
+                przykład 1</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="badanie-przebiegu-zmiennosci-funkcji-ii.html">&#9664; Wprowadzenie</a></div>
+            <div class="next_temat"><a href="funkcje-wielu-zmiennych.html" class="next_temat">Funkcje wielu zmiennych
+                    &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Badanie przebiegu zmienności funkcji - przykład 1</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_12" poziom="blok_0">Zbadaj przebieg zmienności funkcji:
+                \[f(x)=\frac{1}{x^{2}-2}+1\] <span class="u">Rozwiązanie:</span>
+                <div> Musimy wyznaczyć: <ul style="margin:0;list-style-type:decimal;">
+                        <li>Dziedzinę.</li>
+                        <li>Miejsca zerowe.</li>
+                        <li>Punkt przecięcia z osią </i>Oy</i>.</li>
+                        <li>Granice na krańcach dziedziny.</li>
+                        <li>Asymptoty.</li>
+                        <li>Przedziały monotoniczności.</li>
+                        <li>Ekstrema.</li>
+                        <li>Przedziały wklęsłości i wypukłości.</li>
+                        <li>Punkty przegięcia.</li>
+                    </ul> Na końcu narysujemy wykres funkcji i odczytujemy z niego zbiór wartości funkcji. <ul
+                        class="lista1">
+                        <li>Wyznaczamy <b>dziedzinę</b> funkcji.<br /> Sprawdzamy kiedy zeruje się mianownik:
+                            \[\begin{split} x^{2}-2&=0\\x^{2}&=2\\x=\sqrt{2}\quad &\lor \quad x=-\sqrt{2} \end{split}\]
+                            Zatem dziedzina funkcji to: \[\mathbb{R}\backslash\{-\sqrt{2},\sqrt{2}\}\] </li>
+                        <li> Wyznaczamy <b>miejsca zerowe</b> funkcji.<br /> Przyrównujemy wzór funkcji do zera i
+                            rozwiązujemy takie równanie: \[\begin{split} \quad\quad\quad \quad \quad
+                            \frac{1}{x^{2}-2}+1&=0\\\frac{1}{x^{2}-2}&=-1\quad\quad \quad \quad / \cdot
+                            (x^{2}-2)\\1&=-(x^{2}-2)\\1&=-x^{2}+2\\x^{2}&=1\\x=1\quad &\lor\quad x=-1 \end{split}\]
+                            Zatem miejscami zerowymi funkcji są: \( x=-1 \) oraz \( x=1 \). </li>
+                        <li> Wyznaczamy punkt przecięcia z <b>osią \(Oy\)</b><br /> W tym celu liczymy wartość funkcji
+                            zerze: \[f(0)= \frac{1}{0^{2}-2}+1=\frac{1}{-2}+1=-\frac{1}{2}+1=\frac{1}{2}\] Zatem punkt
+                            przecięcia funkcji z osią \(Oy\), to: \(\left (0,\frac{1}{2}\right )\). </li>
+                        <li>Wyznaczamy <b>granice</b> na krańcach dziedziny.<br /> Tutaj zawsze należy wyznaczyć granice
+                            funkcji w \( +\infty \) oraz \( -\infty \).<br /> W tym przypadku będziemy musieli dodatkowo
+                            policzyć granice funkcji dla \( x \)-ów, które wypadły z dziedziny (bo tam funkcja jest
+                            nieciągła), czyli dla \( x=\sqrt{2} \) oraz \( x=-\sqrt{2} \).<br /> Zaczynamy od przypadków
+                            w nieskończonościach:<br /> \[\lim_{x \to +\infty}f(x)=\lim_{x \to
+                            +\infty}\bigg(\frac{1}{x^{2}-2}+1\bigg)=\bigg[\frac{1}{+\infty }+1\bigg]=[0+1]=1\] \[\lim_{x
+                            \to -\infty}f(x)=\lim_{x \to -\infty}\bigg(\frac{1}{x^{2}-2}+1\bigg)=\bigg[\frac{1}{+\infty
+                            }+1\bigg]=[0+1]=1\] Uwaga! Wyliczone granice w \( +\infty \) oraz \( -\infty \) od razu dają
+                            nam asymptotę poziomą, która w tym przypadku jest prostą o równaniu \( y=1 \). Będzie o tym
+                            jeszcze mowa w kolejnym punkcie.<br /> Teraz obliczymy granice w punktach, kóre nie należą
+                            do dziedziny: Liczymy granicę lewostronną dla \( x=\sqrt{2} \): \[\begin{split} \lim_{x \to
+                            \sqrt{2}^{-}}f(x)&=\lim_{x \to
+                            \sqrt{2}^{-}}\left(\frac{1}{x^{2}-2}+1\right)=\left[\frac{1}{(\sqrt{2}^{-})^{2}-2}+1\right]=
+                            \left [\frac{1}{2^{-}-2}+1 \right ]=\\&=\left [ \frac{1}{{0}^{-}}+1 \right ]=\left [ -\infty
+                            +1 \right ]=-\infty \end{split}\] Wyjaśnienie oznaczeń:<br />
+                            <div style="margin:0 20px 10px"> \(\begin{split} {\left ( {\sqrt{2}}^{-} \right )}^{2}
+                                \end{split}\) - to liczba trochę mniejsza od \( \sqrt{2} \) podniesiona do kwadratu (np.
+                                \( {1,41}^{2} \)).<br /> \( {2}^{-} \) - liczba trochę mniejsza od \( 2 \) (np. \( 1,99
+                                \)).<br /> \( {0}^{-} \) - liczba trochę mniejsza od \( 0 \) (np. \( -0,01 \)). </div>
+                            Teraz podobnie liczymy granicę prawostronną dla \( x=\sqrt{2} \):<br /> \[\begin{split}
+                            \lim_{x \to \sqrt{2}^{+}}f(x)&=\lim_{x \to
+                            \sqrt{2}^{+}}\left(\frac{1}{x^{2}-2}+1\right)=\left[\frac{1}{(\sqrt{2}^{+})^{2}-2}+1\right]=
+                            \left [\frac{1}{2^{+}-2}+1 \right ]=\\&=\left [ \frac{1}{{0}^{+}}+1 \right ]=\left [ +\infty
+                            +1 \right ]=+\infty \end{split}\] Zatem dla \(\begin{split} x=\sqrt{2 } \end{split}\)
+                            granice obustronne istnieją, ale są różne, więc granica dla \(\begin{split} x =\sqrt{2 }
+                            \end{split}\) nie istnieje. Zapiszemy to tak: \[\lim_{x \to \sqrt{2}^{-}}f(x)=-\infty
+                            \\\lim_{x \to \sqrt{2}^{+}}f(x)=+\infty \] Zatem: \[\lim_{x \to \sqrt{2}}f(x)=\text{nie
+                            istnieje}\] Teraz musimy wykonać podobne rachunki dla drugiego punktu nie należącego do
+                            dziedziny. Liczymy zatem granicę lewostronną dla \(\begin{split} x=-\sqrt{2} \end{split}\):
+                            \[\begin{split} \lim_{x \to -\sqrt{2}^{-}}f(x)&=\lim_{x \to
+                            -\sqrt{2}^{-}}\left(\frac{1}{x^{2}-2}+1\right)=\left[\frac{1}{\left ( -{\sqrt{2}}^{-} \right
+                            )^2-2}+1\right]=\\&= \left [\frac{1}{2^{+}-2}+1 \right ]=\left [ \frac{1}{{0}^{+}}+1 \right
+                            ]=\left [ +\infty +1 \right ]=+\infty \end{split}\] Uwaga! Zauważ, że liczba \(\begin{split}
+                            \left ( -{\sqrt{2}}^{-} \right )^2 \end{split}\) jest trochę większa od \( 2 \), bo to jest
+                            np.: \( \left ( -1,41 \right )^2=2,0164 \)<br /><br /> Teraz podobnie liczymy granicę
+                            prawostronną dla \(\begin{split} x=-\sqrt{2} \end{split}\): \[\begin{split} \lim_{x \to
+                            -\sqrt{2}^{+}}f(x)&=\lim_{x \to
+                            -\sqrt{2}^{+}}\left(\frac{1}{x^{2}-2}+1\right)=\left[\frac{1}{\left ( -{\sqrt{2}}^{+} \right
+                            )^2-2}+1\right]= \left [\frac{1}{2^{-}-2}+1 \right ]=\\&=\left [ \frac{1}{{0}^{-}}+1 \right
+                            ]=\left [ -\infty +1 \right ]=-\infty \end{split}\] Zatem dla \( x=-\sqrt{2} \) granice
+                            obustronne istnieją, ale są różne, więc granica dla \( x=-\sqrt{2} \) nie istnieje.
+                            Zapiszemy to tak: \[\lim_{x \to -\sqrt{2}^{-}}f(x)=+\infty \\\lim_{x \to
+                            -\sqrt{2}^{+}}f(x)=-\infty \] Zatem: \[\lim_{x \to -\sqrt{2}}f(x)= \text{nie istnieje}\]
+                        </li>
+                        <li> <b>Wyznaczamy asymptoty</b>.<br /> <b>Asymptoty pionowe</b> już wyznaczyliśmy przy
+                            wyznaczaniu dziedziny - są nimi proste pionowe, przechodzące przez punkty, które nie należą
+                            do dziedziny.<br /> Zatem asymptoty pionowe, to proste opisane równaniami: \[x=-\sqrt{2}\]
+                            oraz \[x=\sqrt{2}\] <b>Asymptoty poziome</b> istnieją, jeżeli granice w \( +\infty \) oraz
+                            \( -\infty \)istnieją i są skończone.<br /> Już wyliczyliśmy, że: \[\lim_{x \to
+                            +\infty}f(x)=1\\\lim_{x \to -\infty}f(x)=1\] Zatem asymptota pozioma istnieje i jej
+                            równanie, to: \[y=1\] <b>Asymptoty ukośne</b> nie istnieją, bo istnieją asymptoty poziome.
+                            Normalnie asymptotę ukośną prawostronną wyznaczamy obliczając granice: \[\lim_{x \to
+                            +\infty}\frac{f(x)}{x}=a\] oraz \[\lim_{x \to +\infty}\left ( f(x)-ax \right )=b\] Jeśli
+                            obie te granice istnieją i są skończone (czyli 2 i 3 są liczbami rzeczywistymi skończonymi),
+                            to asymptota prawostronna jest opisana równaniem: \[y=ax+b\] Tak samo obliczamy asymptotę
+                            ukośną lewostronną, tylko że liczymy granice w \( -\infty \). </li>
+                        <li> Wyznaczamy <b>przedziały monotoniczności</b>.<br /> Aby wyznaczyć przedziały
+                            monotoniczności (oraz ekstrema), to musimy obliczyć pochodną funkcji. Zatem liczymy:
+                            \[f'(x)=\left ( \frac{1}{x^2 -2}+1 \right )'=\frac{0 \cdot \left ( x^2 -2 \right )-1 \cdot 2
+                            x }{{\left ( x^2 -2 \right )}^{2 }}=\frac{-2 x }{{\left ( x^2 -2 \right )}^{2 }}\] Funkcja
+                            \( f(x) \) jest <b>rosnąca</b> jeśli \( f'(x)>0 \).<br /> Funkcja \( f(x) \) jest
+                            <b>malejąca</b> jeśli \( f'(x)\lt 0 \).<br /> Na początku wyznaczymy przedziały w których
+                            funkcja jest rosnąca, czyli rozwiążemy nierówność: \[\begin{split}
+                            f'(x)&>0\\\frac{-2x}{{\left ( x^2 -2 \right )}^{2}}&>0 \end{split}\] Mnożymy nierówność
+                            stronami przez wyrażenie dodatnie \( {\left ( x^2 -2 \right )}^{2} \) i otrzymujemy:
+                            \[\begin{split} -2x&>0\\x&\lt 0 \end{split}\] Zatem funkcja \( f(x) \) jest rosnąca dla \(
+                            x\in \left ( -\infty ;0 \right ) \).<br /> Teraz wyznaczymy przedziały w których funkcja
+                            jest malejąca, czyli rozwiążemy nierówność: \[\begin{split} f'(x)&\lt 0\\\frac{-2x}{{\left (
+                            x^2 -2 \right )}^{2}}&\lt 0\\-2x&\lt 0\\x&>0 \end{split}\] Zatem funkcja \( f(x) \) jest
+                            malejąca dla \( x\in \left ( 0;+\infty \right ) \).<br /> </li>
+                        <li> Wyznaczamy <b>ekstrema</b>.<br /> Funkcja może mieć ekstremum tylko w tych miejscach gdzie
+                            jej pochodna się zeruje. Dodatkowo aby ekstremum istniało, to funkcja musi w danym punkcie
+                            zmienić monotoniczność. Mogą być dwie sytuacje: <ul>
+                                <li>Jeśli funkcja była rosnąca i w pewnym momencie zaczyna maleć, to mamy ekstremum
+                                    maksimum (wykres lokalnie przypomina górkę)</li>
+                                <li>Jeśli funkcja była malejąca i w pewnym momencie zaczyna rosnąć, to mamy ekstremum
+                                    minimum (wykres lokalnie przypomina dolinę)</li>
+                            </ul> Zaczynamy od znalezienia tych \( x \)-ów dla których \( f'(x)=0 \). Rozwiązujemy
+                            równanie: \[\begin{split} f'(x)&=0\\\frac{-2}{{\left ( x^2 -2 \right
+                            )}^{2}}&=0\\-2x&=0\\x&=0 \end{split}\] Zatem podejrzewamy, że dla \( x=0 \) istnieje
+                            ekstremum. Musimy jeszcze stwierdzić, czy funkcja zmienia w tym punkcie
+                            monotoniczność.<br /> W poprzednim punkcie ustaliliśmy, że: <ul>
+                                <li>dla \( x\in (-\infty ;0) \) funkcja \( f(x) \) jest rosnąca,</li>
+                                <li>dla \( x\in (0;+\infty ) \) funkcja \( f(x) \) jest malejąca</li>
+                            </ul> Zatem dla \( x=0 \) funkcja zmienia się z rosnącej na malejącą, czyli mamy ekstremum
+                            maksimum.<br /><br /> Wyznaczmy jeszcze wartość jaką przyjmuje funkcja w tym ekstremum.
+                            Liczymy: \[f(0)=\frac{1}{{0}^{2}-2}+1=-\frac{1}{2}+1=\frac{1}{2}\] (ta wartość przyda się
+                            podczas rysowania wykresu funkcji) </li>
+                        <li> Wyznaczamy <b>przedziały wklęsłości i wypukłości</b>.<br /> Aby wyznaczyć przedziały
+                            wklęsłości i wypukłości (oraz punkty przegięcia), to musimy obliczyć drugą pochodną funkcji.
+                            Zatem liczymy:<br /> \[\begin{split} f''(x)=\left ( f'(x) \right )'&=\left (
+                            \frac{-2x}{{\left ( x^2 -2 \right )}^{2}} \right )'=\\&=\frac{-2\cdot {\left ( x^2 -2 \right
+                            )}^{2}-(-2x)\cdot 2\left ( x^2 -2 \right )\cdot 2x}{{\left ( {\left ( x^2 -2 \right )}^{2}
+                            \right )}^{2}}=\\&=\frac{-2\cdot \left ( {x}^{4}-4x^2 +4 \right )+8x^2 \left ( x^2 -2 \right
+                            )}{{\left ( x^2 -2 \right )}^{4}}=\\&=\frac{6{x}^{4}-8x^2 -8}{{\left ( x^2 -2 \right )}^{4}}
+                            \end{split}\] Funkcja \( f(x) \) jest <b>wypukła</b> jeśli \( f''(x)>0 \).<br /> Funkcja \(
+                            f(x) \) jest <b>wklęsła</b> jeśli \( f''(x)<0 \).<br></0><br /> Na początku wyznaczymy
+                            przedziały w których funkcja jest wypukła, czyli rozwiążemy nierówność: \[\begin{split}
+                            f''(x)&>0\\\frac{6{x}^{4}-8x^2 -8}{{\left ( x^2 -2 \right )}^{4}}&>0 \end{split}\] Mnożymy
+                            nierówność stronami przez wyrażenie dodatnie \( {\left ( x^2 -2 \right )}^{4} \) i
+                            otrzymujemy: \[6{x}^{4}-8x^2 -8>0\] Żeby rozwiązać tą nierówność, to musimy naszkicować
+                            wykres funkcji \( y=6{x}^{4}-8x^2 -8 \) i odczytać z niego, gdzie jest większy od zera
+                            (czyli gdzie znajduje się nad osią \( x \)-ów). W tym celu musimy najpierw wyznaczyć miejsca
+                            zerowe tej funkcji, czyli rozwiązać równanie: \[6{x}^{4}-8x^2 -8 = 0\] Wykonamy
+                            podstawienie: \[t=x^2 \] Przy takim założeniu musi być: \( t>0 \).<br /> Mamy zatem:
+                            \[6t^2-8t -8 = 0\] <div class="math_left"> \[\Delta =64-4\cdot 6\cdot (-8)=64+192=256\]
+                            </div> \[\sqrt{\Delta }=16\] \[\begin{split} {t}_{1}&=\frac{8-16}{12}=-\frac{8}{12}\lt
+                            0\\{t}_{2}&=\frac{8+16}{12}=2 \end{split}\] Zatem jedyne dodatnie rozwiązanie równania
+                            kwadratowego, to: \( t=2 \). Czyli wracając do \( x \) mamy: \[\begin{split} x^2
+                            &=2\\x=\sqrt{2}\quad &\lor \quad x=-\sqrt{2} \end{split}\] Zatem miejsca zerowe funkcji \(
+                            y=6{x}^{4}-8x^2 -8 \) to \( \sqrt{2 } \) oraz \( -\sqrt{2} \).<br /> Żeby rozwiązać
+                            nierówność: \( 6{x}^{4}-8x^2 -8>0 \), to musimy naszkicować wykres funkcji \(
+                            y=6{x}^{4}-8x^2 -8 \). Czyli zaznaczamy miejsca zerowe i rysujemy: <img class="center"
+                                src="grafika/studia/badanie_przebiegu_funkcji/przyklad1a.png" alt="" /> Odczytujemy z
+                            wykresu gdzie funkcja jest większa od zera i otrzymujemy, że: \[6{x}^{4}-8x^2 -8>0\quad
+                            \text{dla}\quad x\in \left ( -\infty ;-\sqrt{2} \right )\cup \left ( \sqrt{2};+\infty \right
+                            )\] Czyli funkcja \( f(x) \) jest wypukła dla \( x\in \left ( -\infty ;-\sqrt{2} \right
+                            )\cup \left ( \sqrt{2};+\infty \right ) \).<br /><br /> Teraz wyznaczymy przedziały w
+                            których funkcja jest wklęsła, czyli rozwiążemy nierówność: \[\begin{split} f''(x)&\lt
+                            0\\\frac{6{x}^{4}-8x^2 -8}{{\left ( x^2 -2 \right )}^{4}}&\lt 0 \end{split}\] Nie musimy
+                            tutaj jednak wykonywać żadnych rachunków. Po prostu korzystamy z wykonanych przed chwilą
+                            obliczeń i zauważamy, że funkcja jest mniejsza od zera dla \( x\in \left (
+                            -\sqrt{2};\sqrt{2} \right ) \).<br /> Czyli funkcja \( f(x) \) jest wklęsła dla \( x\in
+                            \left ( -\sqrt{2};\sqrt{2} \right ) \). </li>
+                        <li>Wyznaczamy <b>punkty przegięcia</b>.<br /> Punkty przegięcia występują w tych miejscach, w
+                            których funkcja zmienia wypukłość. Żeby je znaleźć, to należy rozwiązać równanie:
+                            \[\begin{split} f''(x)&=0\\\frac{6{x}^{4}-8x^2 -8}{{\left ( x^2 -2 \right )}^{4}}&=0
+                            \end{split}\] My to równanie rozwiązaliśmy już przy wyznaczaniu przedziałów wklęsłości i
+                            wypukłości i wiemy, że jego rozwiązaniami są: \[x=-\sqrt{2}\quad \lor \quad x=\sqrt{2}\]
+                            Zatem w tych punktach funkcja zmienia wypukłość, czyli teoretycznie są to punkty przegięcia,
+                            ale... Niestety nie należą one do dziedziny - na początku wyliczyliśmy, że dziedzina to: \(
+                            \mathbb{R} \backslash \left \lbrace -\sqrt{2}, \sqrt{2} \right \rbrace \).<br /> Czyli z
+                            tego płynie taki wniosek, że nasza funkcja \( f(x) \) nie ma punktów przegięcia. </li>
+                    </ul> Na koniec rysujemy jeszcze wykres funkcji: <div class="centertxt" style="margin: 10px auto">
+                        <img src="grafika/studia/badanie_przebiegu_funkcji/przyklad1b.png" alt="" /> </div> Na podstawie
+                    wykresu odczytujemy zbiór wartości funkcji: \[ZW = \left ( -\infty ;\frac{1}{2} \right )\cup \left (
+                    1;+\infty \right )\] </div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="badanie-przebiegu-zmiennosci-funkcji-ii.html">&#9664; Wprowadzenie</a></div>
+                <div class="next_temat"><a href="funkcje-wielu-zmiennych.html" class="next_temat">Funkcje wielu
+                        zmiennych &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

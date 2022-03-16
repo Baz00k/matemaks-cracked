@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mediana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="189" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Statystyka|Mediana">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="statystyka.html">Statystyka</a> &rarr; <a href="mediana.html">Mediana</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="odchylenie-standardowe.html">&#9664; Odchylenie standardowe</a></div>
+            <div class="next_temat"><a href="moda.html" class="next_temat">Moda &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Mediana</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_187" poziom="blok_0">
+                <div class="mb20"> Mediana - to <b>wartość środkowa</b>. </div>
+                <div class="akapit"> Jeżeli mamy wyznaczyć medianę jakiegoś zbioru liczb, to musimy najpierw wypisać te
+                    liczby w kolejności niemalejącej, a następnie wybrać liczbę środkową (w przypadku gdy mamy
+                    nieparzystą liczbę liczb w zbiorze). Jeżeli mamy parzystą liczbę liczb w zbiorze, to mediana jest
+                    równa średniej arytmetycznej dwóch środkowych liczb. </div>
+                <div class="zadanie" id="1699" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz medianę liczb: \(6, 4, 2, 4, 4\).</div>
+                    <div class="p_p">Najpierw wypisujemy liczby w kolejności niemalejącej: \[2, 4,
+                        \color{Red}4\color{Black}, 4, 6\] Mediana to liczba środkowa. Zatem mediana jest równa \(4\).
+                    </div>
+                </div>
+                <div class="zadanie" id="1700" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz medianę liczb: \(5, 8, -1, 6, 6, 1, 10\).</div>
+                    <div class="p_p">Najpierw wypisujemy liczby w kolejności niemalejącej: \[-1, 1, 5,
+                        \color{Red}6\color{Black}, 6, 8, 10\] Mediana to liczba środkowa. Zatem mediana jest równa
+                        \(6\).</div>
+                </div>
+                <div class="zadanie" id="1701" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz medianę liczb: \(7,8,3,4,9,2\).</div>
+                    <div class="p_p">Najpierw wypisujemy liczby w kolejności niemalejącej: \[2,3,
+                        \color{Red}4,7\color{Black}, 8,9\] W tym przypadku nie mamy jednej liczby środkowej, zatem
+                        bierzemy dwie liczby środkowe: \(4\) oraz \(7\), a następnie liczymy ich średnią arytmetyczną:
+                        \[\frac{4+7}{2}=\frac{11}{2}\] Zatem mediana jest równa \(\frac{11}{2}\).</div>
+                </div>
+            </div>
+            <div class="zadanie" id="289" tytul="" typ="1" yt="0LDVXd2ihIx" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-20">
+                <div class="z_tresc">W kolejnych sześciu rzutach kostką otrzymano następujące wyniki: <span
+                        class="odsu">\(6, 3, 1, 2, 5, 5\)</span>. Mediana tych wyników jest równa: <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 3 \)</div>
+                        <div><b>B.</b>\( 3{,}5 \)</div>
+                        <div><b>C.</b>\( 4 \)</div>
+                        <div><b>D.</b>\( 5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="717" tytul="" typ="1" yt="YUq_fsxbs2F" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-05-04">
+                <div class="z_tresc">Oblicz medianę oraz średnią arytmetyczną danych: \(1, 2, 4, 7, 1\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">mediana: \(2\), średnia arytmetyczna: \(3\)</div>
+            </div>
+            <div class="zadanie" id="136" tytul="" typ="1" yt="sfrKBbjAA2T" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Mediana danych: <span class="ml3 mr7">\(0, 1, 1, 2, 3, 1\)</span> jest równa <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 1 \)</div>
+                        <div><b>B.</b>\( 1{,}5 \)</div>
+                        <div><b>C.</b>\( 2 \)</div>
+                        <div><b>D.</b>\( 2{,}5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="451" tytul="" typ="1" yt="kCNhBLtUNtg" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2011-12-01">
+                <div class="z_tresc">Mediana danych: <span class="odsu">\(-4, 2, 6, 0, 1\)</span> jest równa <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 6 \)</div>
+                        <div><b>B.</b>\( 0 \)</div>
+                        <div><b>C.</b>\( 2{,}5 \)</div>
+                        <div><b>D.</b>\( 1 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="178" tytul="" typ="1" yt="0hW83Icqx8T" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Oblicz medianę danych: \(0, 1, 3, 3, 1, 1, 2, 1\).</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(1\)</div>
+            </div>
+            <div class="zadanie" id="79" tytul="" typ="1" yt="YgSaNISQLvE" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-01-09">
+                <div class="z_tresc">Wyniki sprawdzianu z matematyki przedstawione są w tabeli: <table class="tabela2">
+                        <tr>
+                            <td>Ocena</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Liczba uczniów</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                    </table> Mediana ocen ze sprawdzianu jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( 3{,}5 \)</div>
+                        <div><b>B.</b>\( 3 \)</div>
+                        <div><b>C.</b>\( 4 \)</div>
+                        <div><b>D.</b>\( 4{,}5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="137" tytul="" typ="1" yt="ARY8npSQjLl" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Mediana danych przedstawionych w tabeli liczebności jest równa <table
+                        class="tabela2">
+                        <tr>
+                            <td>wartość</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                            <td>\(3\)</td>
+                        </tr>
+                        <tr>
+                            <td>liczebność</td>
+                            <td>\(5\)</td>
+                            <td>\(2\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table>
+                    <div class="blok_odp">
+                        <div><b>A.</b>\( 0 \)</div>
+                        <div><b>B.</b>\( 0{,}5 \)</div>
+                        <div><b>C.</b>\( 1 \)</div>
+                        <div><b>D.</b>\( 5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="179" tytul="" typ="1" yt="YHwRVqjLZdl" p="0" lvl="PP" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-02-25">
+                <div class="z_tresc">Oblicz medianę danych przedstawionych w postaci tabeli liczebności <table
+                        class="tabela2">
+                        <tr>
+                            <td>wartość</td>
+                            <td>\(0\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                            <td>\(3\)</td>
+                        </tr>
+                        <tr>
+                            <td>liczebność</td>
+                            <td>\(4\)</td>
+                            <td>\(3\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(1\)</div>
+            </div>
+            <div class="zadanie" id="614" tytul="" typ="1" yt="oT3CVWeR04Z" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">Wyniki sprawdzianu z matematyki są przedstawione na diagramie. <img
+                        src="./grafika/g0255.png" class="center" noc="1" alt="" /> Mediana ocen uzyskanych przez uczniów
+                    jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( 6 \)</div>
+                        <div><b>B.</b>\( 5 \)</div>
+                        <div><b>C.</b>\( 4{,}5 \)</div>
+                        <div><b>D.</b>\( 4 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="615" tytul="" typ="1" yt="Yc4-9LlHMus" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">W drużynie koszykarskiej zawodnicy mają wzrost odpowiednio: \(191\) cm, \(210\) cm,
+                    \(205\) cm, \(204\) cm, \(212\) cm. Mediana zbioru tych wartości wynosi <div class="blok_odp">
+                        <div><b>A.</b>\( 204 \) cm</div>
+                        <div><b>B.</b>\( 205 \) cm</div>
+                        <div><b>C.</b>\( 207 \) cm</div>
+                        <div><b>D.</b>\( 210 \) cm</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="616" tytul="" typ="1" yt="MBL2oqyTkTQ" p="0" lvl="PP" pkt="1" typ_v="0" pisz=""
+                odp="1" wsk="" data="2011-08-18">
+                <div class="z_tresc">W drużynie siatkarskiej zawodnicy mają wzrost odpowiednio: \(207\) cm, \(205\) cm,
+                    \(205\) cm, \(197\) cm, \(212\) cm, \(216\) cm. Mediana zbioru tych wartości wynosi <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 197 \) cm</div>
+                        <div><b>B.</b>\( 201 \) cm</div>
+                        <div><b>C.</b>\( 205 \) cm</div>
+                        <div><b>D.</b>\( 206 \) cm</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="259" tytul="" typ="1" yt="gq7F7roHUp0" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-08-21">
+                <div class="z_tresc">Pewna firma zatrudnia \(6\) osób. Dyrektor zarabia \(8000\) zł, a pensje
+                    pozostałych pracowników są równe: \(2000\)&nbsp;zł, \(2800\)&nbsp;zł, \(3400\)&nbsp;zł,
+                    \(3600\)&nbsp;zł, \(4200\)&nbsp;zł. Mediana zarobków tych \(6\) osób jest równa <div
+                        class="blok_odp">
+                        <div><b>A.</b>\( 3400 \) zł</div>
+                        <div><b>B.</b>\( 3500 \) zł</div>
+                        <div><b>C.</b>\( 6000 \) zł</div>
+                        <div><b>D.</b>\( 7000 \) zł</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="753" tytul="" typ="1" yt="U3X335hA9sk" p="0" lvl="PP" pkt="4" typ_v="1" pisz=""
+                odp="1" wsk="" data="2012-07-31">
+                <div class="z_tresc">Ciąg \((9, 18, x)\) jest geometryczny, a ciąg \((x, 30, y)\) jest
+                    arytmetyczny.<br />Oblicz medianę liczb: \(10, x, y, 12, 12, 18, 30.\)</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(18\)</div>
+            </div>
+            <div class="zadanie" id="1008" tytul="" typ="1" yt="0JDaC3lKPUp" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2013-05-08">
+                <div class="z_tresc">Mediana uporządkowanego niemalejąco zestawu sześciu liczb: <span class="odsu1">\(1,
+                        2, 3, x, 5, 8\)</span> jest równa \(4\). Wtedy <div class="blok_odp">
+                        <div><b>A.</b>\( x=2 \)</div>
+                        <div><b>B.</b>\( x=3 \)</div>
+                        <div><b>C.</b>\( x=4 \)</div>
+                        <div><b>D.</b>\( x=5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="1397" tytul="" typ="1" yt="Q1f6ewXyJav" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-05-06">
+                <div class="z_tresc">Mediana zestawu danych \( 2, 12, a, 10, 5, 3 \) jest równa \( 7 \). Wówczas <div
+                        class="blok_odp">
+                        <div><b>A.</b>\(a=4 \)</div>
+                        <div><b>B.</b>\(a=6 \)</div>
+                        <div><b>C.</b>\(a=7 \)</div>
+                        <div><b>D.</b>\(a=9 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+            <div class="zadanie" id="1442" tytul="" typ="1" yt="kRaUZ6vYGNW" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-08-26">
+                <div class="z_tresc">Średnia arytmetyczna liczb: <span class="odsu1">\( x,13,7,5,5,3,2,11 \)</span> jest
+                    równa \( 7 \). Mediana tego zestawu liczb jest równa <div class="blok_odp">
+                        <div><b>A.</b>\(6 \)</div>
+                        <div><b>B.</b>\(7 \)</div>
+                        <div><b>C.</b>\(10 \)</div>
+                        <div><b>D.</b>\(5 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="1471" tytul="" typ="1" yt="YqO8TsvkUEB" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2014-12-16">
+                <div class="z_tresc">Średnia arytmetyczna zestawu danych: <span class="odsu">\( 3, 8, 3, 11, 3, 10, 3, x
+                        \)</span> jest równa \( 6 \). Mediana tego zestawu jest równa <div class="blok_odp">
+                        <div><b>A.</b>\( 5 \)</div>
+                        <div><b>B.</b>\( 6 \)</div>
+                        <div><b>C.</b>\( 7 \)</div>
+                        <div><b>D.</b>\( 8 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="1781" tytul="" typ="1" yt="MhFtcFkpiGD" p="0" lvl="PP" pkt="1" typ_v="2" pisz=""
+                odp="1" wsk="" data="2015-08-27">
+                <div class="z_tresc">Medianą zestawu danych \(9, 1, 4, x, 7, 9\) jest liczba \(8\). Wtedy \(x\) może być
+                    równe <div class="blok_odp">
+                        <div><b>A.</b>\( 8 \)</div>
+                        <div><b>B.</b>\( 4 \)</div>
+                        <div><b>C.</b>\( 7 \)</div>
+                        <div><b>D.</b>\( 9 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">D</div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="odchylenie-standardowe.html">&#9664; Odchylenie standardowe</a></div>
+                <div class="next_temat"><a href="moda.html" class="next_temat">Moda &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>

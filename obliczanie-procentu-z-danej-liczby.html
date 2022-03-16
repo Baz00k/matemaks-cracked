@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Obliczanie procentu z danej liczby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michał Budzyński" />
+    <link rel="Shortcut icon" href="./grafika/matemaks_ikona.ico" />
+    <link rel="stylesheet" type="text/css" href="./mstyle_20201217.css">
+</head>
+
+<body>
+    <div id="container" class="container" s_tabela="a_temat" s_id="236" s_pkt="0" s_fzmp4="0" p_min="5" p_max="28"
+        p_cel="0" p_procent="60" nadtematy="|Szkoła|Liczby i działania|Procenty|Obliczanie procentu z danej liczby">
+        <div id="top"><a href="index.html"></a></div>
+        <div id="menu">⠀</div>
+        <div id="menu_wysuwane"></div>
+        <div class="pasek_root druk_ukryj">Jesteś tutaj: <a href="szkola.html">Szkoła</a> &rarr; <a
+                href="liczby-i-dzialania.html">Liczby i działania</a> &rarr; <a href="procenty.html">Procenty</a> &rarr;
+            <a href="obliczanie-procentu-z-danej-liczby.html">Obliczanie procentu z danej liczby</a></div>
+        <div id="pasek_root_gora" class="pasek_root_2 druk_ukryj">
+            <div><a href="jakim-procentem-jednej-liczby-jest-druga-liczba.html">&#9664; Jakim procentem jednej liczby
+                    jest druga liczba</a></div>
+            <div class="next_temat"><a href="obliczanie-liczby-majac-dany-jej-procent.html"
+                    class="next_temat">Obliczanie liczby mając dany jej procent &#9654;</a></div>
+        </div>
+        <div class="middle">
+            <h1 class="tytuldzialu">Obliczanie procentu z danej liczby</h1>
+            <div class="spistresci mb20"></div>
+            <div class="blok_strony" id="blok_233" poziom="blok_0">Aby obliczyć procent z danej liczby, należy pomnożyć
+                procent przez tę liczbę. Przed wykonaniem mnożenia oczywiście zamieniamy procent na ułamek. <div
+                    class="zadanie" id="1710" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Oblicz ile wynosi \(5\%\) z liczby \(70\).</div>
+                    <div class="p_p">Wykonujemy następujący rachunek: \[5\%\cdot 70=\frac{5}{100}\cdot
+                        70=\frac{35}{10}=3{,}5\]</div>
+                </div>
+                <div class="zadanie" id="1711" p="0" lvl="" typ="1">
+                    <div class="z_tresc">Bartek zarobił \(1800\) zł i postanowił przeznaczyć \(10\%\) tej kwoty na zakup
+                        gier komputerowych. Ile pieniędzy wydał Bartek na gry?</div>
+                    <div class="p_p">Obliczamy \(10\%\) liczby \(1800\): \[10\%\cdot 1800=\frac{10}{100}\cdot
+                        1800=10\cdot 18=180\] Bartek wydał na gry \(180\) zł.</div>
+                </div>
+                <div id="program-procent-na-ulamek"></div>
+                <div class="twierdzenie">
+                    <script>function procent_z_liczby() { var c = _("procent3").value, a = _("procent4").value, c = c.replace(/\,/gi, "."), a = a.replace(/\,/gi, "."), b = a.search("/"); if (-1 != b) { var d = a.substring(0, b), b = a.substring(b + 1, a.length); 0 != b && isInt(d) && isInt(b) && (a = d / b) } var d = 1E3 * c / 1E5, e; isInt(c) && isInt(a) && (e = c * a / 100); _("procent_z_liczby_wynik").innerHTML = c + "% &sdot; " + a + " = " + d + " &sdot; " + a + " = " + e };</script>
+                    <h3>Program do obliczania procentu z liczby</h3><br style="margin-bottom: 10px;" /> Oblicz <input
+                        type="text" id="procent3" style="width: 60px">% z liczby <input type="text" id="procent4"
+                        style="width: 60px">. <input type="button" value="Oblicz" onClick="procent_z_liczby();"> <br
+                        style="margin-bottom: 10px;" />
+                    <div id="procent_z_liczby_wynik"></div>
+                </div>
+            </div>
+            <div class="zadanie" id="2844" tytul="" typ="1" yt="kQpx-7w2yx9" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2019-01-09">
+                <div class="z_tresc">Oceń prawdziwość podanych zdań. Wybierz <b>P</b>, jeśli zdanie jest prawdziwe, albo
+                    <b>F</b> – jeśli jest fałszywe. <table class="tabela2 tabela_pf">
+                        <tr>
+                            <td class="textleft">\(120\%\) liczby \(180\) to tyle samo, co \(180\%\) liczby \(120\).
+                            </td>
+                            <td class="prawdafalsz">P</td>
+                            <td class="prawdafalsz">F</td>
+                        </tr>
+                        <tr>
+                            <td class="textleft">\(20\%\) liczby \(36\) to tyle samo, co \(40\%\) liczby \(18\).</td>
+                            <td class="prawdafalsz">P</td>
+                            <td class="prawdafalsz">F</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">PP</div>
+            </div>
+            <div class="zadanie" id="2606" tytul="" typ="1" yt="wcRMXwrs3NS" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2018-05-06">
+                <div class="z_tresc">Cena roweru po obniżce o \(15\%\) była równa \(850\) zł. Przed obniżką ten rower
+                    kosztował <div class="blok_odp">
+                        <div><b>A.</b>\( 1000,00 \) zł</div>
+                        <div><b>B.</b>\( 977,50 \) zł</div>
+                        <div><b>C.</b>\( 865,00 \) zł</div>
+                        <div><b>D.</b>\( 850,15 \) zł</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">A</div>
+            </div>
+            <div class="zadanie" id="2691" tytul="" typ="1" yt="Esh_46m08xT" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2018-07-03">
+                <div class="z_tresc">Cena pewnego towaru w wyniku obniżki o \(10\%\) zmniejszytła się o \(2018\) zł. Ten
+                    towar po tej obniżce kosztował <div class="blok_odp">
+                        <div><b>A.</b>\( 20180 \) zł</div>
+                        <div><b>B.</b>\( 18162 \) zł</div>
+                        <div><b>C.</b>\( 2108 \) zł</div>
+                        <div><b>D.</b>\( 2028 \) zł</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="2659" tytul="" typ="1" yt="IfMFjpJrZUj" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2018-06-07">
+                <div class="z_tresc">Po dwukrotnej obniżce, za każdym razem o \(10\%\) w stosunku do ceny obowiązującej
+                    w chwili obniżki, komputer kosztuje \(1944\) złote. Stąd wynika, że przed tymi obniżkami ten
+                    komputer kosztował <div class="blok_odp">
+                        <div><b>A.</b>\( 2200 \) złotych</div>
+                        <div><b>B.</b>\( 2300 \) złotych</div>
+                        <div><b>C.</b>\( 2400 \) złotych</div>
+                        <div><b>D.</b>\( 3000 \) złotych</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">C</div>
+            </div>
+            <div class="zadanie" id="2206" tytul="" typ="1" yt="Mnj-QWoHNah" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="1" wsk="" data="2016-08-23">
+                <div class="z_tresc">Buty, które kosztowały \(220\) złotych, przeceniono i sprzedano za \(176\) złotych.
+                    O ile procent obniżono cenę butów? <div class="blok_odp">
+                        <div><b>A.</b>\( 80 \)</div>
+                        <div><b>B.</b>\( 20 \)</div>
+                        <div><b>C.</b>\( 22 \)</div>
+                        <div><b>D.</b>\( 44 \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">B</div>
+            </div>
+            <div class="zadanie" id="2901" tytul="" typ="1" yt="gs6KzNDmNP-" p="0" lvl="" pkt="2" typ_v="1" pisz=""
+                odp="1" wsk="" data="2019-04-16">
+                <div class="z_tresc">Na diagramie przedstawiono informacje, jaki procent meczów w ciągu całego sezonu
+                    drużyna piłkarska zakończyła wygraną, jaki – przegraną, a jaki – remisem. <img
+                        src="./grafika/g0588.png" class="center m20" noc="1" alt="" /> W ciągu całego sezonu drużyna
+                    wygrała \(10\) meczów. Ile meczów w sezonie ta drużyna przegrała? Zapisz obliczenia.</div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+                <div class="p_o odpowiedz">\(12\)</div>
+            </div>
+            <div class="zadanie" id="2911" tytul="" typ="1" yt="89TYJ4qzZ7W" p="0" lvl="PP" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2019-05-06">
+                <div class="z_tresc">W pewnym banku prowizja od udzielanych kredytów hipotecznych przez cały styczeń
+                    była równa \(4\%\). Na początku lutego ten bank obniżył wysokość prowizji od wszystkich kredytów o
+                    \(1\) punkt procentowy. Oznacza to, że prowizja od kredytów hipotecznych w tym banku zmniejszyła się
+                    o <div class="blok_odp">
+                        <div><b>A.</b>\( 1\% \)</div>
+                        <div><b>B.</b>\( 25\% \)</div>
+                        <div><b>C.</b>\( 33\% \)</div>
+                        <div><b>D.</b>\( 75\% \)</div>
+                    </div>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="3113" tytul="" typ="1" yt="gcMX8R7JDx5" p="0" lvl="" pkt="1" typ_v="1" pisz=""
+                odp="" wsk="" data="2020-03-31">
+                <div class="z_tresc">Na diagramie kołowym przedstawiono procentowy udział soków o różnych smakach, które
+                    zostały sprzedane podczas festynu. Najmniej sprzedano soku pomidorowego, tylko \(15\) kartonów, a
+                    najwięcej – soku jabłkowego. <img src="./grafika/g0649.png" class="center m20" noc="1" alt="" />
+                    Oceń prawdziwość podanych zdań. Wybierz <b>P</b>, jeśli zdanie jest prawdziwe, albo <b>F</b> – jeśli
+                    jest fałszywe. <table class="tabela2 tabela_pf">
+                        <tr>
+                            <td class="textleft">Sprzedano łącznie \(125\) kartonów soków.</td>
+                            <td class="prawdafalsz">P</td>
+                            <td class="prawdafalsz">F</td>
+                        </tr>
+                        <tr>
+                            <td class="textleft">Sprzedano o \(30\) kartonów więcej soku jabłkowego niż pomidorowego.
+                            </td>
+                            <td class="prawdafalsz">P</td>
+                            <td class="prawdafalsz">F</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+            <div class="zadanie" id="3133" tytul="" typ="1" yt="IFKzAmuZ8J6" p="0" lvl="" pkt="3" typ_v="1" pisz=""
+                odp="" wsk="" data="2020-03-31">
+                <div class="z_tresc">Pudełko w kształcie prostopadłościanu o wymiarach przedstawionych na rysunku
+                    zawiera \(32\) czekoladki. Każda czekoladka ma kształt prostopadłościanu o wymiarach \(2\) cm, \(2\)
+                    cm i \(1{,}5\) cm. Ile procent objętości pudełka stanowi objętość wszystkich czekoladek <img
+                        src="./grafika/g0659.png" class="center m20" noc="1" alt="" /></div>
+                <div onclick="pokafilm(this)" class="buttons"><div class=player></div></div>
+            </div>
+        </div>
+        <div class="pasek_root_dol_cont druk_ukryj">
+            <div id="pasek_root_dol" class="pasek_root_2">
+                <div><a href="jakim-procentem-jednej-liczby-jest-druga-liczba.html">&#9664; Jakim procentem jednej
+                        liczby jest druga liczba</a></div>
+                <div class="next_temat"><a href="obliczanie-liczby-majac-dany-jej-procent.html"
+                        class="next_temat">Obliczanie liczby mając dany jej procent &#9654;</a></div>
+            </div>
+        </div>
+        <div id="footer" class="footer">&copy; 2010-2020 Matemaks Michał Budzyński | <a href="#top">Na górę strony</a> |
+            <a href="./kontakt.html">Kontakt</a> | <a href="./regulamin.html">Regulamin</a> | <a
+                href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a href="./cennik.html">Cennik</a> | <a
+                href="./index.html">Strona główna</a></div>
+    </div>
+    <script type="text/javascript" src="./skrypty/skrypty_c_20210120.js"></script>
+    <script
+        type="text/x-mathjax-config"> MathJax.Hub.Config({ showMathMenu: false, showMathMenuMSIE: false, messageStyle: "none", preRemoveClass: "MathJax_Preview", "HTML-CSS": {mtextFontInherit: true}, jax: ["input/TeX","input/MathML","output/HTML-CSS"], extensions: ["tex2jax.js", "mml2jax.js"], TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}, tex2jax: { ignoreClass: "no-mathjax" } }); MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () { MathJax.InputJax.TeX.prefilterHooks.Add(function (data) { if (!data.display) {data.math = "\\displaystyle{"+data.math+" }"}; }); }); </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>
+        .MathJax_Preview {
+            color: #888;
+            text-align: center;
+        }
+
+        .math_left .MathJax_Display {
+            text-align: left !important;
+        }
+    </style>
+    <div id="pasek_logowania" class="pasek_logowania"></div>
+</body>
+
+</html>
